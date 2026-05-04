@@ -55,17 +55,12 @@
 
       <!-- Left: form -->
       <div class="form-card">
-        <!--
-          FORM SUBMISSION (currently mailto:)
-          For now this opens the user's email client pre-filled — they click Send in their app.
-          When ready for proper inline submissions, swap action to a form provider:
-            - Formspree:    https://formspree.io       (50/mo free)
-            - Web3Forms:    https://web3forms.com      (1,000/mo free)
-            - Basin:        https://usebasin.com       (100/mo free)
-            - Netlify Forms: built-in if on Netlify
-        -->
-        <form id="contact-form" method="POST" action="mailto:hello@iamcoachgina.com"
+        <form id="contact-form" method="POST" action="https://api.web3forms.com/submit"
               onsubmit="return handleSubmit(event)">
+          <input type="hidden" name="access_key" value="6f3782e0-56aa-4b00-803c-114f9e312c2b" />
+          <input type="hidden" name="from_name" value="iamcoachgina.com contact form" />
+          <input type="hidden" name="subject" id="hidden-subject" value="New enquiry from iamcoachgina.com" />
+          <input type="checkbox" name="botcheck" style="display:none;" tabindex="-1" autocomplete="off" />
           <div class="form-row">
             <div class="form-field">
               <label for="name">Your name</label>
@@ -159,50 +154,54 @@
     }
   })();
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     const form = e.target;
     const status = document.getElementById("form-status");
     const btn = document.getElementById("submit-btn");
 
-    // Pull form values
     const data = new FormData(form);
-    const name     = (data.get("name")     || "").toString().trim();
-    const email    = (data.get("email")    || "").toString().trim();
-    const topic    = (data.get("topic")    || "").toString().trim();
-    const timeline = (data.get("timeline") || "").toString().trim();
-    const company  = (data.get("company")  || "").toString().trim();
-    const message  = (data.get("message")  || "").toString().trim();
+    const name  = (data.get("name")  || "").toString().trim();
+    const topic = (data.get("topic") || "").toString().trim();
+    const subjectField = document.getElementById("hidden-subject");
+    if (subjectField) {
+      subjectField.value = `[${topic || "Contact form"}] ${name || "New enquiry"} — iamcoachgina.com`;
+      data.set("subject", subjectField.value);
+    }
 
-    // Build email body
-    const subject = `[${topic || "Contact form"}] ${name || "New enquiry"}`;
-    const bodyLines = [
-      `Hi Gina,`,
-      ``,
-      message,
-      ``,
-      `---`,
-      `Name: ${name}`,
-      `Email: ${email}`,
-      `Topic: ${topic}`,
-      `Timeline: ${timeline || "—"}`,
-      `Company: ${company || "—"}`,
-      ``,
-      `Sent from iamcoachgina.com contact form.`
-    ];
-    const body = bodyLines.join("\n");
-
-    // Open user's email client
-    const mailto = `mailto:hello@iamcoachgina.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.location.href = mailto;
-
-    // Show confirmation in case the email client doesn't open visibly
-    status.style.display = "block";
-    status.innerHTML = `Opening your email app… If nothing happened, please email <a href="mailto:hello@iamcoachgina.com" style="color:var(--yellow); text-decoration:underline;">hello@iamcoachgina.com</a> directly.`;
     btn.disabled = true;
     btn.style.opacity = "0.6";
-    btn.textContent = "Opening email…";
+    btn.textContent = "Sending…";
+    status.style.display = "none";
 
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Accept": "application/json" },
+        body: data
+      });
+      const result = await res.json();
+      if (result.success) {
+        form.reset();
+        status.style.display = "block";
+        status.style.background = "rgba(247,208,70,.12)";
+        status.style.borderColor = "rgba(247,208,70,.3)";
+        status.style.color = "var(--yellow)";
+        status.innerHTML = `Thanks — your message is in. I'll reply within 2 business days from <strong>hello@iamcoachgina.com</strong>.`;
+        btn.textContent = "Sent ✓";
+      } else {
+        throw new Error(result.message || "Submission failed");
+      }
+    } catch (err) {
+      status.style.display = "block";
+      status.style.background = "rgba(255,90,90,.12)";
+      status.style.borderColor = "rgba(255,90,90,.3)";
+      status.style.color = "#ff8080";
+      status.innerHTML = `Something went wrong. Please email <a href="mailto:hello@iamcoachgina.com" style="color:#ff8080; text-decoration:underline;">hello@iamcoachgina.com</a> directly.`;
+      btn.disabled = false;
+      btn.style.opacity = "1";
+      btn.textContent = "Send message";
+    }
     return false;
   }
 </script>

@@ -88,7 +88,7 @@ h1.headline em{ font-style:normal; color:var(--yellow); }
 @keyframes spin{ to{ transform: rotate(352deg);} }
 
 /* Ticker */
-.ticker{ margin-top:40px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:18px 0; overflow:hidden; background:var(--bg-2); }
+.ticker{ margin-top:96px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:18px 0; overflow:hidden; background:var(--bg-2); }
 .ticker-track{ display:flex; gap:56px; white-space:nowrap; animation:scroll 36s linear infinite; font-family:var(--f-display); font-weight:800; font-size:22px; color:var(--ink); letter-spacing:-0.01em; }
 .ticker-track span{ color:var(--ink-dim); display:inline-flex; align-items:center; gap:56px; }
 .ticker-track .dot{ width:8px; height:8px; border-radius:50%; background:var(--yellow); display:inline-block; }
