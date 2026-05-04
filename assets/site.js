@@ -66,6 +66,7 @@
             <h5>Say hi</h5>
             <ul>
               <li><a href="mailto:hello@iamcoachgina.com">hello@iamcoachgina.com</a></li>
+              <li><a href="https://www.linkedin.com/in/gearginatan/" target="_blank" rel="noopener">LinkedIn</a></li>
               <li><a href="${prefix}contact.html">Contact form</a></li>
               <li><a href="${prefix}privacy.html">Privacy</a></li>
               <li><a href="${prefix}terms.html">Terms</a></li>
