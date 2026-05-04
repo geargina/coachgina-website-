@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GEARGINA — Coach Gina</title>
+    <link>https://iamcoachgina.com/blog/</link>
+    <description>Honest writing on AI, prompting, coaching, and what's actually working — by an AI coach in Singapore.</description>
+    <language>en</language>
+    <atom:link href="https://iamcoachgina.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Apr 2026 01:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Singapore Budget 2026: Every AI Initiative You Need to Know</title>
+      <link>https://iamcoachgina.com/blog/singapore-budget-2026-ai-business-owners-workers-guide.html</link>
+      <guid>https://iamcoachgina.com/blog/singapore-budget-2026-ai-business-owners-workers-guide.html</guid>
+      <pubDate>Wed, 22 Apr 2026 01:00:00 GMT</pubDate>
+      <category>Policy</category>
+      <description>400% tax deductions, free premium AI tools, a PM-chaired National AI Council. Every Singapore Budget 2026 AI initiative, broken down.</description>
+    </item>
+    <item>
+      <title>Singapore Is Introducing AI in Schools From Primary 4</title>
+      <link>https://iamcoachgina.com/blog/singapore-ai-education-moe-primary-school-framework.html</link>
+      <guid>https://iamcoachgina.com/blog/singapore-ai-education-moe-primary-school-framework.html</guid>
+      <pubDate>Sat, 18 Apr 2026 01:00:00 GMT</pubDate>
+      <category>Policy</category>
+      <description>MOE's 'four Learns' framework brings AI into Singapore primary schools. What it gets right and what's still missing.</description>
+    </item>
+    <item>
+      <title>5 Prompting Techniques That Separate the Top 1% of AI Users</title>
+      <link>https://iamcoachgina.com/blog/ai-prompting-techniques-claude-chatgpt-gemini.html</link>
+      <guid>https://iamcoachgina.com/blog/ai-prompting-techniques-claude-chatgpt-gemini.html</guid>
+      <pubDate>Wed, 15 Apr 2026 01:00:00 GMT</pubDate>
+      <category>Prompting</category>
+      <description>Memory injection, reverse prompting, constraint cascade, role stacking, and the verification loop. Works on Claude, ChatGPT, and Gemini.</description>
+    </item>
+    <item>
+      <title>40 Professionals Walked Into an AI Workshop Not Knowing What Claude Was</title>
+      <link>https://iamcoachgina.com/blog/ai-workshop-singapore-teams-claude-adoption.html</link>
+      <guid>https://iamcoachgina.com/blog/ai-workshop-singapore-teams-claude-adoption.html</guid>
+      <pubDate>Fri, 10 Apr 2026 01:00:00 GMT</pubDate>
+      <category>Workshops</category>
+      <description>AI adoption is rarely a technology problem — it's a confidence problem. A case study from a 40-person Claude workshop in Singapore.</description>
+    </item>
+    <item>
+      <title>A 15-Year Industry Veteran Asked for Distribution Rights After 30 Seconds</title>
+      <link>https://iamcoachgina.com/blog/wtfox-ai-whatsapp-crm-sales-automation.html</link>
+      <guid>https://iamcoachgina.com/blog/wtfox-ai-whatsapp-crm-sales-automation.html</guid>
+      <pubDate>Sun, 05 Apr 2026 01:00:00 GMT</pubDate>
+      <category>Building</category>
+      <description>The sales problem WTFox.ai is solving — a WhatsApp-native CRM with sales automation built for high-velocity teams.</description>
+    </item>
+    <item>
+      <title>Five Prompts I Use Every Week</title>
+      <link>https://iamcoachgina.com/blog/five-prompts-i-use-every-week.html</link>
+      <guid>https://iamcoachgina.com/blog/five-prompts-i-use-every-week.html</guid>
+      <pubDate>Thu, 12 Mar 2026 01:00:00 GMT</pubDate>
+      <category>Prompting</category>
+      <description>The Claude and ChatGPT prompts I actually run every week — for editing, decision-making, and resetting messy thinking.</description>
+    </item>
+    <item>
+      <title>Why "Just Use ChatGPT" Is the Worst AI Advice</title>
+      <link>https://iamcoachgina.com/blog/just-use-chatgpt-is-bad-advice.html</link>
+      <guid>https://iamcoachgina.com/blog/just-use-chatgpt-is-bad-advice.html</guid>
+      <pubDate>Fri, 20 Feb 2026 01:00:00 GMT</pubDate>
+      <category>Coaching</category>
+      <description>A short rant about tool-dropping in AI advice — plus the framework I use with clients to pick the right AI stack.</description>
+    </item>
+  </channel>
+</rss>
