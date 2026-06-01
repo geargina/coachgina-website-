@@ -1,4 +1,4 @@
-# robots.txt for iamcoachgina.com
+# robots.txt for geargina.com
 User-agent: *
 Allow: /
 Disallow: /privacy.html
@@ -29,4 +29,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://iamcoachgina.com/sitemap.xml
+Sitemap: https://geargina.com/sitemap.xml
