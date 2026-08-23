@@ -48,7 +48,7 @@ There is no build step and nothing is generated. Miss a file and the post is inv
 
 Category is display text plus `articleSection` plus the feed `<category>`. It has no CSS dependency, so adding a new one is safe.
 
-**Cover images are forced to 16:9 with `object-fit:cover`.** Portrait source art must be composed onto a 16:9 canvas first (1920x1080, matching background) or the crop cuts through the middle of the image.
+Covers live in **`assets/img/`**. **Cover images are forced to 16:9 with `object-fit:cover`.** Portrait source art must be composed onto a 16:9 canvas first (1920x1080, matching background) or the crop cuts through the middle of the image.
 
 **`.article .body` has no `table` styles.** A post needing a table carries a scoped `<style>` in its own head rather than forcing a `?v=` bump across every file.
 

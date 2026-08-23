@@ -58,7 +58,7 @@
       "@id": "https://geargina.com/#org",
       "name": "GEARGINA",
       "url": "https://geargina.com/",
-      "logo": "https://geargina.com/assets/geargina-workshop.png",
+      "logo": "https://geargina.com/assets/img/geargina-workshop.png",
       "founder": { "@id": "https://geargina.com/#gina" },
       "email": "hello@iamcoachgina.com",
       "areaServed": "Worldwide",
@@ -202,20 +202,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=5">
+<link rel="stylesheet" href="assets/css/site.css?v=9">
 </head>
 <body>
 
 <!-- Nav + top strip injected by site.js -->
 <div id="site-nav"></div>
 
-<!-- ===== Hero ===== -->
-<header class="hero">
-  <div class="wrap">
+<!-- ===== Hero (cinematic) ===== -->
+<header class="hero cinematic">
+  <div class="hero-bg">
+    <!-- 0.3MB after compression, so motion runs on mobile too. Poster prevents a blank first frame. -->
+    <video class="hero-vid" src="assets/video/loop-2.mp4" poster="assets/video/hero-poster.jpg"
+           autoplay loop muted playsinline preload="auto"></video>
+    <span class="ai-tag">// AI generated visual</span>
+  </div>
+
+  <div class="wrap hero-inner">
     <div>
       <span class="kicker"><span class="pulse"></span>Booking Q4 2026 workshops</span>
       <h1 class="headline">
-        Hello <span class="wave">👋</span> I'm Geargina,
+        Hello <span class="wave">&#128075;</span> I'm Geargina,
         <em>your AI coach</em> for curious humans.
       </h1>
       <p class="lede">
@@ -228,20 +235,19 @@
         <a href="#about" class="btn ghost">About me</a>
       </div>
     </div>
-    <div class="collage">
-      <div class="tile a">
-        <img src="assets/photos/masterclass-n1.jpg" alt="Geargina Tan teaching the Claude Masterclass 101 in Singapore, August 2026, with attendees working on laptops around a boardroom table" />
-        <span class="label">// Claude Masterclass, Aug 2026</span>
-        <div class="sticker-badge">
-          Real AI<br/>that you<br/>actually use
-        </div>
+
+    <!-- Real photograph, so the proof sits next to the atmosphere -->
+    <a class="proof-card" href="#offerings">
+      <img src="assets/photos/masterclass-n2.jpg" alt="The second cohort of the Claude Masterclass 101 in Singapore" />
+      <div class="proof-meta">
+        <b>Claude Masterclass 101</b>
+        <span>21 attendees &middot; 2 cohorts &middot; Singapore, Aug 2026</span>
       </div>
-      <div class="tile c">
-        <img src="assets/photos/masterclass-n2.jpg" alt="The second cohort of the Claude Masterclass 101 in Singapore, attendees following along on their own laptops" />
-        <span class="label">// Cohort 2</span>
-      </div>
-    </div>
+      <div class="sticker-badge">Real AI<br/>that you<br/>actually use</div>
+    </a>
   </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
 </header>
 
 <!-- ===== Ticker ===== -->
@@ -251,6 +257,22 @@
     <span>AI Workshops <i class="dot"></i> 1:1 Coaching <i class="dot"></i> Prompting <i class="dot"></i> Automation <i class="dot"></i> Tools <i class="dot"></i> Curiosity <i class="dot"></i></span>
   </div>
 </div>
+
+<!-- ===== Taught and spoken at ===== -->
+<section class="hosts">
+  <div class="wrap">
+    <span class="hosts-lbl">Taught and spoken at</span>
+    <span class="host">Cogentic AI Partners</span>
+    <span class="host">BNF Group</span>
+    <span class="host">LHH</span>
+    <span class="host">AmCham Singapore</span>
+    <span class="host">Podium</span>
+    <span class="host">Nifnexa</span>
+    <span class="host">Claude Cowork Meetup</span>
+    <span class="host">Claude Bloom Singapore</span>
+    <span class="host">CJC</span>
+  </div>
+</section>
 
 <!-- ===== Offerings ===== -->
 <section id="offerings" class="offerings s">
@@ -285,12 +307,12 @@
 
       <div class="offer">
         <div class="visual">
-          <img src="assets/photos/speaking-hall.jpg" alt="Geargina Tan speaking on AI adoption and digital transformation as an invited guest speaker in Singapore" />
+          <img src="assets/photos/bnf-retreat.jpg" alt="Geargina Tan delivering an AI Adoption Workshop at the BNF Group strategy retreat in Singapore, March 2026" />
           <span class="chip">// Group · 2 hrs to full day</span>
         </div>
         <span class="tag">Team Workshops</span>
         <h3>Private sessions built on your team's actual work.</h3>
-        <p>2 hr, 3 hr, and full-day formats, in person in Singapore or online. We work in Claude and ChatGPT on your team's own documents and tasks, and everyone leaves with a setup running on their own account. Recent sessions include a 3 hr workshop for 40+ senior managers at a Singapore industrial group's strategy retreat, a full-day private cohort, an Insight Hour with Podium for women professionals, and the opening talk at Keith Teo's first Claude Cowork Meetup.</p>
+        <p>2 hr, 3 hr, and full-day formats, in person in Singapore or online. We work in Claude and ChatGPT on your team's own documents and tasks, and everyone leaves with a setup running on their own account. Recent sessions include a 3 hr workshop for 40+ senior managers at BNF Group's strategy retreat, a full-day private cohort, an Insight Hour with Podium for women professionals, and the opening talk at Keith Teo's first Claude Cowork Meetup.</p>
         <ul>
           <li>Claude and ChatGPT, based on what your team already uses</li>
           <li>Hands-on from the first 15 mins. Bring laptops.</li>
@@ -307,7 +329,8 @@
 
       <div class="offer">
         <div class="visual">
-          <img src="assets/geargina-workshop.png" alt="Geargina Tan, AI trainer available to training partners, academies and communities in Singapore" />
+          <video src="assets/video/gina-sits-down.mp4" autoplay loop muted playsinline preload="metadata"></video>
+          <span class="ai-tag">// AI generated visual</span>
           <span class="chip">// Partner model</span>
         </div>
         <span class="tag">For Partners</span>
@@ -329,7 +352,8 @@
 
       <div class="offer">
         <div class="visual">
-          <img src="assets/coaching-casual.png" alt="Geargina Tan, 1:1 AI coaching sessions for professionals in Singapore" />
+          <video src="assets/video/gina-drinks-tea.mp4" autoplay loop muted playsinline preload="metadata"></video>
+          <span class="ai-tag">// AI generated visual</span>
           <span class="chip">// 1:1 · 4 or 8 weeks</span>
         </div>
         <span class="tag">1:1 Coaching</span>
@@ -349,6 +373,42 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ===== The path (sticky) ===== -->
+<section class="ladder s" id="ladder">
+  <div class="wrap">
+    <div class="ladder-grid">
+      <div class="ladder-side">
+        <span class="eyebrow">The path</span>
+        <h2 class="sec">From chatting with AI,<br/>to handing it real work.</h2>
+        <p class="lede">Everything I teach moves along the same 3 steps. Most people stop at the first one and assume that is all there is.</p>
+        <a href="#offerings" class="btn ghost">Where this happens
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="ladder-steps">
+        <article class="step">
+          <div class="step-num">01</div>
+          <h3>Chat</h3>
+          <p>Ask better, get better. Which model to reach for, how to brief it like a new hire on their first day, and why a vague question earns a vague answer.</p>
+          <span class="step-tag">Most people live here</span>
+        </article>
+        <article class="step">
+          <div class="step-num">02</div>
+          <h3>Context</h3>
+          <p>Give it your actual work. A Claude Project holds your documents and your way of doing things, and connectors let it reach your calendar and your inbox, so it stops starting from zero every time you open it.</p>
+          <span class="step-tag">Where it gets useful</span>
+        </article>
+        <article class="step">
+          <div class="step-num">03</div>
+          <h3>Agentic</h3>
+          <p>Hand the task over. You write a skill once and it runs the same way every time, and Cowork takes a job end to end while you do something else. You delegate the outcome instead of the steps.</p>
+          <span class="step-tag">Where the hours come back</span>
+        </article>
+      </div>
     </div>
   </div>
 </section>
@@ -405,8 +465,9 @@
   <div class="wrap">
     <div class="about-grid">
       <div class="about-media">
-        <img src="assets/neon-headphones.png" alt="Gina, neon portrait" />
-        <div class="stamp">GEARGINA</div>
+        <video src="assets/video/gina-blue-suit.mp4" poster="assets/video/gina-blue-suit-poster.jpg"
+               autoplay loop muted playsinline preload="metadata"></video>
+        <span class="ai-tag">// AI generated visual</span>
       </div>
       <div class="about-body">
         <span class="eyebrow">Hey, I'm GEARGINA</span>
@@ -436,7 +497,7 @@
         <h2 class="sec" style="margin:0;">What people said after working with me.</h2>
       </div>
     </div>
-    <div class="testi-grid" style="grid-template-columns:repeat(2,1fr);">
+    <div class="testi-grid">
       <div class="testi-card">
         <blockquote>"Geargina has very good 'trainer' skills. She knows the stuff well and is able to articulate the approach very clearly with simple illustrations and drawing comparisons to things we easily understand."</blockquote>
         <div class="who">
@@ -449,6 +510,20 @@
         <div class="who">
           <div class="av">JH</div>
           <div><b>Julian Hu</b><span>Product Manager</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <blockquote>"Yesterday's session was terrific! Geargina was very knowledgeable, and my mind was focused on how the learning could be used in everyday life, not just work."</blockquote>
+        <div class="who">
+          <div class="av">V</div>
+          <div><b>Viju</b><span>Masterclass attendee</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <blockquote>"Enjoyed the session. I'm gonna build my own Obsidian coming week."</blockquote>
+        <div class="who">
+          <div class="av">W</div>
+          <div><b>Willis</b><span>Masterclass attendee</span></div>
         </div>
       </div>
     </div>
@@ -469,7 +544,7 @@
     </div>
     <div class="blog-grid">
       <a class="post" href="blog/singapore-budget-2026-ai-business-owners-workers-guide.html">
-        <div class="cover"><img src="assets/geargina-sword-cat.png" alt=""></div>
+        <div class="cover"><img src="assets/img/geargina-sword-cat.png" alt=""></div>
         <div class="body">
           <div class="meta"><span>// Policy</span><span>10 min read</span></div>
           <h3>Singapore Budget 2026: Every AI Initiative You Need to Know — For Business Owners and Workers.</h3>
@@ -477,7 +552,7 @@
         </div>
       </a>
       <a class="post" href="blog/api-vs-mcp-difference-explained-simply.html">
-        <div class="cover"><img src="assets/api-vs-mcp-sketch.jpg" alt="Hand-drawn API vs MCP sketch by Geargina Tan: tangled cables into a robot for APIs, one USB-C style hub for MCP"></div>
+        <div class="cover"><img src="assets/img/api-vs-mcp-sketch.jpg" alt="Hand-drawn API vs MCP sketch by Geargina Tan: tangled cables into a robot for APIs, one USB-C style hub for MCP"></div>
         <div class="body">
           <div class="meta"><span>// Tools</span><span>4 min read</span></div>
           <h3>API vs MCP: What Is the Difference?</h3>
@@ -553,7 +628,7 @@
   </div>
 </div>
 
-<script src="assets/site.js?v=5" data-page="home"></script>
+<script src="assets/js/site.js?v=9" data-page="home"></script>
 <script>
   const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
     "palette": "green",
@@ -573,8 +648,8 @@
 
   const HERO_SOURCES = {
     workshop: { type: "image", src: "assets/photos/masterclass-n1.jpg" },
-    neon:     { type: "image", src: "assets/neon-headphones.png" },
-    milo:     { type: "image", src: "assets/milo.png" }
+    neon:     { type: "image", src: "assets/img/neon-headphones.png" },
+    milo:     { type: "image", src: "assets/img/milo.png" }
   };
 
   function setHeroMedia(key) {
@@ -598,9 +673,12 @@
     document.documentElement.setAttribute("data-theme",
       state.palette === "green" ? "" : state.palette);
     setHeroMedia(state.hero);
-    document.querySelector("h1.headline").innerHTML = HEADLINES[state.headline] || HEADLINES.warm;
-    document.querySelector('[data-section="testimonials"]').style.display = state.testimonials ? "" : "none";
-    document.querySelector('[data-section="blog"]').style.display = state.blog ? "" : "none";
+    const hl = document.querySelector("h1.headline");
+    if (hl) hl.innerHTML = HEADLINES[state.headline] || HEADLINES.warm;
+    const ts = document.querySelector('[data-section="testimonials"]');
+    if (ts) ts.style.display = state.testimonials ? "" : "none";
+    const bs = document.querySelector('[data-section="blog"]');
+    if (bs) bs.style.display = state.blog ? "" : "none";
 
     document.querySelectorAll("#tw-palette .swatch").forEach(el =>
       el.classList.toggle("active", el.dataset.theme === state.palette));

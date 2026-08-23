@@ -84,7 +84,7 @@ h1.headline em{ font-style:normal; color:var(--yellow); }
 .collage .tile .label{ position:absolute; left:12px; bottom:12px; font-family:var(--f-mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase; background:rgba(10,10,10,.55); backdrop-filter:blur(6px); padding:6px 10px; border-radius:999px; color:#fff; border:1px solid rgba(255,255,255,.18); }
 .collage .tile.c .rec{ position:absolute; top:12px; left:12px; display:inline-flex; align-items:center; gap:6px; font-family:var(--f-mono); font-size:10px; letter-spacing:.16em; background:rgba(0,0,0,.55); padding:5px 10px; border-radius:999px; color:#fff; }
 .collage .tile.c .rec .d{ width:7px; height:7px; border-radius:50%; background:#ff4d4d; box-shadow:0 0 8px #ff4d4d; animation:pulse 1.2s ease-in-out infinite; }
-.sticker-badge{ position:absolute; right:-22px; bottom:-10px; width:116px; height:116px; border-radius:50%; background:var(--yellow); color:var(--yellow-ink); display:grid; place-items:center; transform:rotate(-8deg); font-family:var(--f-mono); font-size:10px; letter-spacing:.18em; text-transform:uppercase; text-align:center; padding:10px; box-shadow:0 20px 40px -15px rgba(247,208,70,.35); animation:spin 20s linear infinite; z-index:2; }
+.sticker-badge{ position:absolute; right:-26px; top:-26px; width:104px; height:104px; border-radius:50%; background:var(--yellow); color:var(--yellow-ink); display:grid; place-items:center; transform:rotate(-8deg); font-family:var(--f-mono); font-size:10px; letter-spacing:.18em; text-transform:uppercase; text-align:center; padding:10px; box-shadow:0 20px 40px -15px rgba(247,208,70,.35); animation:spin 20s linear infinite; z-index:2; }
 @keyframes spin{ to{ transform: rotate(352deg);} }
 
 /* Ticker */
@@ -265,4 +265,202 @@ footer{ padding-top:80px; }
   .foot-top{ grid-template-columns:1fr 1fr; }
   nav.main ul{ display:none; }
   .cta-banner{ padding:36px; }
+}
+
+/* ============================================================
+   Scroll-driven motion. Native CSS, no JS, no library.
+
+   DESIGN RULE, deliberate: these animations NEVER touch opacity.
+   A scroll timeline that fails to advance would leave opacity at 0
+   and hide the content. Transform-only means the worst case is
+   "did not move", never "invisible". Learned the hard way: an
+   earlier version faded in and left the whole offerings section
+   blank, because `entry`-phase ranges do not complete for elements
+   taller than the viewport.
+
+   Ranges use the `cover` phase, which is well defined for any
+   element size, rather than `entry`.
+
+   Two guards: browsers without scroll timelines get the static
+   page, and prefers-reduced-motion is respected.
+   Delete this block to revert.
+   ============================================================ */
+
+@keyframes rise-up   { from { transform: translateY(28px); } to { transform: translateY(0); } }
+@keyframes rise-soft { from { transform: translateY(14px); } to { transform: translateY(0); } }
+@keyframes slow-zoom { from { transform: scale(1); }        to { transform: scale(1.09); } }
+@keyframes draw-rule { from { transform: scaleX(0); }       to { transform: scaleX(1); } }
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+
+    /* Cards lift as they come into view. Each has its own timeline,
+       so the stagger is free. */
+    .offer,
+    .testi-card,
+    .blog-grid .post,
+    .help-item {
+      animation: rise-up linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 22%;
+    }
+
+    /* Headings and body copy, a smaller move so it reads as settling
+       rather than sliding. */
+    section.s h2.sec,
+    section.s .lede,
+    .hosts .wrap {
+      animation: rise-soft linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 18%;
+    }
+
+    /* The eyebrow rule draws itself left to right */
+    section.s .eyebrow::before {
+      transform-origin: left center;
+      animation: draw-rule linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 20%;
+    }
+
+    /* The zoom. Photographs scale slowly the entire time they are on
+       screen, tracking scroll position rather than a timer. */
+    .collage .tile img,
+    .offer .visual img,
+    .about-media img,
+    .article .cover img {
+      animation: slow-zoom linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 100%;
+      will-change: transform;
+    }
+  }
+}
+
+/* ============================================================
+   FLASHY BUILD. Cinematic hero + sticky ladder + bolder motion.
+   Everything below is additive. Delete this block and the hero /
+   ladder markup to return to the approved design, or check out
+   the tag checkpoint-approved-2026-08-23.
+   ============================================================ */
+
+/* ---------- Cinematic hero ---------- */
+.hero.cinematic{ position:relative; min-height:100svh; display:flex; align-items:center; padding:0; overflow:hidden; }
+.hero.cinematic .hero-bg{ position:absolute; inset:0; z-index:0; }
+.hero.cinematic .hero-bg video,
+.hero.cinematic .hero-bg img{
+  width:100%; height:100%; object-fit:cover; display:block;
+  /* Bias the crop upward. The source is portrait and her face sits near the
+     top, so a centred cover-fit shows only her torso. */
+  object-position:50% 14%;
+}
+/* Legibility. Two layers: a vertical wash for the type, a brand tint for warmth. */
+.hero.cinematic .hero-bg::after{
+  content:""; position:absolute; inset:0;
+  background:
+    linear-gradient(100deg, var(--bg) 4%, rgba(15,42,32,.88) 30%, rgba(15,42,32,.42) 58%, rgba(15,42,32,.14) 100%),
+    linear-gradient(to top, var(--bg) 0%, transparent 38%);
+}
+.hero.cinematic .hero-inner{ position:relative; z-index:1; display:grid; grid-template-columns:1.3fr .7fr; gap:48px; align-items:center; padding:92px var(--pad-x) 76px; }
+.hero.cinematic h1.headline{ font-size:clamp(40px, 5.1vw, 74px); margin:20px 0 18px; text-shadow:0 2px 40px rgba(0,0,0,.35); }
+.hero.cinematic .lede{ max-width:46ch; font-size:16px; }
+
+.ai-tag{
+  position:absolute; right:14px; bottom:14px; z-index:2;
+  font-family:var(--f-mono); font-size:9px; letter-spacing:.16em; text-transform:uppercase;
+  color:rgba(242,236,216,.55); background:rgba(8,32,24,.5); backdrop-filter:blur(6px);
+  border:1px solid rgba(242,236,216,.14); padding:4px 9px; border-radius:999px;
+}
+
+/* The real photograph, so proof sits beside the atmosphere */
+.proof-card{
+  position:relative; display:block; text-decoration:none; color:inherit;
+  border-radius:22px; overflow:visible; border:1px solid var(--line-2);
+  background:var(--card); box-shadow:0 40px 80px -30px rgba(0,0,0,.65);
+  transition:transform .35s cubic-bezier(.2,.7,.3,1), border-color .35s ease;
+}
+.proof-card:hover{ transform:translateY(-6px) rotate(-.6deg); border-color:var(--yellow); }
+.proof-card img{ width:100%; aspect-ratio:1/1; object-fit:cover; display:block; border-radius:22px 22px 0 0; }
+.proof-meta{ padding:16px 18px 18px; }
+.proof-meta b{ display:block; font-family:var(--f-display); font-weight:800; font-size:16px; }
+.proof-meta span{ display:block; margin-top:4px; font-family:var(--f-mono); font-size:10px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-mute); }
+
+.scroll-cue{ position:absolute; left:50%; bottom:26px; transform:translateX(-50%); z-index:2; width:24px; height:38px; border:1px solid var(--line-2); border-radius:999px; display:grid; place-items:start center; padding-top:7px; }
+.scroll-cue span{ width:3px; height:8px; border-radius:2px; background:var(--yellow); animation:cue 1.9s ease-in-out infinite; }
+@keyframes cue{ 0%{opacity:0; transform:translateY(0);} 30%{opacity:1;} 100%{opacity:0; transform:translateY(14px);} }
+
+/* ---------- Sticky ladder ---------- */
+.ladder{ background:var(--bg-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.ladder-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:64px; align-items:start; }
+.ladder-side{ position:sticky; top:18vh; }
+.ladder-side .sec{ margin:0 0 18px; }
+.ladder-side .btn{ margin-top:26px; }
+.ladder-steps{ display:flex; flex-direction:column; gap:20px; }
+.step{
+  position:relative; background:var(--card); border:1px solid var(--line);
+  border-radius:24px; padding:34px 34px 30px; overflow:hidden;
+  transition:border-color .3s ease, transform .3s ease;
+}
+.step:hover{ border-color:var(--line-2); transform:translateX(4px); }
+.step-num{
+  font-family:var(--f-display); font-weight:900; font-size:74px; line-height:1;
+  color:transparent; -webkit-text-stroke:1px var(--line-2); margin-bottom:6px;
+}
+.step h3{ font-family:var(--f-display); font-weight:800; font-size:30px; margin:0 0 12px; letter-spacing:-0.01em; }
+.step p{ color:var(--ink-dim); font-size:16px; line-height:1.6; margin:0; max-width:52ch; }
+.step-tag{ display:inline-block; margin-top:20px; font-family:var(--f-mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--yellow); border:1px solid rgba(247,208,70,.3); padding:6px 11px; border-radius:999px; }
+
+/* ---------- Bolder scroll motion ---------- */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    /* Steps come in with a little more travel and a whisper of rotation */
+    .step{
+      animation: step-in linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 30%;
+    }
+    /* Hero background drifts and scales as you leave it */
+    .hero.cinematic .hero-bg video,
+    .hero.cinematic .hero-bg img{
+      animation: hero-drift linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 100%;
+      will-change: transform;
+    }
+    /* The proof card rises further than the rest, so it reads as the anchor */
+    .proof-card{
+      animation: rise-up linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 20%;
+    }
+  }
+}
+@keyframes step-in{ from{ transform:translateY(46px) rotate(-.8deg); } to{ transform:translateY(0) rotate(0); } }
+@keyframes hero-drift{ from{ transform:scale(1.03); } to{ transform:scale(1.14); } }
+
+/* ---------- Mobile ---------- */
+@media (max-width:960px){
+  .hero.cinematic{ min-height:auto; }
+  .hero.cinematic .hero-inner{ grid-template-columns:1fr; gap:36px; padding:80px var(--pad-x) 64px; }
+  .hero.cinematic .ai-tag{ right:10px; bottom:10px; }
+  .hero.cinematic .hero-bg::after{ background:linear-gradient(to top, var(--bg) 12%, rgba(15,42,32,.86) 55%, rgba(15,42,32,.7) 100%); }
+  .proof-card{ max-width:420px; }
+  .ladder-grid{ grid-template-columns:1fr; gap:36px; }
+  .ladder-side{ position:static; }
+  .scroll-cue{ display:none; }
+  .step{ padding:28px 24px 24px; }
+  .step-num{ font-size:56px; }
+}
+
+/* ---------- Taught and spoken at ---------- */
+.hosts{ padding:22px 0; background:var(--bg-2); border-bottom:1px solid var(--line); }
+.hosts .wrap{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.hosts .hosts-lbl{ font-family:var(--f-mono); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-mute); margin-right:8px; }
+.hosts .host{ font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-dim); padding:7px 13px; border:1px solid var(--line-2); border-radius:999px; white-space:nowrap; transition:border-color .25s ease, color .25s ease; }
+.hosts .host:hover{ border-color:var(--yellow); color:var(--ink); }
+@media (max-width:960px){
+  .hosts{ padding:18px 0; }
+  .hosts .wrap{ gap:8px; }
+  .hosts .hosts-lbl{ width:100%; margin:0 0 4px; }
+  .hosts .host{ font-size:10px; padding:6px 11px; }
 }
