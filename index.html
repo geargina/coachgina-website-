@@ -207,7 +207,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=12">
+<link rel="stylesheet" href="assets/css/site.css?v=13">
 </head>
 <body>
 
@@ -219,8 +219,8 @@
 <header class="hero cinematic">
   <div class="hero-bg">
     <!-- 0.3MB after compression, so motion runs on mobile too. Poster prevents a blank first frame. -->
-    <video class="hero-vid" src="assets/video/loop-2.mp4" poster="assets/video/hero-poster.jpg"
-           autoplay loop muted playsinline preload="metadata"></video>
+    <video class="hero-vid" data-src="assets/video/loop-2.mp4" poster="assets/video/hero-poster.jpg"
+           loop muted playsinline preload="none"></video>
     <span class="ai-tag">// AI generated visual</span>
   </div>
 
@@ -244,7 +244,7 @@
 
     <!-- Real photograph, so the proof sits next to the atmosphere -->
     <a class="proof-card" href="#offerings">
-      <img src="assets/photos/masterclass-n2.jpg" alt="The second cohort of the Claude Masterclass 101 in Singapore" />
+      <img fetchpriority="high" decoding="async" src="assets/photos/masterclass-n2.jpg" alt="The second cohort of the Claude Masterclass 101 in Singapore" />
       <div class="proof-meta">
         <b>Claude Masterclass 101</b>
         <span>21 attendees &middot; 2 cohorts &middot; Singapore, Aug 2026</span>
@@ -290,7 +290,7 @@
 
       <div class="offer featured">
         <div class="visual">
-          <img src="assets/photos/friday-demo.jpg" alt="Geargina Tan demonstrating her Claude dashboard live during the Claude Masterclass in Singapore" />
+          <img loading="lazy" decoding="async" src="assets/photos/friday-demo.jpg" alt="Geargina Tan demonstrating her Claude dashboard live during the Claude Masterclass in Singapore" />
           <span class="chip">// Cohort · 3 hrs · cap 30</span>
         </div>
         <span class="tag">Claude Masterclass 101</span>
@@ -313,7 +313,7 @@
 
       <div class="offer">
         <div class="visual">
-          <img src="assets/photos/bnf-retreat.jpg" alt="Geargina Tan delivering an AI Adoption Workshop at the BNF Group strategy retreat in Singapore, March 2026" />
+          <img loading="lazy" decoding="async" src="assets/photos/bnf-retreat.jpg" alt="Geargina Tan delivering an AI Adoption Workshop at the BNF Group strategy retreat in Singapore, March 2026" />
           <span class="chip">// Group · 2 hrs to full day</span>
         </div>
         <span class="tag">Team Workshops</span>
@@ -550,7 +550,7 @@
     </div>
     <div class="blog-grid">
       <a class="post" href="blog/singapore-budget-2026-ai-business-owners-workers-guide.html">
-        <div class="cover"><img src="assets/img/geargina-sword-cat.jpg" alt="Illustration by Geargina Tan (Coach Gina), Singapore's AI expert and COO of WTFox.ai: a determined figure holding a sword with a ginger cat, used for her Singapore Budget 2026 AI explainer. Practical AI commentary for business owners and workers in Singapore."></div>
+        <div class="cover"><img loading="lazy" decoding="async" src="assets/img/geargina-sword-cat.jpg" alt="Illustration by Geargina Tan (Coach Gina), Singapore's AI expert and COO of WTFox.ai: a determined figure holding a sword with a ginger cat, used for her Singapore Budget 2026 AI explainer. Practical AI commentary for business owners and workers in Singapore."></div>
         <div class="body">
           <div class="meta"><span>// Policy</span><span>10 min read</span></div>
           <h3>Singapore Budget 2026: Every AI Initiative You Need to Know, for Business Owners and Workers.</h3>
@@ -558,7 +558,7 @@
         </div>
       </a>
       <a class="post" href="blog/api-vs-mcp-difference-explained-simply.html">
-        <div class="cover"><img src="assets/img/api-vs-mcp-sketch.jpg" alt="Hand-drawn API vs MCP sketch by Geargina Tan: tangled cables into a robot for APIs, one USB-C style hub for MCP"></div>
+        <div class="cover"><img loading="lazy" decoding="async" src="assets/img/api-vs-mcp-sketch.jpg" alt="Hand-drawn API vs MCP sketch by Geargina Tan: tangled cables into a robot for APIs, one USB-C style hub for MCP"></div>
         <div class="body">
           <div class="meta"><span>// Tools</span><span>4 min read</span></div>
           <h3>API vs MCP: What Is the Difference?</h3>
@@ -635,7 +635,7 @@
   </div>
 </div>
 
-<script src="assets/js/site.js?v=12" data-page="home"></script>
+<script src="assets/js/site.js?v=13" data-page="home"></script>
 <script>
   const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
     "palette": "green",
