@@ -266,3 +266,73 @@ footer{ padding-top:80px; }
   nav.main ul{ display:none; }
   .cta-banner{ padding:36px; }
 }
+
+/* ============================================================
+   Scroll-driven motion. Native CSS, no JS, no library.
+
+   DESIGN RULE, deliberate: these animations NEVER touch opacity.
+   A scroll timeline that fails to advance would leave opacity at 0
+   and hide the content. Transform-only means the worst case is
+   "did not move", never "invisible". Learned the hard way: an
+   earlier version faded in and left the whole offerings section
+   blank, because `entry`-phase ranges do not complete for elements
+   taller than the viewport.
+
+   Ranges use the `cover` phase, which is well defined for any
+   element size, rather than `entry`.
+
+   Two guards: browsers without scroll timelines get the static
+   page, and prefers-reduced-motion is respected.
+   Delete this block to revert.
+   ============================================================ */
+
+@keyframes rise-up   { from { transform: translateY(28px); } to { transform: translateY(0); } }
+@keyframes rise-soft { from { transform: translateY(14px); } to { transform: translateY(0); } }
+@keyframes slow-zoom { from { transform: scale(1); }        to { transform: scale(1.09); } }
+@keyframes draw-rule { from { transform: scaleX(0); }       to { transform: scaleX(1); } }
+
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+
+    /* Cards lift as they come into view. Each has its own timeline,
+       so the stagger is free. */
+    .offer,
+    .testi-card,
+    .blog-grid .post,
+    .help-item {
+      animation: rise-up linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 22%;
+    }
+
+    /* Headings and body copy, a smaller move so it reads as settling
+       rather than sliding. */
+    section.s h2.sec,
+    section.s .lede,
+    .hosts .wrap {
+      animation: rise-soft linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 18%;
+    }
+
+    /* The eyebrow rule draws itself left to right */
+    section.s .eyebrow::before {
+      transform-origin: left center;
+      animation: draw-rule linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 20%;
+    }
+
+    /* The zoom. Photographs scale slowly the entire time they are on
+       screen, tracking scroll position rather than a timer. */
+    .collage .tile img,
+    .offer .visual img,
+    .about-media img,
+    .article .cover img {
+      animation: slow-zoom linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 100%;
+      will-change: transform;
+    }
+  }
+}
