@@ -202,20 +202,27 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=6">
+<link rel="stylesheet" href="assets/site.css?v=7">
 </head>
 <body>
 
 <!-- Nav + top strip injected by site.js -->
 <div id="site-nav"></div>
 
-<!-- ===== Hero ===== -->
-<header class="hero">
-  <div class="wrap">
+<!-- ===== Hero (cinematic) ===== -->
+<header class="hero cinematic">
+  <div class="hero-bg">
+    <!-- 0.3MB after compression, so motion runs on mobile too. Poster prevents a blank first frame. -->
+    <video class="hero-vid" src="assets/loop-2.mp4" poster="assets/hero-poster.jpg"
+           autoplay loop muted playsinline preload="auto"></video>
+    <span class="ai-tag">// AI generated visual</span>
+  </div>
+
+  <div class="wrap hero-inner">
     <div>
       <span class="kicker"><span class="pulse"></span>Booking Q4 2026 workshops</span>
       <h1 class="headline">
-        Hello <span class="wave">👋</span> I'm Geargina,
+        Hello <span class="wave">&#128075;</span> I'm Geargina,
         <em>your AI coach</em> for curious humans.
       </h1>
       <p class="lede">
@@ -228,20 +235,19 @@
         <a href="#about" class="btn ghost">About me</a>
       </div>
     </div>
-    <div class="collage">
-      <div class="tile a">
-        <img src="assets/photos/masterclass-n1.jpg" alt="Geargina Tan teaching the Claude Masterclass 101 in Singapore, August 2026, with attendees working on laptops around a boardroom table" />
-        <span class="label">// Claude Masterclass, Aug 2026</span>
-        <div class="sticker-badge">
-          Real AI<br/>that you<br/>actually use
-        </div>
+
+    <!-- Real photograph, so the proof sits next to the atmosphere -->
+    <a class="proof-card" href="#offerings">
+      <img src="assets/photos/masterclass-n2.jpg" alt="The second cohort of the Claude Masterclass 101 in Singapore" />
+      <div class="proof-meta">
+        <b>Claude Masterclass 101</b>
+        <span>21 attendees &middot; 2 cohorts &middot; Singapore, Aug 2026</span>
       </div>
-      <div class="tile c">
-        <img src="assets/photos/masterclass-n2.jpg" alt="The second cohort of the Claude Masterclass 101 in Singapore, attendees following along on their own laptops" />
-        <span class="label">// Cohort 2</span>
-      </div>
-    </div>
+      <div class="sticker-badge">Real AI<br/>that you<br/>actually use</div>
+    </a>
   </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
 </header>
 
 <!-- ===== Ticker ===== -->
@@ -329,7 +335,8 @@
 
       <div class="offer">
         <div class="visual">
-          <img src="assets/coaching-casual.png" alt="Geargina Tan, 1:1 AI coaching sessions for professionals in Singapore" />
+          <video src="assets/gina-drinks-tea.mp4" autoplay loop muted playsinline preload="metadata"></video>
+          <span class="ai-tag">// AI generated visual</span>
           <span class="chip">// 1:1 · 4 or 8 weeks</span>
         </div>
         <span class="tag">1:1 Coaching</span>
@@ -349,6 +356,42 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ===== The path (sticky) ===== -->
+<section class="ladder s" id="ladder">
+  <div class="wrap">
+    <div class="ladder-grid">
+      <div class="ladder-side">
+        <span class="eyebrow">The path</span>
+        <h2 class="sec">From chatting with AI,<br/>to handing it real work.</h2>
+        <p class="lede">Everything I teach moves along the same 3 steps. Most people stop at the first one and assume that is all there is.</p>
+        <a href="#offerings" class="btn ghost">Where this happens
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="ladder-steps">
+        <article class="step">
+          <div class="step-num">01</div>
+          <h3>Chat</h3>
+          <p>Ask better, get better. Which model to reach for, how to brief it like a new hire on their first day, and why a vague question earns a vague answer.</p>
+          <span class="step-tag">Most people live here</span>
+        </article>
+        <article class="step">
+          <div class="step-num">02</div>
+          <h3>Context</h3>
+          <p>Give it your actual work. A Claude Project holds your documents and your way of doing things, and connectors let it reach your calendar and your inbox, so it stops starting from zero every time you open it.</p>
+          <span class="step-tag">Where it gets useful</span>
+        </article>
+        <article class="step">
+          <div class="step-num">03</div>
+          <h3>Agentic</h3>
+          <p>Hand the task over. You write a skill once and it runs the same way every time, and Cowork takes a job end to end while you do something else. You delegate the outcome instead of the steps.</p>
+          <span class="step-tag">Where the hours come back</span>
+        </article>
+      </div>
     </div>
   </div>
 </section>
@@ -405,7 +448,8 @@
   <div class="wrap">
     <div class="about-grid">
       <div class="about-media">
-        <img src="assets/neon-headphones.png" alt="Gina, neon portrait" />
+        <video src="assets/gina-sits-down.mp4" autoplay loop muted playsinline preload="metadata"></video>
+        <span class="ai-tag">// AI generated visual</span>
         <div class="stamp">GEARGINA</div>
       </div>
       <div class="about-body">
@@ -553,7 +597,7 @@
   </div>
 </div>
 
-<script src="assets/site.js?v=6" data-page="home"></script>
+<script src="assets/site.js?v=7" data-page="home"></script>
 <script>
   const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
     "palette": "green",
@@ -598,9 +642,12 @@
     document.documentElement.setAttribute("data-theme",
       state.palette === "green" ? "" : state.palette);
     setHeroMedia(state.hero);
-    document.querySelector("h1.headline").innerHTML = HEADLINES[state.headline] || HEADLINES.warm;
-    document.querySelector('[data-section="testimonials"]').style.display = state.testimonials ? "" : "none";
-    document.querySelector('[data-section="blog"]').style.display = state.blog ? "" : "none";
+    const hl = document.querySelector("h1.headline");
+    if (hl) hl.innerHTML = HEADLINES[state.headline] || HEADLINES.warm;
+    const ts = document.querySelector('[data-section="testimonials"]');
+    if (ts) ts.style.display = state.testimonials ? "" : "none";
+    const bs = document.querySelector('[data-section="blog"]');
+    if (bs) bs.style.display = state.blog ? "" : "none";
 
     document.querySelectorAll("#tw-palette .swatch").forEach(el =>
       el.classList.toggle("active", el.dataset.theme === state.palette));
