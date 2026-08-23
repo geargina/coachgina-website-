@@ -48,8 +48,8 @@ A price is a claim. This is the only file that states one.
 |---|---|---|---|
 | Anonymous survey respondent | **PUBLISHED** | Not needed, honestly labelled anonymous | "Geargina has very good 'trainer' skills. She knows the stuff well and is able to articulate the approach very clearly with simple illustrations and drawing comparisons to things we easily understand." Post-session survey, n=11. |
 | Julian Hu, Product Manager | **PUBLISHED**, wording unconfirmed | Geargina confirms he is a real friend and comfortable being used, 23 Aug 2026 | "The 1:1 sessions were the best money I spent this year. I went from 'ChatGPT tourist' to genuinely faster at my job." Geargina's decision 23 Aug 2026 when the contradiction was put to her: **"leave it."** Closed. Do not remove or re-raise this without her. Noted that the quote references 1:1 sessions while no completed 1:1 engagement is on record; she has accepted that. |
-| Viju, SNM | UNCONFIRMED, not published | **Not obtained** | "Yesterday's session was terrific! Geargina was very knowledgeable... my mind was focused on how the learning could be used in everyday life, not just work." Source text is ellipsis-truncated, and it was a **private WhatsApp message**. Needs the full text and explicit consent. |
-| Willis Tarn, Commanding Officer, Decision Intelligence | UNCONFIRMED, not published | Public LinkedIn comment | "Thanks for the Masterclass! Enjoyed the session... I'll write a post on my learning next week. I'm gonna build my own Obsidian coming week." Needs the full untruncated text and the post URL for link-back. |
+| Viju | **PUBLISHED** | Geargina supplied the full WhatsApp screenshot and cleared it 23 Aug 2026, asking for a generic one-liner in Julian's format | Published as: "Yesterday's session was terrific! Geargina was very knowledgeable, and my mind was focused on how the learning could be used in everyday life, not just work." Faithful to his words; the original's hyphen separator is rendered as a comma and the middle clause about SNM is elided. Attributed "Viju, Masterclass attendee" rather than naming his employer, per her instruction to keep it generic. |
+| Willis | **PUBLISHED** | Public LinkedIn comment, cleared 23 Aug 2026 | Published as: "Enjoyed the session. I'm gonna build my own Obsidian coming week." Attributed "Willis, Masterclass attendee" per her instruction to keep it generic. **Caveat: I only ever had the ellipsis-truncated version of his comment.** The published line uses only the parts that were unambiguous. Worth checking against the original comment when convenient. |
 | "In Chong, CEO of BHB" | **RETIRED** | n/a | Appears in no record. Removed 23 Aug 2026. |
 | "Wee Kiat, Founder, Agency" | **RETIRED** | n/a | Appears in no record. Removed 23 Aug 2026. |
 
@@ -64,10 +64,10 @@ Naming an organisation publicly implies permission. Tiers:
 | Cogentic AI Partners | PUBLISHED | Named in the Masterclass and Partners cards. Covered by the working relationship, but the five asks below are still open with Hari. |
 | Podium | PUBLISHED | Geargina instructed inclusion, 23 Aug 2026. 18 Jun 2026 Insight Hour, 2 hrs, 7 to 15 women professionals. |
 | Claude Cowork Meetup (Keith Teo, Cclarity) | PUBLISHED | Geargina instructed inclusion. 22 May 2026, first edition, Fort Canning. She gave the opener on Skills, Connectors and Plugins. |
-| Claude Bloom Singapore | Not published | Public meetup, low risk, still worth asking. |
-| Nifnexa | Not published | Ask directly. |
-| LHH, AmCham Singapore, CJC Bizcomp | Not published | Formal organisations with brand-usage sensitivity. **Ask in writing first.** |
-| BNF Group | **Not named on site** | Real client, 30 Mar 2026 Ritz-Carlton retreat. Their own preference is to be called "BNF Group" rather than the BNL subsidiary brands, but that was for participant-facing material, which is not the same as a permission to name them in her marketing. The Team Workshops card describes the engagement without naming them. Ask before naming. The retreat photo was pasted inline in chat and is not in the repo. |
+| Claude Bloom Singapore | PUBLISHED | Cleared by Geargina 23 Aug 2026. |
+| Nifnexa | PUBLISHED | Cleared by Geargina 23 Aug 2026. |
+| LHH, AmCham Singapore, CJC | PUBLISHED | Cleared by Geargina 23 Aug 2026 ("go ahead"). Note these are formal organisations; if any of them object later, remove on request. |
+| BNF Group | **PUBLISHED** | Cleared by Geargina 23 Aug 2026. Named in the Team Workshops copy and the credibility strip, with a photo of the retreat. Use "BNF Group" rather than the BNL subsidiary brands, per the client's own stated preference. |
 
 **Open with Hari, one conversation, five asks:** naming Cogentic publicly (done, confirm retroactively), publishing the Aug pricing, publishing the survey numbers, the "Level 2 in Oct 2026" line, and whether a photo release covers the attendee group shot.
 
@@ -80,7 +80,7 @@ Naming an organisation publicly implies permission. Tiers:
 | `assets/photos/friday-demo.jpg` | PUBLISHED, cropped | Original showed a laptop with a legible travel itinerary naming 6 cities. Cropped to the top 56% to remove it. Verified at 3x zoom that remaining dashboard text is illegible. A public follower count is visible. |
 | `assets/photos/speaking-hall.jpg` | PUBLISHED | No audience in frame. Her, the lectern, her own intro slide. |
 | Group selfie, 20 Aug 21:34 | **NOT PUBLISHED** | 9 identifiable paying attendees. Geargina's decision, 23 Aug 2026. |
-| School lecture theatre photos (2 files, 15 May) | **NOT PUBLISHED** | A hall of uniformed secondary students, faces visible. Minors. Not appropriate for a commercial site without school and parental consent. |
+| CJC lecture theatre photo | **PUBLISHED** as `assets/photos/cjc-talk.jpg` | Geargina confirms 23 Aug 2026 these are from her time at CJC and cleared them ("good to go"). Students in uniform are visible in the wide shot. If CJC has a media policy or anyone objects, remove on request. The second, cluttered AV-desk frame remains unpublished on quality grounds. |
 | BNF Group conference room | Not in repo | Sent inline, no file on disk. Request as a file if wanted. |
 
 ## Biography

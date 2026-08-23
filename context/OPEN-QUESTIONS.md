@@ -6,7 +6,9 @@ Last updated: 23 Aug 2026
 
 ## Blocking published work
 
-1. **Does the contact form actually deliver?** Every CTA on the site funnels to it. Web3Forms rejects server-side test posts on the free plan, and `hello@iamcoachgina.com` is her own mailbox which cannot be searched from the connected `geargina@wtfox.ai` account, so delivery is unverified either way. **Action: submit the form once at geargina.com/contact and confirm it arrives.** If it does not, the access key needs re-provisioning.
+1. ~~**Does the contact form actually deliver?**~~ **RESOLVED 23 Aug 2026: Geargina confirmed "it works".** Original note below for context.
+
+   ORIGINAL: Every CTA on the site funnels to it. Web3Forms rejects server-side test posts on the free plan, and `hello@iamcoachgina.com` is her own mailbox which cannot be searched from the connected `geargina@wtfox.ai` account, so delivery is unverified either way. **Action: submit the form once at geargina.com/contact and confirm it arrives.** If it does not, the access key needs re-provisioning.
 
 2. **Julian Hu's wording.** He has consented to being used. Send him the exact published sentence and get a yes: *"The 1:1 sessions were the best money I spent this year. I went from 'ChatGPT tourist' to genuinely faster at my job."* Note it references 1:1 sessions, so it needs rewording if that offer changes.
 

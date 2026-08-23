@@ -451,3 +451,16 @@ footer{ padding-top:80px; }
   .step{ padding:28px 24px 24px; }
   .step-num{ font-size:56px; }
 }
+
+/* ---------- Taught and spoken at ---------- */
+.hosts{ padding:22px 0; background:var(--bg-2); border-bottom:1px solid var(--line); }
+.hosts .wrap{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.hosts .hosts-lbl{ font-family:var(--f-mono); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-mute); margin-right:8px; }
+.hosts .host{ font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-dim); padding:7px 13px; border:1px solid var(--line-2); border-radius:999px; white-space:nowrap; transition:border-color .25s ease, color .25s ease; }
+.hosts .host:hover{ border-color:var(--yellow); color:var(--ink); }
+@media (max-width:960px){
+  .hosts{ padding:18px 0; }
+  .hosts .wrap{ gap:8px; }
+  .hosts .hosts-lbl{ width:100%; margin:0 0 4px; }
+  .hosts .host{ font-size:10px; padding:6px 11px; }
+}
