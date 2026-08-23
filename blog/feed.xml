@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GEARGINA — Coach Gina</title>
+    <title>GEARGINA | Coach Gina</title>
     <link>https://geargina.com/blog/</link>
-    <description>Honest writing on AI, prompting, coaching, and what's actually working — by an AI coach in Singapore.</description>
+    <description>Honest writing on AI, prompting, coaching, and what's actually working, by an AI coach in Singapore.</description>
     <language>en</language>
     <atom:link href="https://geargina.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     <lastBuildDate>Mon, 24 Aug 2026 01:00:00 GMT</lastBuildDate>
@@ -45,7 +45,7 @@
       <guid>https://geargina.com/blog/ai-workshop-singapore-teams-claude-adoption.html</guid>
       <pubDate>Fri, 10 Apr 2026 01:00:00 GMT</pubDate>
       <category>Workshops</category>
-      <description>AI adoption is rarely a technology problem — it's a confidence problem. A case study from a 40-person Claude workshop in Singapore.</description>
+      <description>AI adoption is rarely a technology problem. It is a confidence problem. A case study from a 40-person Claude workshop in Singapore.</description>
     </item>
     <item>
       <title>A 15-Year Industry Veteran Asked for Distribution Rights After 30 Seconds</title>
@@ -53,7 +53,7 @@
       <guid>https://geargina.com/blog/wtfox-ai-whatsapp-crm-sales-automation.html</guid>
       <pubDate>Sun, 05 Apr 2026 01:00:00 GMT</pubDate>
       <category>Building</category>
-      <description>The sales problem WTFox.ai is solving — a WhatsApp-native CRM with sales automation built for high-velocity teams.</description>
+      <description>The sales problem WTFox.ai is solving, a WhatsApp-native CRM with sales automation built for high-velocity teams.</description>
     </item>
     <item>
       <title>Five Prompts I Use Every Week</title>
@@ -61,7 +61,7 @@
       <guid>https://geargina.com/blog/five-prompts-i-use-every-week.html</guid>
       <pubDate>Thu, 12 Mar 2026 01:00:00 GMT</pubDate>
       <category>Prompting</category>
-      <description>The Claude and ChatGPT prompts I actually run every week — for editing, decision-making, and resetting messy thinking.</description>
+      <description>The Claude and ChatGPT prompts I actually run every week, for editing, decision-making, and resetting messy thinking.</description>
     </item>
     <item>
       <title>Why "Just Use ChatGPT" Is the Worst AI Advice</title>
@@ -69,7 +69,7 @@
       <guid>https://geargina.com/blog/just-use-chatgpt-is-bad-advice.html</guid>
       <pubDate>Fri, 20 Feb 2026 01:00:00 GMT</pubDate>
       <category>Coaching</category>
-      <description>A short rant about tool-dropping in AI advice — plus the framework I use with clients to pick the right AI stack.</description>
+      <description>A short rant about tool-dropping in AI advice, plus the framework I use with clients to pick the right AI stack.</description>
     </item>
   </channel>
 </rss>
