@@ -77,6 +77,7 @@
               <select id="topic" name="topic" required>
                 <option value="">Pick one…</option>
                 <option value="workshop">Workshop for my team</option>
+                <option value="partner">Host a workshop with me</option>
                 <option value="coaching">1:1 coaching</option>
                 <option value="speaking">Speaking / panel</option>
                 <option value="press">Press / interview</option>
@@ -169,7 +170,7 @@
     const topic = (data.get("topic") || "").toString().trim();
     const subjectField = document.getElementById("hidden-subject");
     if (subjectField) {
-      subjectField.value = `[${topic || "Contact form"}] ${name || "New enquiry"} — geargina.com`;
+      subjectField.value = `[${topic || "Contact form"}] ${name || "New enquiry"} via geargina.com`;
       data.set("subject", subjectField.value);
     }
 
