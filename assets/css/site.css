@@ -1,7 +1,7 @@
 /* ===== GEARGINA shared site styles ===== */
 :root {
   --bg:#0f2a20; --bg-2:#082018; --card:#12382a; --card-2:#0b2a1f;
-  --ink:#f2ecd8; --ink-dim:#b9c9bd; --ink-mute:#6f8577;
+  --ink:#f2ecd8; --ink-dim:#b9c9bd; --ink-mute:#92a499;
   --line:rgba(242,236,216,0.10); --line-2:rgba(242,236,216,0.18);
   --yellow:#f7d046; --yellow-ink:#1a1405;
   --neon-cyan:#56ffd0; --neon-mag:#ff5ec8;
@@ -136,7 +136,7 @@ h2.sec{ font-family:var(--f-display); font-weight:800; font-size:clamp(32px, 4.2
 .help-item{ display:grid; grid-template-columns:52px 1fr auto; gap:18px; align-items:center; padding:22px; background:var(--card-2); border:1px solid var(--line); border-radius:20px; transition:background .2s ease, border-color .2s ease; }
 .help-item:hover{ background:var(--card); border-color:var(--line-2); }
 .help-item .n{ width:44px; height:44px; border-radius:50%; display:grid; place-items:center; font-family:var(--f-mono); font-size:13px; color:var(--yellow); border:1px solid rgba(247,208,70,.35); }
-.help-item h4{ margin:0 0 4px; font-family:var(--f-display); font-weight:700; font-size:17px; }
+.help-item h3{ margin:0 0 4px; font-family:var(--f-display); font-weight:700; font-size:17px; }
 .help-item p{ margin:0; font-size:13px; color:var(--ink-dim); line-height:1.4; }
 .help-item .arr{ width:22px; height:22px; color:var(--ink-mute); }
 
@@ -214,7 +214,7 @@ footer{ padding-top:80px; }
 /* Options card grid */
 .split{ display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; }
 .info-card{ background:var(--card-2); border:1px solid var(--line); border-radius:22px; padding:28px; margin-bottom:14px; }
-.info-card h4{ margin:0 0 8px; font-family:var(--f-display); font-weight:700; font-size:18px; }
+.info-card h2{ margin:0 0 8px; font-family:var(--f-display); font-weight:700; font-size:18px; }
 .info-card p{ margin:0; color:var(--ink-dim); font-size:14px; line-height:1.55; }
 
 /* ===== Article (post) ===== */
