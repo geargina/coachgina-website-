@@ -19,6 +19,7 @@ Last reviewed: 23 Aug 2026
 | 3 hour format | CONFIRMED | Facilitator runbook | |
 | Cohort cap 30 | CONFIRMED | Same | |
 | Confidence setting up a Project, 2.5 to 3.7 out of 5 | CONFIRMED | Pre n=19, post n=11 survey | Published as a rounded before-and-after. Always label as a post-session survey, never as an independent study. |
+| Full-day private cohort delivered | CONFIRMED | "Be an AI Native: 0 to 1 in a Day", 20 Jun 2026 | 9:30 to 16:30, private cohort of 6 to 7. This is the "full-day cohort" referenced in the Team Workshops card. |
 | 10 of 11 rated pacing "just right" | CONFIRMED | Post survey, n=11 | Not currently published. Available if needed. |
 | "20+ workshops delivered" | **RETIRED** | No source | Removed 23 Aug 2026. Records show roughly 14 engagements since Mar 2026. Do not reinstate without a counted list. |
 | "150+ humans coached 1:1" | **RETIRED** | No source | Removed 23 Aug 2026. No 1:1 coaching clients appear in any record. |
