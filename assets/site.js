@@ -20,7 +20,7 @@
   const topStrip = `
     <div class="topstrip">
       <div class="wrap">
-        <span><span class="dot"></span>Open for Q3 2026 workshops · Singapore + Remote</span>
+        <span><span class="dot"></span>Booking Q4 2026 workshops · Singapore + Online</span>
         <span>Est. 2026 · EN / 中文</span>
       </div>
     </div>`;

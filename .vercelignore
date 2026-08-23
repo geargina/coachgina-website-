@@ -1,0 +1,8 @@
+# Nothing here should ever be publicly served.
+# Every committed file in this repo becomes a URL on geargina.com,
+# so anything internal must be listed here.
+CLAUDE.md
+README.md
+context/
+.claude/
+previews/

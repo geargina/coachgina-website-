@@ -7,3 +7,6 @@ node_modules/
 .idea/
 .vscode/
 Thumbs.db
+
+# Local design previews, never deployed
+previews/

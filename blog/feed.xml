@@ -6,7 +6,15 @@
     <description>Honest writing on AI, prompting, coaching, and what's actually working — by an AI coach in Singapore.</description>
     <language>en</language>
     <atom:link href="https://geargina.com/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 22 Apr 2026 01:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 01:00:00 GMT</lastBuildDate>
+    <item>
+      <title>API vs MCP: What Is the Difference?</title>
+      <link>https://geargina.com/blog/api-vs-mcp-difference-explained-simply.html</link>
+      <guid>https://geargina.com/blog/api-vs-mcp-difference-explained-simply.html</guid>
+      <pubDate>Mon, 24 Aug 2026 01:00:00 GMT</pubDate>
+      <category>Tools</category>
+      <description>An API lets 2 apps talk to each other. MCP is the single plug that lets AI connect to many apps at once. Explained simply for non-technical professionals.</description>
+    </item>
     <item>
       <title>Singapore Budget 2026: Every AI Initiative You Need to Know</title>
       <link>https://geargina.com/blog/singapore-budget-2026-ai-business-owners-workers-guide.html</link>
