@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>API vs MCP: What Is the Difference? Explained Simply | GEARGINA</title>
+<meta name="description" content="An API lets 2 apps talk to each other. MCP is the single plug that lets AI connect to many apps at once. The difference, explained simply for beginners." />
+<meta name="keywords" content="API vs MCP, difference between API and MCP, what is MCP, Model Context Protocol explained, MCP explained simply, does MCP replace APIs, MCP for beginners, AI workshop Singapore" />
+<meta name="author" content="Coach Gina" />
+<link rel="canonical" href="https://geargina.com/blog/api-vs-mcp-difference-explained-simply.html" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="API vs MCP: What Is the Difference?" />
+<meta property="og:description" content="An API lets 2 apps talk to each other. MCP is the single plug that lets AI connect to many apps at once. The difference, explained simply for beginners." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://geargina.com/blog/api-vs-mcp-difference-explained-simply.html" />
+<meta property="og:image" content="https://geargina.com/assets/api-vs-mcp-sketch.jpg" />
+<meta property="og:site_name" content="GEARGINA | Coach Gina" />
+<meta property="article:published_time" content="2026-08-24T09:00:00+08:00" />
+<meta property="article:author" content="Coach Gina" />
+<meta property="article:section" content="Tools" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="API vs MCP: What Is the Difference?" />
+<meta name="twitter:description" content="An API lets 2 apps talk to each other. MCP is the single plug that lets AI connect to many apps at once. Explained simply." />
+<meta name="twitter:image" content="https://geargina.com/assets/api-vs-mcp-sketch.jpg" />
+
+<!-- JSON-LD: BlogPosting -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "API vs MCP: What Is the Difference?",
+  "description": "An API lets 2 apps talk to each other. MCP is the single plug that lets AI connect to many apps at once. The difference, explained simply for beginners.",
+  "image": "https://geargina.com/assets/api-vs-mcp-sketch.jpg",
+  "datePublished": "2026-08-24",
+  "dateModified": "2026-08-24",
+  "author": {
+    "@type": "Person",
+    "name": "Coach Gina",
+    "url": "https://geargina.com/#about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GEARGINA",
+    "url": "https://geargina.com/"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://geargina.com/blog/api-vs-mcp-difference-explained-simply.html"
+  },
+  "articleSection": "Tools",
+  "keywords": "API vs MCP, difference between API and MCP, what is MCP, Model Context Protocol explained, does MCP replace APIs"
+}
+</script>
+
+<!-- JSON-LD: BreadcrumbList for richer search + AEO context -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://geargina.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://geargina.com/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "API vs MCP: What Is the Difference?", "item": "https://geargina.com/blog/api-vs-mcp-difference-explained-simply.html" }
+  ]
+}
+</script>
+
+<!-- JSON-LD: FAQPage. This post answers question-shaped queries, so the
+     answers are lifted from the body to keep page text and schema in agreement. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between an API and MCP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An API is a private connection between 2 specific apps, and every app has its own. MCP is one standard connection that lets an AI assistant plug into many apps at once. The practical difference is the setup cost: with APIs somebody wires each app up by hand, and with MCP the AI connects once to anything that speaks the standard."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does MCP replace APIs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The apps still talk to each other through APIs underneath. MCP is a standard layer that sits on top of them, so an AI has one predictable way in rather than a different custom connection for every tool."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does MCP stand for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Model Context Protocol. It is an open standard introduced by Anthropic in November 2024 that describes how an AI model receives context and connects to outside tools. Because it is open, other companies have adopted it too."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to understand MCP if I am not a developer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do not need to build one, but knowing the word helps you make decisions. When a tool advertises MCP support it means your AI can probably reach your existing systems without a developer writing a custom integration for each one, which changes what you can ask for and how long it should take."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css?v=5">
+
+<!-- Scoped table styles. site.css has no table rules, and one post is not
+     worth a cache-bust across every file. See context/seo-conventions.md -->
+<style>
+  .article .body table{ width:100%; border-collapse:collapse; margin:28px 0; font-size:15px; }
+  .article .body th{ font-family:var(--f-mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--ink-mute); text-align:left; padding:12px 14px; border-bottom:1px solid var(--line-2); }
+  .article .body td{ padding:12px 14px; border-bottom:1px solid var(--line); color:var(--ink-dim); vertical-align:top; }
+  .article .body tr:last-child td{ border-bottom:none; }
+  .article .body td:first-child{ color:var(--ink); font-weight:500; }
+  .table-scroll{ overflow-x:auto; }
+</style>
+</head>
+<body>
+
+<div id="site-nav"></div>
+
+<article class="s" style="padding:64px 0 48px;">
+  <div class="article">
+    <div class="meta">
+      <span>// Tools</span>
+      <span>4 min read</span>
+      <span>Aug 2026</span>
+    </div>
+    <h1>API vs MCP: What Is the Difference?</h1>
+    <p class="dek">An API is how 2 apps talk to each other, and every app has its own. MCP is one standard plug that lets an AI assistant connect to many apps at once, without replacing the APIs underneath. Here is the whole thing in plain English, for people who use AI every day but never studied the plumbing.</p>
+  </div>
+
+  <div class="article">
+    <div class="cover"><img src="../assets/api-vs-mcp-sketch.jpg" alt="Hand-drawn sketch by Geargina Tan (Coach Gina), Singapore's AI expert and COO of WTFox.ai: API vs MCP, explained simply. Tangled cables from app boxes into a robot show one-by-one API connections; a single USB-C hub below shows MCP as the one universal plug. AI training for teams in Singapore." /></div>
+  </div>
+
+  <div class="article">
+    <div class="body">
+      <p>Here is the short answer. An API is a private handshake between 2 apps. MCP is a shared socket that lets an AI use many apps through one standard connection, and it runs on top of APIs rather than replacing them. People describe MCP as the USB-C of AI, and that comparison holds up better than most.</p>
+
+      <p>I only worked this out properly after a conversation with my CTO. He used both words in the same sentence, I nodded along, and then realised on the way home that I could not have explained the difference to anyone. If you are in the same position, you are in good company. Most people using AI daily cannot explain it either, and nothing bad has happened to them yet. It does start to matter once you are choosing tools.</p>
+
+      <h2>What is an API, in plain English?</h2>
+
+      <p>An API is the agreed way for 2 pieces of software to talk to each other. You use them constantly without noticing. When you pay with a card, the shop's system is calling the bank through an API. When you log into something new using your Google account, that is an API too.</p>
+
+      <p>The catch is that every app designs its own. Your calendar has one shape, your email has a different shape, your CRM has a third. They all work, but none of them match. So if you want your AI assistant to reach 10 different tools, somebody has to sit down and wire up 10 separate connections by hand, then maintain all 10 when the apps change.</p>
+
+      <p>That is the real cost, and it is why "can the AI just read my calendar" used to be a bigger question than it sounded.</p>
+
+      <h2>What is MCP, and what does it stand for?</h2>
+
+      <p>MCP stands for Model Context Protocol. It is an open standard <a href="https://modelcontextprotocol.io/" target="_blank" rel="noopener">introduced by Anthropic in November 2024</a>, and because it is open, other companies have adopted it since.</p>
+
+      <p>Think about the drawer of chargers everyone had a few years ago. One cable for the phone, a different one for the camera, a third for the old laptop, and a fourth that nobody could identify. Then USB-C arrived and one plug fitted almost everything.</p>
+
+      <p>MCP is that, for AI. A tool builds one MCP connection, and any AI that speaks MCP can use it. Your AI sets it up once, and anything on the other side just plugs in.</p>
+
+      <blockquote>MCP is the USB-C for AI. Set it up once, and any app that speaks MCP plugs in.</blockquote>
+
+      <h2>Does MCP replace APIs?</h2>
+
+      <p>No, and this is the part people get wrong most often.</p>
+
+      <p>The apps underneath are still talking through their own APIs. Nothing about that changed. MCP is a standard layer sitting on top, so the AI has one predictable way in instead of a different custom route for every tool. The tangle of cables did not disappear. It moved behind the hub.</p>
+
+      <h2>API vs MCP, side by side</h2>
+
+      <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>Question</th><th>API</th><th>MCP</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>What is it?</td>
+            <td>The agreed way 2 specific apps talk to each other</td>
+            <td>One standard way an AI connects to many apps</td>
+          </tr>
+          <tr>
+            <td>How many connections do you set up?</td>
+            <td>One per app, each one different</td>
+            <td>One, reused by anything that speaks MCP</td>
+          </tr>
+          <tr>
+            <td>Who does the work?</td>
+            <td>A developer, per app, then maintains it</td>
+            <td>Mostly done for you if the tool supports MCP</td>
+          </tr>
+          <tr>
+            <td>Does it replace the other?</td>
+            <td>No, APIs are still underneath</td>
+            <td>No, it sits on top of APIs</td>
+          </tr>
+          <tr>
+            <td>Everyday comparison</td>
+            <td>A drawer of proprietary chargers</td>
+            <td>The one USB-C cable</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h2>Why does this matter if you are not technical?</h2>
+
+      <p>Because it changes what you are allowed to ask for.</p>
+
+      <p>Say you want an assistant that reads your CRM and your calendar, then drafts follow-ups for the deals going quiet. Two years ago that was a project. Someone scopes it, someone builds 2 custom integrations, someone maintains them, and you wait.</p>
+
+      <p>If both tools support MCP, you connect them and start using it the same afternoon. Same outcome, different order of magnitude of effort. When you are deciding between 2 tools and one of them supports MCP, that is now a real point of difference rather than a line on a feature list.</p>
+
+      <p>It also gives you a better question to ask a vendor. Not "can you integrate with our systems", which everyone says yes to, but "do you support MCP", which has an actual answer.</p>
+
+      <h2>Where should you start?</h2>
+
+      <p>Do not go and read the specification. You will not need it.</p>
+
+      <p>Open whichever AI tool you already pay for and look for a connectors, integrations or MCP section in the settings. Connect exactly one thing you use every day, your calendar is the easiest, and then ask the AI a question that requires it. Something like what is my first meeting on Thursday and who is coming. When the answer is right, you have understood MCP better than any article can teach you, because you have watched it work on your own data.</p>
+
+      <p>Then stop. One connection is a good week's progress.</p>
+
+      <p>If you want the longer version of this, the same ground is covered hands-on in the <a href="../index.html#offerings">Claude Masterclass</a>, where everyone connects their own tools in the room. And if you are still choosing between assistants, <a href="just-use-chatgpt-is-bad-advice.html">this piece on why "just use ChatGPT" is bad advice</a> is the companion to this one.</p>
+
+      <hr/>
+
+      <p><strong>Working out how AI fits your actual week?</strong> That is what I do with teams, and I <a href="../contact.html?topic=workshop">run workshops on it</a> in Singapore and online.</p>
+
+      <p class="dek" style="font-size:15px; margin-top:28px;">Geargina Tan is the co-founder and COO of WTFox.ai and runs hands-on AI workshops in Singapore for people with no technical background.</p>
+    </div>
+  </div>
+</article>
+
+<div class="article-foot">
+  <a href="index.html" class="btn ghost">← All posts</a>
+  <a href="../contact.html?topic=workshop" class="btn">Ask about a workshop
+    <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+  </a>
+</div>
+
+<div id="site-footer"></div>
+
+<script src="../assets/site.js?v=5" data-page="post"></script>
+</body>
+</html>
