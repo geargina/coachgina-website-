@@ -19,6 +19,8 @@ Last reviewed: 23 Aug 2026
 | 3 hour format | CONFIRMED | Facilitator runbook | |
 | Cohort cap 30 | CONFIRMED | Same | |
 | Confidence setting up a Project, 2.5 to 3.7 out of 5 | CONFIRMED | Pre n=19, post n=11 survey | Published as a rounded before-and-after. Always label as a post-session survey, never as an independent study. |
+| 40+ senior managers, 3 hr session, Mar 2026 | CONFIRMED | Client case study, `03-work/coach-gina/speaking/ai-workshop-master-template.md` §11 | BNF Group strategy retreat, Mon 30 Mar 2026, Ritz-Carlton Singapore. 40+ senior management, ages 40 to 55, almost all had never used an AI tool. Taught on Claude. **Currently described on site WITHOUT naming the client.** |
+| Online attendees from Indonesia and the Philippines | CONFIRMED | Geargina, 23 Aug 2026 | Online delivery reached participants in both. Note this is ONLINE reach, not in-person delivery in those countries. |
 | Full-day private cohort delivered | CONFIRMED | "Be an AI Native: 0 to 1 in a Day", 20 Jun 2026 | 9:30 to 16:30, private cohort of 6 to 7. This is the "full-day cohort" referenced in the Team Workshops card. |
 | 10 of 11 rated pacing "just right" | CONFIRMED | Post survey, n=11 | Not currently published. Available if needed. |
 | "20+ workshops delivered" | **RETIRED** | No source | Removed 23 Aug 2026. Records show roughly 14 engagements since Mar 2026. Do not reinstate without a counted list. |
@@ -45,7 +47,7 @@ A price is a claim. This is the only file that states one.
 | Person | Status | Consent | Text |
 |---|---|---|---|
 | Anonymous survey respondent | **PUBLISHED** | Not needed, honestly labelled anonymous | "Geargina has very good 'trainer' skills. She knows the stuff well and is able to articulate the approach very clearly with simple illustrations and drawing comparisons to things we easily understand." Post-session survey, n=11. |
-| Julian Hu, Product Manager | **PUBLISHED**, wording unconfirmed | Geargina confirms he is a real friend and comfortable being used, 23 Aug 2026 | "The 1:1 sessions were the best money I spent this year. I went from 'ChatGPT tourist' to genuinely faster at my job." **Open: send him this exact sentence and get a yes.** A person consenting to be named does not make the wording his. Note it references 1:1 sessions, so it needs adjusting if that offer changes. |
+| Julian Hu, Product Manager | **PUBLISHED**, wording unconfirmed | Geargina confirms he is a real friend and comfortable being used, 23 Aug 2026 | "The 1:1 sessions were the best money I spent this year. I went from 'ChatGPT tourist' to genuinely faster at my job." Geargina's decision 23 Aug 2026 when the contradiction was put to her: **"leave it."** Closed. Do not remove or re-raise this without her. Noted that the quote references 1:1 sessions while no completed 1:1 engagement is on record; she has accepted that. |
 | Viju, SNM | UNCONFIRMED, not published | **Not obtained** | "Yesterday's session was terrific! Geargina was very knowledgeable... my mind was focused on how the learning could be used in everyday life, not just work." Source text is ellipsis-truncated, and it was a **private WhatsApp message**. Needs the full text and explicit consent. |
 | Willis Tarn, Commanding Officer, Decision Intelligence | UNCONFIRMED, not published | Public LinkedIn comment | "Thanks for the Masterclass! Enjoyed the session... I'll write a post on my learning next week. I'm gonna build my own Obsidian coming week." Needs the full untruncated text and the post URL for link-back. |
 | "In Chong, CEO of BHB" | **RETIRED** | n/a | Appears in no record. Removed 23 Aug 2026. |
@@ -65,7 +67,7 @@ Naming an organisation publicly implies permission. Tiers:
 | Claude Bloom Singapore | Not published | Public meetup, low risk, still worth asking. |
 | Nifnexa | Not published | Ask directly. |
 | LHH, AmCham Singapore, CJC Bizcomp | Not published | Formal organisations with brand-usage sensitivity. **Ask in writing first.** |
-| BNF Group | Not published | Appears on a slide in a photo Geargina sent inline. That file is not in the repo. Confirm the client may be named before using the image. |
+| BNF Group | **Not named on site** | Real client, 30 Mar 2026 Ritz-Carlton retreat. Their own preference is to be called "BNF Group" rather than the BNL subsidiary brands, but that was for participant-facing material, which is not the same as a permission to name them in her marketing. The Team Workshops card describes the engagement without naming them. Ask before naming. The retreat photo was pasted inline in chat and is not in the repo. |
 
 **Open with Hari, one conversation, five asks:** naming Cogentic publicly (done, confirm retroactively), publishing the Aug pricing, publishing the survey numbers, the "Level 2 in Oct 2026" line, and whether a photo release covers the attendee group shot.
 
@@ -87,5 +89,5 @@ Naming an organisation publicly implies permission. Tiers:
 |---|---|---|
 | Co-founder and COO of WTFox.ai | CONFIRMED | Her own guest-speaker slide reads "Co-founder of WTFox.ai". Site previously said "Founder and COO"; corrected 23 Aug 2026. |
 | Came to AI with no technical background | CONFIRMED | Her own framing, and the spine of the Promise. |
-| Universal Studios Singapore, Jewel Changi Airport, Amazon, FinTech | UNCONFIRMED on this site | Long-standing About copy, untouched. Worth a pass if the About section is ever rewritten. |
+| Universal Studios Singapore, Jewel Changi Airport, Amazon, FinTech | CONFIRMED | Geargina confirmed 23 Aug 2026: "yes this hold true". |
 | API vs MCP post reach | CONFIRMED | 43,812 impressions per the Notion Performance DB, 44,790 per her own LinkedIn audit. Cite "over 43,000" as the safe lower bound. |
