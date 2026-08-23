@@ -18,11 +18,11 @@ Last reviewed: 23 Aug 2026
 | 2 evening cohorts, 20 and 21 Aug 2026 | CONFIRMED | Same | 6pm to 9pm, SQ Collective, 65 Mohamed Sultan Rd |
 | 3 hour format | CONFIRMED | Facilitator runbook | |
 | Cohort cap 30 | CONFIRMED | Same | |
-| Confidence setting up a Project, 2.5 to 3.7 out of 5 | CONFIRMED | Pre n=19, post n=11 survey | Published as a rounded before-and-after. Always label as a post-session survey, never as an independent study. |
+| Confidence setting up a Project, 2.5 to 3.7 out of 5 | CONFIRMED | Pre n=19, post n=11 survey | Now published as **"rose 48%"** (Geargina 23 Aug 2026: the raw scale numbers had no appeal). 3.7/2.5 = 1.48, so the relative rise of the mean is arithmetically correct. Caveat that must travel with it: the before and after are NOT the same people (19 vs 11 respondents), so it is not a paired measurement. Always label as a post-session survey, never as a study. |
 | 40+ senior managers, 3 hr session, Mar 2026 | CONFIRMED | Client case study, `03-work/coach-gina/speaking/ai-workshop-master-template.md` §11 | BNF Group strategy retreat, Mon 30 Mar 2026, Ritz-Carlton Singapore. 40+ senior management, ages 40 to 55, almost all had never used an AI tool. Taught on Claude. **Currently described on site WITHOUT naming the client.** |
 | Online attendees from Indonesia and the Philippines | CONFIRMED | Geargina, 23 Aug 2026 | Online delivery reached participants in both. Note this is ONLINE reach, not in-person delivery in those countries. |
 | Full-day private cohort delivered | CONFIRMED | "Be an AI Native: 0 to 1 in a Day", 20 Jun 2026 | 9:30 to 16:30, private cohort of 6 to 7. This is the "full-day cohort" referenced in the Team Workshops card. |
-| 10 of 11 rated pacing "just right" | CONFIRMED | Post survey, n=11 | Not currently published. Available if needed. |
+| 10 of 11 rated pacing "just right" | CONFIRMED | Post survey, n=11 | **Now published as "91% of survey respondents".** 10/11 = 90.9%. An unambiguous proportion, unlike the confidence mean. |
 | "20+ workshops delivered" | **RETIRED** | No source | Removed 23 Aug 2026. Records show roughly 14 engagements since Mar 2026. Do not reinstate without a counted list. |
 | "150+ humans coached 1:1" | **RETIRED** | No source | Removed 23 Aug 2026. No 1:1 coaching clients appear in any record. |
 | "0%" jargon stat | **RETIRED** | Rhetorical device | A slogan wearing a statistic's clothes. |
