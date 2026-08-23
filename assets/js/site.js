@@ -1,5 +1,5 @@
 // Shared nav + footer + tweaks panel for all pages.
-// Usage: include <script src="assets/site.js" data-page="home"></script> at end of body.
+// Usage: include <script src="assets/js/site.js" data-page="home"></script> at end of body.
 (function(){
   const script = document.currentScript;
   const activePage = (script && script.dataset.page) || "home";

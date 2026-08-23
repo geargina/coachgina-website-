@@ -17,8 +17,11 @@ Static site for Geargina Tan (Coach Gina). Plain HTML, CSS and JS. No build step
 | `index.html` | Homepage. Sections in order: nav, hero, ticker, `#offerings`, help grid, `#about`, `#testi`, `#blog`, `#cta`, footer, and a dev-only `#tweaks-panel`. |
 | `contact.html` | Enquiry form. Posts to Web3Forms, delivers to `hello@iamcoachgina.com`. |
 | `blog/` | Posts, hand-maintained index, `feed.xml`, and `post-template.html`. |
-| `assets/` | `site.css`, `site.js`, and generated brand art. |
-| `assets/photos/` | Real photographs only. |
+| `assets/css/` | `site.css`. |
+| `assets/js/` | `site.js`. |
+| `assets/img/` | Generated brand art and composed blog covers. |
+| `assets/video/` | Video clips **and their poster frames**, so a clip and its poster live together. |
+| `assets/photos/` | **Real photographs only.** This separation is the point: it makes the real-versus-generated distinction structural rather than something to remember. |
 | `context/` | Internal. Claims gate, voice rules, SEO conventions, open questions. Never deployed. |
 | `previews/` | Local design explorations. Gitignored, never deployed. |
 
@@ -46,7 +49,8 @@ Bump every hit in one commit. Do not migrate to `vercel.json` cache headers; it 
 ## Structure decisions, so nobody "tidies" them later
 
 - **Root HTML stays flat.** Moving pages breaks live URLs, canonicals, the sitemap and inbound links for no benefit at 12 pages.
-- **`assets/photos/` is separate from `assets/` on purpose.** It makes the real-versus-generated distinction structural rather than something to remember.
+- **`assets/` is organised into `css/ js/ img/ video/ photos/`.** Reorganised 23 Aug 2026 at Geargina's request. Nothing sits loose at the `assets/` root any more; put new files in the right subfolder. `photos/` is for real photographs and nothing else.
+- **A blog cover goes in `assets/img/`**, and `blog/post-template.html` already points there.
 
 ## Publishing a blog post
 

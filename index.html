@@ -58,7 +58,7 @@
       "@id": "https://geargina.com/#org",
       "name": "GEARGINA",
       "url": "https://geargina.com/",
-      "logo": "https://geargina.com/assets/geargina-workshop.png",
+      "logo": "https://geargina.com/assets/img/geargina-workshop.png",
       "founder": { "@id": "https://geargina.com/#gina" },
       "email": "hello@iamcoachgina.com",
       "areaServed": "Worldwide",
@@ -202,7 +202,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=7">
+<link rel="stylesheet" href="assets/css/site.css?v=8">
 </head>
 <body>
 
@@ -213,7 +213,7 @@
 <header class="hero cinematic">
   <div class="hero-bg">
     <!-- 0.3MB after compression, so motion runs on mobile too. Poster prevents a blank first frame. -->
-    <video class="hero-vid" src="assets/loop-2.mp4" poster="assets/hero-poster.jpg"
+    <video class="hero-vid" src="assets/video/loop-2.mp4" poster="assets/video/hero-poster.jpg"
            autoplay loop muted playsinline preload="auto"></video>
     <span class="ai-tag">// AI generated visual</span>
   </div>
@@ -313,7 +313,7 @@
 
       <div class="offer">
         <div class="visual">
-          <video src="assets/gina-sits-down.mp4" autoplay loop muted playsinline preload="metadata"></video>
+          <video src="assets/video/gina-sits-down.mp4" autoplay loop muted playsinline preload="metadata"></video>
           <span class="ai-tag">// AI generated visual</span>
           <span class="chip">// Partner model</span>
         </div>
@@ -336,7 +336,7 @@
 
       <div class="offer">
         <div class="visual">
-          <video src="assets/gina-drinks-tea.mp4" autoplay loop muted playsinline preload="metadata"></video>
+          <video src="assets/video/gina-drinks-tea.mp4" autoplay loop muted playsinline preload="metadata"></video>
           <span class="ai-tag">// AI generated visual</span>
           <span class="chip">// 1:1 · 4 or 8 weeks</span>
         </div>
@@ -449,7 +449,7 @@
   <div class="wrap">
     <div class="about-grid">
       <div class="about-media">
-        <video src="assets/gina-blue-suit.mp4" poster="assets/gina-blue-suit-poster.jpg"
+        <video src="assets/video/gina-blue-suit.mp4" poster="assets/video/gina-blue-suit-poster.jpg"
                autoplay loop muted playsinline preload="metadata"></video>
         <span class="ai-tag">// AI generated visual</span>
       </div>
@@ -514,7 +514,7 @@
     </div>
     <div class="blog-grid">
       <a class="post" href="blog/singapore-budget-2026-ai-business-owners-workers-guide.html">
-        <div class="cover"><img src="assets/geargina-sword-cat.png" alt=""></div>
+        <div class="cover"><img src="assets/img/geargina-sword-cat.png" alt=""></div>
         <div class="body">
           <div class="meta"><span>// Policy</span><span>10 min read</span></div>
           <h3>Singapore Budget 2026: Every AI Initiative You Need to Know — For Business Owners and Workers.</h3>
@@ -522,7 +522,7 @@
         </div>
       </a>
       <a class="post" href="blog/api-vs-mcp-difference-explained-simply.html">
-        <div class="cover"><img src="assets/api-vs-mcp-sketch.jpg" alt="Hand-drawn API vs MCP sketch by Geargina Tan: tangled cables into a robot for APIs, one USB-C style hub for MCP"></div>
+        <div class="cover"><img src="assets/img/api-vs-mcp-sketch.jpg" alt="Hand-drawn API vs MCP sketch by Geargina Tan: tangled cables into a robot for APIs, one USB-C style hub for MCP"></div>
         <div class="body">
           <div class="meta"><span>// Tools</span><span>4 min read</span></div>
           <h3>API vs MCP: What Is the Difference?</h3>
@@ -598,7 +598,7 @@
   </div>
 </div>
 
-<script src="assets/site.js?v=7" data-page="home"></script>
+<script src="assets/js/site.js?v=8" data-page="home"></script>
 <script>
   const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
     "palette": "green",
@@ -618,8 +618,8 @@
 
   const HERO_SOURCES = {
     workshop: { type: "image", src: "assets/photos/masterclass-n1.jpg" },
-    neon:     { type: "image", src: "assets/neon-headphones.png" },
-    milo:     { type: "image", src: "assets/milo.png" }
+    neon:     { type: "image", src: "assets/img/neon-headphones.png" },
+    milo:     { type: "image", src: "assets/img/milo.png" }
   };
 
   function setHeroMedia(key) {
