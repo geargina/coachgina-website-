@@ -28,7 +28,7 @@
   const nav = `
     <nav class="main">
       <div class="wrap">
-        <a href="${activePage === 'home' ? '#' : prefix + 'index.html'}" class="brand"><span class="mark">G</span>GEARGINA</a>
+        <a href="${activePage === 'home' ? '#' : prefix + 'index.html'}" class="brand"><img class="mark" src="${prefix}assets/img/logo/mark.svg" alt="" width="28" height="28" />GEARGINA</a>
         <ul>
           ${navLinks.map(l => `<li><a href="${l.href}" ${l.page===activePage?'class="active"':''}>${l.label}</a></li>`).join("")}
         </ul>
@@ -43,7 +43,7 @@
       <div class="wrap">
         <div class="foot-top">
           <div>
-            <a href="${prefix}index.html" class="brand"><span class="mark">G</span>GEARGINA</a>
+            <a href="${prefix}index.html" class="brand"><img class="mark" src="${prefix}assets/img/logo/mark.svg" alt="" width="28" height="28" />GEARGINA</a>
             <p class="foot-blurb" style="margin-top:16px;">AI coaching and workshops for curious humans. Based in Singapore, working globally.</p>
           </div>
           <div>

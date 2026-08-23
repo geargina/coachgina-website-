@@ -27,7 +27,7 @@ a{ color:inherit; }
 nav.main{ padding:18px 0; border-bottom:1px solid var(--line); }
 nav.main .wrap{ display:flex; align-items:center; justify-content:space-between; gap:24px; }
 .brand{ display:flex; align-items:center; gap:10px; font-family:var(--f-display); font-weight:800; letter-spacing:0.02em; font-size:18px; text-decoration:none; color:var(--ink); }
-.brand .mark{ width:28px; height:28px; border-radius:8px; background:var(--yellow); color:var(--yellow-ink); display:grid; place-items:center; font-weight:900; font-size:14px; }
+.brand .mark{ width:28px; height:28px; border-radius:8px; display:block; flex:0 0 auto; }
 nav.main ul{ list-style:none; padding:0; margin:0; display:flex; gap:28px; font-size:14px; color:var(--ink-dim); }
 nav.main ul a{ text-decoration:none; }
 nav.main ul a:hover{ color:var(--ink); }
