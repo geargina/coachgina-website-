@@ -47,7 +47,7 @@
             <p class="foot-blurb" style="margin-top:16px;">AI coaching and workshops for curious humans. Based in Singapore, working globally.</p>
           </div>
           <div>
-            <h5>Work</h5>
+            <h2 class="foot-h">Work</h2>
             <ul>
               <li><a href="${prefix}index.html#offerings">Workshops</a></li>
               <li><a href="${prefix}index.html#offerings">1:1 Coaching</a></li>
@@ -55,7 +55,7 @@
             </ul>
           </div>
           <div>
-            <h5>Read</h5>
+            <h2 class="foot-h">Read</h2>
             <ul>
               <li><a href="${prefix}blog/index.html">Blog</a></li>
               <li><a href="${prefix}index.html#testi">Reviews</a></li>
@@ -63,7 +63,7 @@
             </ul>
           </div>
           <div>
-            <h5>Say hi</h5>
+            <h2 class="foot-h">Say hi</h2>
             <ul>
               <li><a href="mailto:hello@iamcoachgina.com">hello@iamcoachgina.com</a></li>
               <li><a href="https://www.linkedin.com/in/gearginatan/" target="_blank" rel="noopener">LinkedIn</a></li>

@@ -8,6 +8,7 @@
 <meta name="keywords" content="AI workshop Singapore, AI training Singapore, Claude Masterclass, Claude training Singapore, ChatGPT training for teams, AI trainer Singapore, AI workshop for non-technical, corporate AI training, AI training partner, Coach Gina, Geargina Tan, GEARGINA" />
 <meta name="author" content="Coach Gina" />
 <link rel="canonical" href="https://geargina.com/" />
+<link rel="preload" as="image" href="/assets/video/hero-poster.jpg" fetchpriority="high" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -206,19 +207,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=11">
+<link rel="stylesheet" href="assets/css/site.css?v=12">
 </head>
 <body>
 
 <!-- Nav + top strip injected by site.js -->
 <div id="site-nav"></div>
+<main id="main">
 
 <!-- ===== Hero (cinematic) ===== -->
 <header class="hero cinematic">
   <div class="hero-bg">
     <!-- 0.3MB after compression, so motion runs on mobile too. Poster prevents a blank first frame. -->
     <video class="hero-vid" src="assets/video/loop-2.mp4" poster="assets/video/hero-poster.jpg"
-           autoplay loop muted playsinline preload="auto"></video>
+           autoplay loop muted playsinline preload="metadata"></video>
     <span class="ai-tag">// AI generated visual</span>
   </div>
 
@@ -333,7 +335,7 @@
 
       <div class="offer">
         <div class="visual">
-          <video src="assets/video/gina-sits-down.mp4" autoplay loop muted playsinline preload="metadata"></video>
+          <video data-src="assets/video/gina-sits-down.mp4" autoplay loop muted playsinline preload="none"></video>
           <span class="ai-tag">// AI generated visual</span>
           <span class="chip">// Partner model</span>
         </div>
@@ -356,7 +358,7 @@
 
       <div class="offer">
         <div class="visual">
-          <video src="assets/video/gina-drinks-tea.mp4" autoplay loop muted playsinline preload="metadata"></video>
+          <video data-src="assets/video/gina-drinks-tea.mp4" autoplay loop muted playsinline preload="none"></video>
           <span class="ai-tag">// AI generated visual</span>
           <span class="chip">// 1:1 · 4 or 8 weeks</span>
         </div>
@@ -469,8 +471,8 @@
   <div class="wrap">
     <div class="about-grid">
       <div class="about-media">
-        <video src="assets/video/gina-blue-suit.mp4" poster="assets/video/gina-blue-suit-poster.jpg"
-               autoplay loop muted playsinline preload="metadata"></video>
+        <video data-src="assets/video/gina-blue-suit.mp4" poster="assets/video/gina-blue-suit-poster.jpg"
+               autoplay loop muted playsinline preload="none"></video>
         <span class="ai-tag">// AI generated visual</span>
       </div>
       <div class="about-body">
@@ -588,6 +590,7 @@
 </section>
 
 <!-- Footer injected by site.js -->
+</main>
 <div id="site-footer"></div>
 
 <!-- ===== Tweaks ===== -->
@@ -632,7 +635,7 @@
   </div>
 </div>
 
-<script src="assets/js/site.js?v=11" data-page="home"></script>
+<script src="assets/js/site.js?v=12" data-page="home"></script>
 <script>
   const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
     "palette": "green",
@@ -721,6 +724,28 @@
   window.parent.postMessage({ type: "__edit_mode_available" }, "*");
 
   apply();
+</script>
+
+<script>
+  /* Below-fold videos load only when they are about to be seen, so they stop
+     competing with the hero for bandwidth during first paint. */
+  (function(){
+    var vids = document.querySelectorAll('video[data-src]');
+    if (!vids.length) return;
+    if (!('IntersectionObserver' in window)) {
+      vids.forEach(function(v){ v.src = v.dataset.src; });
+      return;
+    }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        var v = e.target;
+        if (!v.src) { v.src = v.dataset.src; v.load(); var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+        io.unobserve(v);
+      });
+    }, { rootMargin: '300px 0px' });
+    vids.forEach(function(v){ io.observe(v); });
+  })();
 </script>
 </body>
 </html>

@@ -5,8 +5,8 @@
   --line:rgba(242,236,216,0.10); --line-2:rgba(242,236,216,0.18);
   --yellow:#f7d046; --yellow-ink:#1a1405;
   --neon-cyan:#56ffd0; --neon-mag:#ff5ec8;
-  --f-display:"Archivo","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --f-body:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --f-display:"Archivo","Archivo Fallback","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --f-body:"Inter","Inter Fallback","Helvetica Neue",Helvetica,Arial,sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
   --maxw:1240px; --pad-x:32px;
 }
@@ -345,7 +345,7 @@ footer{ padding-top:80px; }
    ============================================================ */
 
 /* ---------- Cinematic hero ---------- */
-.hero.cinematic{ position:relative; min-height:100svh; display:flex; align-items:center; padding:0; overflow:hidden; }
+.hero.cinematic{ position:relative; min-height:100vh; display:flex; align-items:center; padding:0; overflow:hidden; }
 .hero.cinematic .hero-bg{ position:absolute; inset:0; z-index:0; }
 .hero.cinematic .hero-bg video,
 .hero.cinematic .hero-bg img{
@@ -464,3 +464,6 @@ footer{ padding-top:80px; }
   .hosts .hosts-lbl{ width:100%; margin:0 0 4px; }
   .hosts .host{ font-size:10px; padding:6px 11px; }
 }
+
+/* footer section labels: h2 for document outline, styled small */
+.foot-h{ font-family:var(--f-mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-mute); margin:0 0 14px; font-weight:500; }
