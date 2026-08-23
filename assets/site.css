@@ -348,7 +348,12 @@ footer{ padding-top:80px; }
 .hero.cinematic{ position:relative; min-height:100svh; display:flex; align-items:center; padding:0; overflow:hidden; }
 .hero.cinematic .hero-bg{ position:absolute; inset:0; z-index:0; }
 .hero.cinematic .hero-bg video,
-.hero.cinematic .hero-bg img{ width:100%; height:100%; object-fit:cover; display:block; }
+.hero.cinematic .hero-bg img{
+  width:100%; height:100%; object-fit:cover; display:block;
+  /* Bias the crop upward. The source is portrait and her face sits near the
+     top, so a centred cover-fit shows only her torso. */
+  object-position:50% 14%;
+}
 /* Legibility. Two layers: a vertical wash for the type, a brand tint for warmth. */
 .hero.cinematic .hero-bg::after{
   content:""; position:absolute; inset:0;
@@ -431,7 +436,7 @@ footer{ padding-top:80px; }
   }
 }
 @keyframes step-in{ from{ transform:translateY(46px) rotate(-.8deg); } to{ transform:translateY(0) rotate(0); } }
-@keyframes hero-drift{ from{ transform:scale(1.02); } to{ transform:scale(1.16) translateY(-2%); } }
+@keyframes hero-drift{ from{ transform:scale(1.03); } to{ transform:scale(1.14); } }
 
 /* ---------- Mobile ---------- */
 @media (max-width:960px){
