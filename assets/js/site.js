@@ -1,4 +1,4 @@
-// Shared nav + footer + tweaks panel for all pages.
+// Shared nav + footer for all pages (top strip, hamburger nav, footer, analytics tag).
 // Usage: include <script src="assets/js/site.js" data-page="home"></script> at end of body.
 (function(){
   const script = document.currentScript;
