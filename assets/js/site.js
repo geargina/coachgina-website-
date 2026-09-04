@@ -21,7 +21,7 @@
   const topStrip = `
     <div class="topstrip">
       <div class="wrap">
-        <span><span class="dot"></span>Booking Q4 2026 workshops · Singapore + Online</span>
+        <span><span class="dot"></span>Booking Q4 2026 workshops<span class="strip-more"> · Singapore + Online</span></span>
       </div>
     </div>`;
 
