@@ -1,8 +1,6 @@
 # robots.txt for geargina.com
 User-agent: *
 Allow: /
-Disallow: /privacy.html
-Disallow: /terms.html
 
 # Allow AI assistants & search crawlers explicitly (AEO)
 User-agent: GPTBot
