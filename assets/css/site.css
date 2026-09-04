@@ -4,14 +4,11 @@
   --ink:#f2ecd8; --ink-dim:#b9c9bd; --ink-mute:#92a499;
   --line:rgba(242,236,216,0.10); --line-2:rgba(242,236,216,0.18);
   --yellow:#f7d046; --yellow-ink:#1a1405;
-  --neon-cyan:#56ffd0; --neon-mag:#ff5ec8;
   --f-display:"Archivo","Archivo Fallback","Helvetica Neue",Helvetica,Arial,sans-serif;
   --f-body:"Inter","Inter Fallback","Helvetica Neue",Helvetica,Arial,sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
   --maxw:1240px; --pad-x:32px;
 }
-[data-theme="neon"]{ --bg:#07070b; --bg-2:#0a0a10; --card:#111118; --card-2:#0b0b12; --ink:#ecfff6; --ink-dim:#b7c7c0; --line:rgba(236,255,246,0.10); --yellow:#ffe84d; --yellow-ink:#0a0a0a; }
-[data-theme="warm"]{ --bg:#0f120f; --bg-2:#080a08; --card:#161a15; --card-2:#0e120e; --ink:#f6f1e4; --ink-dim:#c9c3b2; --line:rgba(246,241,228,0.10); --yellow:#ffb566; --yellow-ink:#1a0f05; }
 
 *{ box-sizing:border-box; }
 html,body{ margin:0; padding:0; background:var(--bg); color:var(--ink); font-family:var(--f-body); -webkit-font-smoothing:antialiased; }
@@ -21,7 +18,7 @@ a{ color:inherit; }
 
 /* Top chrome */
 .topstrip{ border-bottom:1px solid var(--line); font-family:var(--f-mono); font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-dim); }
-.topstrip .wrap{ display:flex; justify-content:space-between; align-items:center; padding-top:10px; padding-bottom:10px; }
+.topstrip .wrap{ display:flex; justify-content:flex-start; align-items:center; padding-top:10px; padding-bottom:10px; }
 .topstrip .dot{ display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--yellow); box-shadow:0 0 10px var(--yellow); margin-right:8px; vertical-align:1px; }
 
 nav.main{ padding:18px 0; border-bottom:1px solid var(--line); }
@@ -32,6 +29,8 @@ nav.main ul{ list-style:none; padding:0; margin:0; display:flex; gap:28px; font-
 nav.main ul a{ text-decoration:none; }
 nav.main ul a:hover{ color:var(--ink); }
 nav.main ul a.active{ color:var(--yellow); }
+.nav-toggle{ display:none; }
+.nav-toggle:focus-visible{ outline:2px solid var(--yellow); outline-offset:2px; }
 
 .btn{
   display:inline-flex; align-items:center; gap:10px;
@@ -73,17 +72,7 @@ h1.headline em{ font-style:normal; color:var(--yellow); }
 .hero-meta{ display:flex; gap:24px; margin-top:36px; padding-top:24px; border-top:1px solid var(--line); font-family:var(--f-mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-mute); }
 .hero-meta b{ color:var(--ink); font-weight:600; display:block; font-family:var(--f-body); font-size:13px; letter-spacing:0; text-transform:none; margin-top:4px; }
 
-/* Collage */
-.collage{ position:relative; display:grid; grid-template-columns:1.2fr 1fr; gap:14px; min-height:460px; }
-.collage .tile{ position:relative; border-radius:18px; overflow:hidden; background:var(--card); border:1px solid var(--line); }
-.collage .tile img, .collage .tile video{ width:100%; height:100%; object-fit:cover; display:block; }
-.collage .tile.a{ aspect-ratio:3/4; overflow:visible; }
-.collage .tile.c{ aspect-ratio:3/4; position:relative; }
-.collage .tile.a > img, .collage .tile.a > video, .collage .tile.a > .label{ border-radius:inherit; }
-.collage .tile.a > img, .collage .tile.a > video{ border-radius:18px; }
-.collage .tile .label{ position:absolute; left:12px; bottom:12px; font-family:var(--f-mono); font-size:10px; letter-spacing:.16em; text-transform:uppercase; background:rgba(10,10,10,.55); backdrop-filter:blur(6px); padding:6px 10px; border-radius:999px; color:#fff; border:1px solid rgba(255,255,255,.18); }
-.collage .tile.c .rec{ position:absolute; top:12px; left:12px; display:inline-flex; align-items:center; gap:6px; font-family:var(--f-mono); font-size:10px; letter-spacing:.16em; background:rgba(0,0,0,.55); padding:5px 10px; border-radius:999px; color:#fff; }
-.collage .tile.c .rec .d{ width:7px; height:7px; border-radius:50%; background:#ff4d4d; box-shadow:0 0 8px #ff4d4d; animation:pulse 1.2s ease-in-out infinite; }
+/* Hero sticker */
 .sticker-badge{ position:absolute; right:-26px; top:-26px; width:104px; height:104px; border-radius:50%; background:var(--yellow); color:var(--yellow-ink); display:grid; place-items:center; transform:rotate(-8deg); font-family:var(--f-mono); font-size:10px; letter-spacing:.18em; text-transform:uppercase; text-align:center; padding:10px; box-shadow:0 20px 40px -15px rgba(247,208,70,.35); animation:spin 20s linear infinite; z-index:2; }
 @keyframes spin{ to{ transform: rotate(352deg);} }
 
@@ -151,7 +140,7 @@ h2.sec{ font-family:var(--f-display); font-weight:800; font-size:clamp(32px, 4.2
 
 /* Testimonials */
 .testi{ background:var(--bg-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-.testi-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.testi-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
 .testi-card{ background:var(--card); border:1px solid var(--line); border-radius:22px; padding:28px; display:flex; flex-direction:column; gap:18px; min-height:260px; }
 .testi-card .stars{ display:flex; gap:2px; color:var(--yellow); }
 .testi-card blockquote{ margin:0; font-size:16px; line-height:1.55; color:var(--ink); }
@@ -246,25 +235,33 @@ footer{ padding-top:80px; }
 .legal ul{ padding-left:22px; }
 .legal strong{ color:var(--ink); }
 
-/* Tweaks panel */
-#tweaks-panel{ position:fixed; right:16px; bottom:16px; width:300px; z-index:100; background:#0b0f0d; border:1px solid var(--line-2); border-radius:18px; padding:16px; font-family:var(--f-body); color:var(--ink); box-shadow:0 30px 80px -20px rgba(0,0,0,.6); display:none; }
-#tweaks-panel.open{ display:block; }
-#tweaks-panel h6{ margin:0 0 10px; font-family:var(--f-mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-dim); }
-#tweaks-panel .row{ display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap; }
-#tweaks-panel .swatch{ width:28px; height:28px; border-radius:50%; border:2px solid transparent; cursor:pointer; }
-#tweaks-panel .swatch.active{ border-color:var(--yellow); }
-#tweaks-panel .opt{ padding:7px 12px; background:var(--card); border:1px solid var(--line); border-radius:999px; font-size:12px; cursor:pointer; }
-#tweaks-panel .opt.active{ background:var(--yellow); color:var(--yellow-ink); border-color:var(--yellow); }
-#tweaks-panel .field{ margin-bottom:14px; }
-
 /* Responsive */
 @media (max-width:960px){
   .hero .wrap{ grid-template-columns:1fr; }
   .stats-grid{ grid-template-columns:repeat(2,1fr); }
   .offer-grid, .help-grid, .about-grid, .testi-grid, .blog-grid, .cta-banner, .split, .form-row{ grid-template-columns:1fr; }
   .foot-top{ grid-template-columns:1fr 1fr; }
-  nav.main ul{ display:none; }
   .cta-banner{ padding:36px; }
+
+  /* Top strip: one span, so clip it rather than let it wrap the bar to 2 lines */
+  .topstrip .wrap > span{ min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+  /* Mobile nav. The bar wraps to 2 rows: brand + CTA + hamburger, then the
+     link list on its own full-width row once .open is set by site.js. */
+  nav.main .wrap{ flex-wrap:wrap; }
+  .nav-toggle{ display:inline-flex; flex-direction:column; justify-content:center; gap:5px; width:44px; height:44px; padding:0; margin-left:auto; background:transparent; border:1px solid var(--line-2); border-radius:12px; cursor:pointer; order:2; }
+  .nav-toggle span{ display:block; width:18px; height:2px; background:var(--ink); margin:0 auto; border-radius:2px; transition:transform .2s ease, opacity .2s ease; }
+  nav.main.open .nav-toggle span:first-child{ transform:translateY(7px) rotate(45deg); }
+  nav.main.open .nav-toggle span:nth-child(2){ opacity:0; }
+  nav.main.open .nav-toggle span:last-child{ transform:translateY(-7px) rotate(-45deg); }
+  nav.main .wrap > .btn{ order:1; }
+  nav.main ul{ order:3; width:100%; display:none; flex-direction:column; gap:14px; padding:16px 0 4px; border-top:1px solid var(--line); margin-top:14px; font-size:16px; }
+  nav.main.open ul{ display:flex; }
+  nav.main ul a{ padding:6px 0; display:block; }
+
+  /* Offer-card footers: price over a full-width button, not a wrapped blob */
+  .offer .foot{ flex-direction:column; align-items:stretch; gap:10px; }
+  .offer .foot .btn{ justify-content:center; }
 }
 
 /* ============================================================
@@ -325,7 +322,6 @@ footer{ padding-top:80px; }
 
     /* The zoom. Photographs scale slowly the entire time they are on
        screen, tracking scroll position rather than a timer. */
-    .collage .tile img,
     .offer .visual img,
     .about-media img,
     .article .cover img {
@@ -467,3 +463,70 @@ footer{ padding-top:80px; }
 
 /* footer section labels: h2 for document outline, styled small */
 .foot-h{ font-family:var(--f-mono); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-mute); margin:0 0 14px; font-weight:500; }
+
+/* ============================================================
+   NEW COMPONENTS, Sep 2026. Trailer (homepage), stage list +
+   FAQ + data table (speaking page). Additive: nothing above
+   this line depends on any of it.
+   ============================================================ */
+
+/* ---------- Trailer: a phone-shaped video beside its pitch ---------- */
+.trailer-grid{ display:grid; grid-template-columns:320px 1fr; gap:48px; align-items:center; }
+.phone{ position:relative; width:280px; aspect-ratio:9/16; border-radius:28px; overflow:hidden; border:1px solid var(--line-2); background:var(--bg-2); box-shadow:0 30px 60px -30px rgba(0,0,0,.6); }
+.phone video, .phone img{ width:100%; height:100%; object-fit:cover; display:block; }
+.phone .play{ position:absolute; inset:0; display:grid; place-items:center; background:linear-gradient(to top, rgba(0,0,0,.45), rgba(0,0,0,0) 60%); border:0; cursor:pointer; color:var(--ink); }
+/* Circle and triangle are both pseudo-elements in the same grid cell, so the
+   button needs no child markup. */
+.phone .play::before{ content:""; grid-area:1/1; width:64px; height:64px; border-radius:50%; background:var(--yellow); box-shadow:0 14px 34px -12px rgba(0,0,0,.55); transition:transform .2s ease; }
+.phone .play::after{ content:""; grid-area:1/1; width:0; height:0; margin-left:5px; border-style:solid; border-width:11px 0 11px 18px; border-color:transparent transparent transparent var(--yellow-ink); }
+.phone .play:hover::before{ transform:scale(1.06); }
+.phone .play:focus-visible{ outline:2px solid var(--yellow); outline-offset:-4px; }
+.phone.playing .play{ display:none; }
+/* .ai-tag defaults to bottom-right of the cinematic hero; inside a phone the
+   left edge is calmer and clears the play button's glow. */
+.phone .ai-tag{ left:10px; bottom:10px; right:auto; }
+
+/* ---------- Stage list: past and upcoming talks ---------- */
+.stage-list{ margin-top:8px; }
+.stage{ display:grid; grid-template-columns:150px 1fr; gap:20px; padding:20px 0; border-top:1px solid var(--line); }
+.stage time{ font-family:var(--f-mono); font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-mute); padding-top:4px; }
+.stage h3{ margin:0 0 6px; font-family:var(--f-display); font-weight:700; font-size:18px; }
+.stage p{ margin:0; color:var(--ink-dim); font-size:14px; line-height:1.55; }
+
+/* ---------- FAQ: native details/summary, no JS ---------- */
+.faq details{ background:var(--card); border:1px solid var(--line); border-radius:18px; padding:0 24px; margin-bottom:10px; }
+.faq summary{ list-style:none; cursor:pointer; padding:18px 0; font-family:var(--f-display); font-weight:700; font-size:17px; display:flex; justify-content:space-between; align-items:center; gap:16px; }
+.faq summary::-webkit-details-marker{ display:none; }
+.faq summary::after{ content:"+"; flex:0 0 auto; font-family:var(--f-mono); font-weight:400; font-size:22px; line-height:1; color:var(--yellow); transition:transform .2s ease; }
+.faq details[open] summary::after{ transform:rotate(45deg); }
+.faq details p{ margin:0 0 18px; color:var(--ink-dim); line-height:1.6; font-size:15px; }
+.faq summary:focus-visible{ outline:2px solid var(--yellow); outline-offset:4px; border-radius:8px; }
+
+/* ---------- Data table: scrolls sideways rather than squashing ---------- */
+.table-wrap{ overflow-x:auto; }
+.data-table{ width:100%; border-collapse:collapse; font-size:14px; }
+.data-table th{ text-align:left; font-family:var(--f-mono); font-weight:500; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-mute); padding:12px 14px; border-bottom:1px solid var(--line); white-space:nowrap; }
+.data-table td{ padding:12px 14px; border-bottom:1px solid var(--line); color:var(--ink-dim); line-height:1.5; vertical-align:top; }
+.data-table tbody tr:last-child td{ border-bottom:none; }
+.data-table td b, .data-table td strong{ color:var(--ink); font-weight:600; }
+
+@media (max-width:960px){
+  .trailer-grid{ grid-template-columns:1fr; gap:28px; }
+  .phone{ width:100%; max-width:280px; margin:0 auto; }
+  .stage{ grid-template-columns:1fr; gap:8px; }
+  .stage time{ padding-top:0; }
+  .faq details{ padding:0 20px; }
+}
+
+/* ============================================================
+   Reduced motion. The scroll-driven blocks above carry their own
+   prefers-reduced-motion guard; these are the looping decorative
+   animations that run on a timer regardless of scroll.
+   ============================================================ */
+@media (prefers-reduced-motion: reduce){
+  .kicker .pulse{ animation:none; }
+  h1.headline .wave{ animation:none; }
+  .sticker-badge{ animation:none; }
+  .ticker-track{ animation:none; }
+  .scroll-cue span{ animation:none; }
+}

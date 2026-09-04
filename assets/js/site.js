@@ -13,6 +13,7 @@
   const navLinks = [
     { href: prefix + "index.html#offerings", label: "Work with me", page: "home" },
     { href: prefix + "index.html#about",     label: "About",        page: "home" },
+    { href: prefix + "speaking.html",        label: "Speaking",     page: "speaking" },
     { href: prefix + "blog/index.html",      label: "Blog",         page: "blog" },
     { href: prefix + "contact.html",         label: "Contact",      page: "contact" }
   ];
@@ -21,7 +22,6 @@
     <div class="topstrip">
       <div class="wrap">
         <span><span class="dot"></span>Booking Q4 2026 workshops · Singapore + Online</span>
-        <span>Est. 2026 · EN / 中文</span>
       </div>
     </div>`;
 
@@ -29,10 +29,13 @@
     <nav class="main">
       <div class="wrap">
         <a href="${activePage === 'home' ? '#' : prefix + 'index.html'}" class="brand"><img class="mark" src="${prefix}assets/img/logo/mark.svg" alt="" width="28" height="28" />GEARGINA</a>
-        <ul>
+        <ul id="nav-menu">
           ${navLinks.map(l => `<li><a href="${l.href}" ${l.page===activePage?'class="active"':''}>${l.label}</a></li>`).join("")}
         </ul>
-        <a href="${prefix}contact.html" class="btn">Book a call
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="${prefix}contact.html" class="btn">Get in touch
           <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
         </a>
       </div>
@@ -50,8 +53,9 @@
             <h2 class="foot-h">Work</h2>
             <ul>
               <li><a href="${prefix}index.html#offerings">Workshops</a></li>
+              <li><a href="${prefix}speaking.html">Speaking</a></li>
               <li><a href="${prefix}index.html#offerings">1:1 Coaching</a></li>
-              <li><a href="${prefix}contact.html">Book a call</a></li>
+              <li><a href="${prefix}contact.html">Get in touch</a></li>
             </ul>
           </div>
           <div>
@@ -87,7 +91,46 @@
   const navHost = document.getElementById("site-nav");
   if (navHost) navHost.innerHTML = topStrip + nav;
 
+  // Mobile nav. The hamburger only renders at <=960px; the handlers are harmless
+  // above that width because the button is display:none and cannot be clicked.
+  const navEl = navHost ? navHost.querySelector("nav.main") : null;
+  const navToggle = navHost ? navHost.querySelector(".nav-toggle") : null;
+  const navMenu = navHost ? navHost.querySelector("#nav-menu") : null;
+
+  function setNavOpen(open){
+    if (!navEl || !navToggle) return;
+    navEl.classList.toggle("open", open);
+    navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+
+  if (navToggle && navEl) {
+    navToggle.addEventListener("click", function(){
+      setNavOpen(!navEl.classList.contains("open"));
+    });
+    document.addEventListener("keydown", function(e){
+      if (e.key !== "Escape") return;
+      if (!navEl.classList.contains("open")) return;
+      setNavOpen(false);
+      navToggle.focus();
+    });
+  }
+
+  if (navMenu) {
+    navMenu.addEventListener("click", function(e){
+      if (e.target && e.target.closest && e.target.closest("a")) setNavOpen(false);
+    });
+  }
+
   // Inject footer
   const footHost = document.getElementById("site-footer");
   if (footHost) footHost.innerHTML = footer;
+
+  // Vercel Web Analytics. 404s until analytics is switched on for the project,
+  // which is expected and harmless.
+  if (document.body) {
+    const insights = document.createElement("script");
+    insights.defer = true;
+    insights.src = "/_vercel/insights/script.js";
+    document.body.appendChild(insights);
+  }
 })();
