@@ -8,7 +8,7 @@ Personal brand website for Geargina Tan (Coach Gina). Static HTML site, deployed
 
 - Plain HTML/CSS/JS (built in Claude design)
 - Hosted on Vercel
-- Domain: geargina.com (registrar: Squarespace, DNS via Google Workspace)
+- Domain: geargina.com, DNS at GoDaddy (ns45/ns46.domaincontrol.com). iamcoachgina.com is a separate Squarespace domain that should forward here.
 - Contact email: hello@iamcoachgina.com (still the working inbox, not a stale URL)
 
 ## Pages

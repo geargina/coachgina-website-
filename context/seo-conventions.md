@@ -7,7 +7,8 @@ What this site already does, and the rules for keeping it consistent. Procedure 
 Better than most. Every page has a title, meta description, canonical, and full Open Graph plus Twitter tags.
 
 Schema in use:
-- `index.html`: an `@graph` with `Person`, `Organization`, `WebSite` and 4 `Service` blocks, plus a separate `FAQPage` with 10 questions
+- `index.html`: an `@graph` with `Person`, `Organization`, `WebSite` and 4 `Service` blocks, plus a `VideoObject` for the trailer and a 6-question `FAQPage` that mirrors the visible `#faq` section. The homepage FAQ was cut from 10 invisible questions to 6 visible ones on 4 Sep 2026.
+- `speaking.html`: `WebPage` + `BreadcrumbList` + `FAQPage` (5, mirrored)
 - `contact.html`: `ContactPage`
 - `blog/index.html`: `Blog`
 - every post: `BlogPosting` + `BreadcrumbList`
@@ -19,6 +20,10 @@ Schema in use:
 **Never add `aggregateRating` or `Review` schema.** There is no rating data. The site previously showed a fabricated "5.0 average" and that must not return in machine-readable form.
 
 **The FAQ schema is the copy answer engines quote verbatim.** Change it in the same commit as the visible copy it describes, never in a follow-up. Stale FAQ answers keep getting asserted long after the page changes.
+
+**No FAQ schema without a visible twin.** Every Question in JSON-LD has a matching `<details><summary>` on the page with identical text. Google's guidance treats markup that does not reflect on-page content as a violation, and invisible FAQ was the one thing this site did that the vendored AI-optimisation guide warns against.
+
+**Dated promotional video.** A trailer that names a cohort date lives in one isolated section (`#trailer`) with its own claims-register row carrying an expiry. Delete the whole section after the date rather than editing around it. `VideoObject.uploadDate` is the date it went live on this site.
 
 **`Service` descriptions must match the visible offer copy exactly**, including price. If the visible card says "scoped per team", the schema does not carry a number.
 
@@ -60,8 +65,8 @@ xmllint --noout sitemap.xml blog/feed.xml
 
 Then extract each JSON-LD block and parse it, run `render-check` at 1440x900 and 390x844, and run the constraint grep from `voice-and-brand.md`. After push: curl the live URL, confirm the feed and sitemap contain it, confirm `context/` still 404s, and run the live URL through validator.schema.org.
 
+Vercel Analytics: `/_vercel/insights/script.js` 404s until Web Analytics is enabled in the project. Whitelist that one failed request in QA.
+
 ## Known gaps, worth doing
 
-- Internal linking between blog posts and offer pages is almost nonexistent. Hand-picked contextual links beat a related-posts component at 8 posts.
-- Two blog post titles contain em-dashes, matching the live post `<h1>`s. Fixing them means changing both the card and the post title together.
-- `blog/index.html` and several posts still reference "1:1 coaching sessions" and "case studies from real coaching sessions", which overstates a service with no completed engagements on record.
+- Internal linking between blog posts and offer pages is still thin, though `speaking.html` now links to two posts and the ai-workshop post links back to `speaking.html`. Hand-picked contextual links beat a related-posts component at this post count.
