@@ -121,7 +121,7 @@ Bio, publishable form:
 
 | File | Status | Notes |
 |---|---|---|
-| `assets/photos/masterclass-n1.jpg` | PUBLISHED | Attendees shot from behind and in profile. No individual identifiable. |
+| `assets/photos/masterclass-n1.jpg` | PUBLISHED (speaking.html photo grid since 6 Sep 2026) | Attendees shot from behind and in profile. No individual identifiable. |
 | `assets/photos/masterclass-n2.jpg` | PUBLISHED | Same. |
 | `assets/photos/friday-demo.jpg` | PUBLISHED, cropped | Original showed a laptop with a legible travel itinerary naming 6 cities. Cropped to the top 56% to remove it. Verified at 3x zoom that remaining dashboard text is illegible. A public follower count is visible. |
 | `assets/photos/speaking-hall.jpg` | PUBLISHED | No audience in frame. Her, the lectern, her own intro slide. |
