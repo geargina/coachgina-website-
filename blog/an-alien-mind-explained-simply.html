@@ -39,7 +39,20 @@
   "@type": "BlogPosting",
   "headline": "An Alien Mind, Explained Simply: What OpenAI's Chief Scientist Actually Said",
   "description": "OpenAI's chief scientist says no lab has solved alignment well enough to keep scaling at full speed. His essay in plain language, with diagrams, at the level of a curious ten-year-old.",
-  "image": "https://geargina.com/assets/img/neon-cyan-pink.jpg",
+  "image": [
+    "https://geargina.com/assets/img/neon-cyan-pink.jpg",
+    {
+      "@type": "ImageObject",
+      "url": "https://geargina.com/assets/img/ai-capability-vs-monitoring-gap.png",
+      "contentUrl": "https://geargina.com/assets/img/ai-capability-vs-monitoring-gap.png",
+      "width": 1080,
+      "height": 1080,
+      "caption": "The essay in one picture. Capability keeps climbing while confidence in monitoring declines, and Pachocki expects AI progress to be increasingly bottlenecked by that gap. Directional, not measured: the essay gives no figures for either line, so this chart carries no scale.",
+      "creditText": "Geargina Tan",
+      "creator": { "@type": "Person", "name": "Geargina Tan" },
+      "license": "https://geargina.com/terms.html"
+    }
+  ],
   "datePublished": "2026-09-07",
   "dateModified": "2026-09-07",
   "author": {
@@ -173,6 +186,10 @@
 .am-hold li{font-size:14.5px;color:#b9c9bd;margin-bottom:8px}
 .am-hold p{margin:0;font-size:14px;color:#92a499}
 .am-last{font-size:18px;line-height:1.55;border-top:1px solid rgba(242,236,216,0.18);padding-top:22px;margin-top:8px}
+.am-figure{margin:30px 0;padding:0}
+.am-figure img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid rgba(242,236,216,0.26)}
+.am-figure figcaption{font-size:14.5px;color:#92a499;line-height:1.5;margin-top:12px;
+  border-left:2px solid rgba(247,208,70,0.45);padding-left:14px}
 @media (max-width:560px){ .am-fig{padding:12px 10px 8px} }
 </style>
 </head>
@@ -209,6 +226,13 @@
       </div>
 
       <p>He wrote "I believe". His opinion, not OpenAI policy, from the person in charge of the science.</p>
+
+      <figure class="am-figure">
+        <img src="../assets/img/ai-capability-vs-monitoring-gap.png" width="1080" height="1080"
+             loading="lazy" decoding="async"
+             alt="Line chart from 2017 to now. A rising green line labelled What AI can do climbs steadily, while a falling amber dashed line labelled How well we can check it declines, and a widening mustard wedge between them shows the gap growing." />
+        <figcaption>The essay in one picture. Capability keeps climbing while confidence in monitoring declines, and Pachocki expects AI progress to be increasingly bottlenecked by that gap. Directional, not measured: the essay gives no figures for either line, so this chart carries no scale.</figcaption>
+      </figure>
 
       <span class="am-no">01</span>
       <h2>Why does OpenAI say it cannot fully understand its own AI?</h2>
