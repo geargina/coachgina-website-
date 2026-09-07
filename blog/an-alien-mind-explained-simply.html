@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>An Alien Mind, Explained Simply: What OpenAI's Chief Scientist Actually Said | GEARGINA</title>
+<meta name="description" content="OpenAI's chief scientist says no lab has solved alignment well enough to keep scaling at full speed. His essay in plain language, with diagrams, at the level of a curious ten-year-old." />
+<meta name="keywords" content="an alien mind, jakub pachocki, openai chief scientist, ai alignment explained simply, ai safety, chain of thought monitoring, recursive self improvement, should we slow down ai" />
+<meta name="author" content="Coach Gina" />
+<link rel="canonical" href="https://geargina.com/blog/an-alien-mind-explained-simply.html" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta name="theme-color" content="#0f2a20" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="An Alien Mind, Explained Simply: What OpenAI's Chief Scientist Actually Said" />
+<meta property="og:description" content="OpenAI's chief scientist says no lab has solved alignment well enough to keep scaling at full speed. His essay in plain language, with diagrams." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://geargina.com/blog/an-alien-mind-explained-simply.html" />
+<meta property="og:image" content="https://geargina.com/assets/img/neon-cyan-pink.jpg" />
+<meta property="og:site_name" content="GEARGINA — Coach Gina" />
+<meta property="article:published_time" content="2026-09-07T09:00:00+08:00" />
+<meta property="article:author" content="Coach Gina" />
+<meta property="article:section" content="Policy" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="An Alien Mind, Explained Simply" />
+<meta name="twitter:description" content="OpenAI's chief scientist says no lab has solved alignment well enough to keep scaling at full speed. His essay in plain language, with diagrams." />
+<meta name="twitter:image" content="https://geargina.com/assets/img/neon-cyan-pink.jpg" />
+
+<!-- JSON-LD: BlogPosting -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "An Alien Mind, Explained Simply: What OpenAI's Chief Scientist Actually Said",
+  "description": "OpenAI's chief scientist says no lab has solved alignment well enough to keep scaling at full speed. His essay in plain language, with diagrams, at the level of a curious ten-year-old.",
+  "image": "https://geargina.com/assets/img/neon-cyan-pink.jpg",
+  "datePublished": "2026-09-07",
+  "dateModified": "2026-09-07",
+  "author": {
+    "@type": "Person",
+    "name": "Geargina Tan",
+    "alternateName": "Coach Gina",
+    "jobTitle": "Co-Founder and COO",
+    "worksFor": { "@type": "Organization", "name": "WTFox.ai", "url": "https://wtfox.ai/" },
+    "url": "https://geargina.com/#about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "GEARGINA",
+    "url": "https://geargina.com/"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://geargina.com/blog/an-alien-mind-explained-simply.html"
+  },
+  "isBasedOn": {
+    "@type": "Article",
+    "name": "An Alien Mind",
+    "author": { "@type": "Person", "name": "Jakub Pachocki" },
+    "publisher": { "@type": "Organization", "name": "OpenAI" },
+    "datePublished": "2026-09-06",
+    "url": "https://openai.com/index/an-alien-mind/"
+  },
+  "articleSection": "Policy",
+  "keywords": "an alien mind, jakub pachocki, openai chief scientist, ai alignment explained simply, ai safety, chain of thought monitoring, recursive self improvement"
+}
+</script>
+
+<!-- JSON-LD: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://geargina.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://geargina.com/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "An Alien Mind, Explained Simply", "item": "https://geargina.com/blog/an-alien-mind-explained-simply.html" }
+  ]
+}
+</script>
+
+<!-- JSON-LD: FAQPage for answer engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is An Alien Mind about?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An Alien Mind is an essay published on 6 September 2026 by Jakub Pachocki, Chief Scientist at OpenAI. His argument is that AI systems are becoming more capable faster than anyone is learning to verify whether they are safe, and that development should slow until the checking catches up. He writes that he currently believes no lab has solved alignment and monitoring well enough to keep scaling at maximum speed for much longer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does OpenAI say it cannot fully understand its own AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because modern AI is not written line by line. In Pachocki's words it is grown more than designed: one simple optimisation step is repeated an enormous number of times across an enormous amount of computing power. He describes large training runs as experiments whose results sometimes surprise the people running them, and says the system's overall behaviour evades a description anyone can fully understand."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is chain of thought monitoring and why is it weakening?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Modern AI writes out its reasoning before answering. OpenAI deliberately chose not to supervise that reasoning, only the final answer, so the model never learns to hide its intentions there and humans can read it. Pachocki names three pressures eroding this: reasoning is increasingly blended with talking to people and using tools, the model is getting better at managing its own reasoning, and models are becoming capable without writing anything down at all. He expects AI progress to be increasingly bottlenecked by confidence in monitoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Pachocki actually asking for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Four things. That voluntary slowdowns become commonplace until shared safety bars exist. That internal commitments such as Preparedness Frameworks become widely mandated safety bars rather than company policy. That those bars be enforced by third-party auditors, government agencies or international bodies. And that international coordination on AI development become a top priority for governments."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should AI development be deliberately slowed down?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pachocki argues for slowing down until safety verification catches up, while also arguing that capable AI is needed on the defending side against AI-enabled attacks. He writes that the idea of racing forward at all costs seems absurd once the stakes are taken seriously. The question of whether any company or country will actually slow while competitors do not remains open, and this page does not claim to answer it."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css?v=15">
+
+<style>
+/* Scoped explainer components. Namespaced .am- so nothing here can touch site.css. */
+.am-src{border:1px solid rgba(247,208,70,0.45);border-left:3px solid #f7d046;background:rgba(247,208,70,0.07);
+  border-radius:0 10px 10px 0;padding:16px 18px;margin:0 0 28px}
+.am-src p{margin:0 0 8px}
+.am-src p:last-child{margin:0}
+.am-src a{color:#f7d046;text-decoration:underline;text-underline-offset:2px}
+.am-verdict{background:#12382a;border:1px solid rgba(242,236,216,0.18);border-left:4px solid #f7d046;
+  border-radius:10px;padding:18px 20px;margin:26px 0}
+.am-verdict p{margin:0;font-size:17px;line-height:1.55}
+.am-no{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:#f7d046;display:block;margin:36px 0 4px}
+.am-fig{background:#0b2a1f;border:1px solid rgba(242,236,216,0.14);border-radius:10px;
+  padding:16px 14px 10px;margin:20px 0;overflow-x:auto}
+.am-fig svg{width:100%;height:auto;display:block;min-width:560px}
+.am-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:#92a499;
+  border-top:1px solid rgba(242,236,216,0.12);margin-top:12px;padding-top:9px}
+.am-legend span{display:inline-flex;align-items:center;gap:6px}
+.am-sw{width:12px;height:12px;border-radius:3px;display:inline-block}
+.am-kid{border-left:3px solid #f7d046;background:rgba(247,208,70,0.06);border-radius:0 8px 8px 0;
+  padding:12px 16px;margin:18px 0}
+.am-kid strong{color:#f7d046}
+.am-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:20px 0}
+.am-card{background:#12382a;border:1px solid rgba(242,236,216,0.16);border-radius:10px;padding:16px}
+.am-card h4{margin:0 0 6px;font-size:15px;font-family:"Archivo",sans-serif;font-weight:700;color:#f2ecd8}
+.am-card p{margin:0;font-size:14px;color:#b9c9bd;line-height:1.5}
+.am-evi{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:11.5px;color:#92a499;margin:-6px 0 18px}
+.am-hold{background:#12382a;border:1px solid rgba(242,236,216,0.16);border-radius:10px;padding:18px 20px}
+.am-hold ul{margin:0 0 10px;padding-left:20px}
+.am-hold li{font-size:14.5px;color:#b9c9bd;margin-bottom:8px}
+.am-hold p{margin:0;font-size:14px;color:#92a499}
+.am-last{font-size:18px;line-height:1.55;border-top:1px solid rgba(242,236,216,0.18);padding-top:22px;margin-top:8px}
+@media (max-width:560px){ .am-fig{padding:12px 10px 8px} }
+</style>
+</head>
+<body>
+
+<div id="site-nav"></div>
+
+<article class="s" style="padding:64px 0 48px;">
+  <div class="article">
+    <div class="meta">
+      <span>// Policy</span>
+      <span>8 min read</span>
+      <span>Sep 2026</span>
+    </div>
+    <h1>An Alien Mind, Explained Simply: What OpenAI's Chief Scientist Actually Said</h1>
+    <p class="dek">On 6 September 2026, OpenAI's chief scientist published an essay saying he believes no lab has solved AI safety well enough to keep building at full speed. His argument in plain language, with diagrams, for anyone who does not work in AI.</p>
+  </div>
+
+  <div class="article">
+    <div class="cover"><img src="../assets/img/neon-cyan-pink.jpg" alt="Portrait of Geargina Tan (Coach Gina), Singapore's AI expert and COO of WTFox.ai, lit by neon light trails, used for her plain-language explainer of An Alien Mind, the September 2026 essay by OpenAI chief scientist Jakub Pachocki on AI alignment, monitoring and slowing down development." fetchpriority="high" decoding="async" /></div>
+  </div>
+
+  <div class="article">
+    <div class="body">
+
+      <div class="am-src">
+        <p><strong>My summary, not OpenAI's words.</strong> The essay is <a href="https://openai.com/index/an-alien-mind/" rel="noopener nofollow" target="_blank">An Alien Mind</a> by Jakub Pachocki, Chief Scientist at OpenAI, published 6 September 2026. The argument is his. The plain-language translation, the diagrams and any mistakes in them are mine.</p>
+        <p>Quotations below are his, word for word. Everything unquoted is my paraphrase. Read the original if this matters to you, because it is about 3,000 words and worth the time.</p>
+      </div>
+
+      <p>He is not warning about a distant science-fiction problem. He is saying something narrower and more uncomfortable: the machines are getting more capable faster than anyone is learning to check whether they are safe, and the checking tool everyone relies on is getting worse rather than better.</p>
+
+      <div class="am-verdict">
+        <p>His own sentence, hedges included: <strong>"Currently I believe that no lab has solved alignment and monitoring to a sufficient degree to continue responsibly scaling at maximum speed for much longer."</strong></p>
+      </div>
+
+      <p>Note the "I believe". One person's dated opinion, not an OpenAI policy statement, and he wrote it that way on purpose. It still happens to be the person in charge of the science.</p>
+
+      <span class="am-no">01</span>
+      <h2>Why does OpenAI say it cannot fully understand its own AI?</h2>
+
+      <p>A normal computer program is written line by line. Someone decides what every part does. Modern AI is not built that way.</p>
+
+      <p>In his words, <strong>"AI is grown more than designed"</strong>. You take one simple learning step, repeat it across an enormous amount of computing power an enormous number of times, and what comes out handles ideas, plans and people. He calls the big training runs <strong>"experiments"</strong>, and says <strong>"we are sometimes surprised by their results"</strong>. The system's overall behaviour, he writes, <strong>"evades a description we can fully understand"</strong>.</p>
+
+      <div class="am-fig">
+        <svg viewBox="0 0 700 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram: a large amount of computing power, plus one simple learning step repeated a very large number of times, produces a mind that works with ideas and can only be partly inspected.">
+          <defs>
+            <marker id="amArr1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="#f7d046"/>
+            </marker>
+          </defs>
+          <rect x="8" y="46" width="150" height="74" rx="7" fill="rgba(242,236,216,0.06)" stroke="#92a499"/>
+          <text x="83" y="76" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#f2ecd8">A huge pile</text>
+          <text x="83" y="96" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#f2ecd8">of computers</text>
+          <line x1="162" y1="83" x2="212" y2="83" stroke="#f7d046" stroke-width="2" marker-end="url(#amArr1)"/>
+          <rect x="216" y="34" width="180" height="98" rx="7" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="306" y="64" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#f2ecd8">One simple step,</text>
+          <text x="306" y="84" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#f2ecd8">repeated an enormous</text>
+          <text x="306" y="104" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#f2ecd8">number of times</text>
+          <line x1="400" y1="83" x2="450" y2="83" stroke="#f7d046" stroke-width="2" marker-end="url(#amArr1)"/>
+          <rect x="454" y="34" width="238" height="98" rx="7" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="573" y="62" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#f2ecd8">A mind that works with</text>
+          <text x="573" y="80" text-anchor="middle" font-family="Inter" font-size="14" font-weight="600" fill="#f2ecd8">ideas, plans and people</text>
+          <text x="573" y="112" text-anchor="middle" font-family="Inter" font-size="12" fill="#b9c9bd">we can inspect small parts of it,</text>
+          <text x="573" y="126" text-anchor="middle" font-family="Inter" font-size="12" fill="#b9c9bd">never the whole thing</text>
+          <text x="306" y="162" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#92a499">OpenAI internalised this around 2017, after consistent returns to scaling</text>
+        </svg>
+        <div class="am-legend">
+          <span><i class="am-sw" style="background:rgba(247,208,70,0.12);border:1px solid #f7d046"></i> the AI itself</span>
+          <span><i class="am-sw" style="background:rgba(242,236,216,0.06);border:1px solid #92a499"></i> the raw materials</span>
+        </div>
+      </div>
+
+      <p class="am-evi">essay section: Intellect we don't fully understand</p>
+
+      <div class="am-kid"><strong>Put it another way.</strong> You can plant a seed and water it and get a tree. That does not mean you know where every branch will go. The people growing AI are in the same position, and they say so.</div>
+
+      <span class="am-no">02</span>
+      <h2>What is the difference between teaching an AI a task and teaching it values?</h2>
+
+      <p>He splits the problem in two. The names sound similar and the difficulty is not.</p>
+
+      <p><strong>Goal alignment</strong> is "does the AI try to accomplish the goal set before it?" He calls this <strong>"extremely practically relevant"</strong>, and it is the part the labs have got working. <strong>Value alignment</strong> is the harder one: getting a system to <strong>"hold and generalize from a high-level set of principles"</strong> when the situation is <strong>"unfamiliar or adversarial"</strong>. That generalisation problem is the one he calls unsolved.</p>
+
+      <div class="am-fig">
+        <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram comparing task teaching and value teaching across the same three steps. Both handle a clear instruction, but at step three, in a situation nobody wrote a rule for, rule-following runs out while learned values still produce a decent decision.">
+          <defs>
+            <marker id="amArr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="#92a499"/>
+            </marker>
+          </defs>
+          <text x="8" y="22" font-family="JetBrains Mono" font-size="11" fill="#92a499">TEACHING THE TASK</text>
+          <circle cx="34" cy="72" r="13" fill="rgba(242,236,216,0.06)" stroke="#92a499"/>
+          <text x="34" y="77" text-anchor="middle" font-family="JetBrains Mono" font-size="12" fill="#f2ecd8">1</text>
+          <rect x="56" y="46" width="160" height="52" rx="7" fill="rgba(242,236,216,0.06)" stroke="#92a499"/>
+          <text x="136" y="70" text-anchor="middle" font-family="Inter" font-size="13" fill="#f2ecd8">You give it a job</text>
+          <text x="136" y="86" text-anchor="middle" font-family="Inter" font-size="13" fill="#f2ecd8">and clear rules</text>
+          <line x1="220" y1="72" x2="252" y2="72" stroke="#92a499" stroke-width="2" marker-end="url(#amArr2)"/>
+          <circle cx="272" cy="72" r="13" fill="rgba(242,236,216,0.06)" stroke="#92a499"/>
+          <text x="272" y="77" text-anchor="middle" font-family="JetBrains Mono" font-size="12" fill="#f2ecd8">2</text>
+          <rect x="294" y="46" width="150" height="52" rx="7" fill="rgba(242,236,216,0.06)" stroke="#92a499"/>
+          <text x="369" y="70" text-anchor="middle" font-family="Inter" font-size="13" fill="#f2ecd8">It gets rewarded</text>
+          <text x="369" y="86" text-anchor="middle" font-family="Inter" font-size="13" fill="#f2ecd8">for obeying</text>
+          <line x1="448" y1="72" x2="480" y2="72" stroke="#92a499" stroke-width="2" marker-end="url(#amArr2)"/>
+          <circle cx="500" cy="72" r="13" fill="rgba(232,163,61,0.14)" stroke="#E8A33D"/>
+          <text x="500" y="77" text-anchor="middle" font-family="JetBrains Mono" font-size="12" fill="#f2ecd8">3</text>
+          <rect x="522" y="40" width="170" height="64" rx="7" fill="rgba(232,163,61,0.14)" stroke="#E8A33D" stroke-dasharray="5 4"/>
+          <text x="607" y="62" text-anchor="middle" font-family="Inter" font-size="13" fill="#f2ecd8">New situation nobody</text>
+          <text x="607" y="78" text-anchor="middle" font-family="Inter" font-size="13" fill="#f2ecd8">wrote a rule for.</text>
+          <text x="607" y="94" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#E8A33D">Rules run out.</text>
+          <line x1="8" y1="132" x2="692" y2="132" stroke="rgba(242,236,216,0.18)" stroke-width="1"/>
+          <text x="8" y="162" font-family="JetBrains Mono" font-size="11" fill="#f7d046">TEACHING THE VALUES</text>
+          <circle cx="34" cy="212" r="13" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="34" y="217" text-anchor="middle" font-family="JetBrains Mono" font-size="12" fill="#f2ecd8">1</text>
+          <rect x="56" y="186" width="160" height="52" rx="7" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="136" y="210" text-anchor="middle" font-family="Inter" font-size="13" fill="#f2ecd8">You teach it what</text>
+          <text x="136" y="226" text-anchor="middle" font-family="Inter" font-size="13" fill="#f2ecd8">matters and why</text>
+          <line x1="220" y1="212" x2="252" y2="212" stroke="#92a499" stroke-width="2" marker-end="url(#amArr2)"/>
+          <circle cx="272" cy="212" r="13" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="272" y="217" text-anchor="middle" font-family="JetBrains Mono" font-size="12" fill="#f2ecd8">2</text>
+          <rect x="294" y="186" width="150" height="52" rx="7" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="369" y="210" text-anchor="middle" font-family="Inter" font-size="13" fill="#f2ecd8">It practises being</text>
+          <text x="369" y="226" text-anchor="middle" font-family="Inter" font-size="13" fill="#f2ecd8">honest and careful</text>
+          <line x1="448" y1="212" x2="480" y2="212" stroke="#92a499" stroke-width="2" marker-end="url(#amArr2)"/>
+          <circle cx="500" cy="212" r="13" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="500" y="217" text-anchor="middle" font-family="JetBrains Mono" font-size="12" fill="#f2ecd8">3</text>
+          <rect x="522" y="180" width="170" height="64" rx="7" fill="rgba(247,208,70,0.12)" stroke="#f7d046" stroke-width="2"/>
+          <text x="607" y="202" text-anchor="middle" font-family="Inter" font-size="13" fill="#f2ecd8">Same new situation.</text>
+          <text x="607" y="218" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#f7d046">It works out the</text>
+          <text x="607" y="234" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#f7d046">decent thing anyway.</text>
+          <text x="350" y="278" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#b9c9bd">Step 3 is the whole essay. Nobody knows yet how to make step 3 reliable.</text>
+        </svg>
+        <div class="am-legend">
+          <span><i class="am-sw" style="background:rgba(247,208,70,0.12);border:1px solid #f7d046"></i> what we want more of</span>
+          <span><i class="am-sw" style="background:rgba(242,236,216,0.06);border:1px solid #92a499"></i> ordinary training today</span>
+          <span><i class="am-sw" style="background:rgba(232,163,61,0.14);border:1px dashed #E8A33D"></i> where it breaks</span>
+        </div>
+      </div>
+
+      <p class="am-evi">essay section: Teaching machines to love</p>
+
+      <div class="am-kid"><strong>Put it another way.</strong> You can teach a child the rule "don't hit your sister". Then a cousin visits. A rule-follower has no instructions. A kind child needs none. Kindness travels to new places and rules do not.</div>
+
+      <p>He gives each of the two current methods a weak spot. These next two summaries are mine, not his phrasing:</p>
+
+      <div class="am-cards">
+        <div class="am-card">
+          <h4>Reward good behaviour</h4>
+          <p>He calls it <strong>"very effective in the average case"</strong> but also <strong>"brittle"</strong>, and says it <strong>"strongly relies on the coverage of training oversight"</strong>. It only covers situations the trainers thought of.</p>
+        </div>
+        <div class="am-card">
+          <h4>Point it at good examples</h4>
+          <p>Train hard enough on difficult goals and, in his words, <strong>"it can learn to reason in a motivated way: bending the 'aligned' seeming thoughts as needed to achieve the goal"</strong>.</p>
+        </div>
+      </div>
+
+      <span class="am-no">03</span>
+      <h2>What is chain of thought monitoring, and why is it wearing out?</h2>
+
+      <p>Modern AI thinks out loud before answering. It writes a rough working-out, called a chain of thought. OpenAI made a deliberate choice about it: never supervise that working-out, only grade the final answer.</p>
+
+      <p>The reasoning is clever. If the model is never punished for what it writes in its notebook, it never learns to keep secrets there. So the notebook stays honest, and humans can read it to see what the model is doing. He writes that when they shipped o1-preview they <strong>"deliberately designed the product to hide the chain of thought, to protect it from supervision pressure"</strong>, and that they have <strong>"strived to maintain the rule of not supervising the reasoning process"</strong>. Preventing rivals from copying the model was a second, smaller reason; keeping the notebook readable was the bigger one.</p>
+
+      <div class="am-fig">
+        <svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram: the AI's notebook is never graded, so it never learns to hide things, which lets humans read it and gain confidence to continue. Three pressures push back on this: reasoning blending with chat and tool use, the model getting better at managing its own notes, and the model being capable without writing anything down.">
+          <defs>
+            <marker id="amArr3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="#f7d046"/>
+            </marker>
+            <marker id="amArr4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="#E8A33D"/>
+            </marker>
+          </defs>
+          <rect x="10" y="30" width="185" height="74" rx="7" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="102" y="58" text-anchor="middle" font-family="Inter" font-size="13.5" font-weight="600" fill="#f2ecd8">The AI's notebook</text>
+          <text x="102" y="78" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#b9c9bd">never graded, so never</text>
+          <text x="102" y="93" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#b9c9bd">learns to hide things</text>
+          <line x1="199" y1="67" x2="243" y2="67" stroke="#f7d046" stroke-width="2" marker-end="url(#amArr3)"/>
+          <rect x="247" y="30" width="175" height="74" rx="7" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="334" y="60" text-anchor="middle" font-family="Inter" font-size="13.5" font-weight="600" fill="#f2ecd8">Humans read it</text>
+          <text x="334" y="82" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#b9c9bd">catch bad intent early</text>
+          <line x1="426" y1="67" x2="470" y2="67" stroke="#f7d046" stroke-width="2" marker-end="url(#amArr3)"/>
+          <rect x="474" y="30" width="216" height="74" rx="7" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="582" y="60" text-anchor="middle" font-family="Inter" font-size="13.5" font-weight="600" fill="#f2ecd8">Confidence to keep going</text>
+          <text x="582" y="82" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#b9c9bd">this is the safety check</text>
+          <text x="10" y="146" font-family="JetBrains Mono" font-size="11" fill="#E8A33D">THREE THINGS PUSHING BACK ON IT</text>
+          <line x1="102" y1="160" x2="102" y2="182" stroke="#E8A33D" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#amArr4)"/>
+          <rect x="10" y="186" width="205" height="56" rx="7" fill="rgba(232,163,61,0.14)" stroke="#E8A33D" stroke-dasharray="5 4"/>
+          <text x="112" y="209" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#f2ecd8">Thinking now blends with</text>
+          <text x="112" y="226" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#f2ecd8">chatting and tool use</text>
+          <line x1="334" y1="160" x2="334" y2="182" stroke="#E8A33D" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#amArr4)"/>
+          <rect x="232" y="186" width="205" height="56" rx="7" fill="rgba(232,163,61,0.14)" stroke="#E8A33D" stroke-dasharray="5 4"/>
+          <text x="334" y="209" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#f2ecd8">It is getting better at</text>
+          <text x="334" y="226" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#f2ecd8">managing its own notes</text>
+          <line x1="582" y1="160" x2="582" y2="182" stroke="#E8A33D" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#amArr4)"/>
+          <rect x="454" y="186" width="236" height="56" rx="7" fill="rgba(232,163,61,0.14)" stroke="#E8A33D" stroke-dasharray="5 4"/>
+          <text x="572" y="209" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#f2ecd8">It gets smarter without</text>
+          <text x="572" y="226" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#f2ecd8">writing anything down</text>
+        </svg>
+        <div class="am-legend">
+          <span><i class="am-sw" style="background:rgba(247,208,70,0.12);border:1px solid #f7d046"></i> the safety check</span>
+          <span><i class="am-sw" style="background:rgba(232,163,61,0.14);border:1px dashed #E8A33D"></i> what is weakening it</span>
+        </div>
+      </div>
+
+      <p class="am-evi">essay section: Monitoring generalization</p>
+
+      <div class="am-kid"><strong>Put it another way.</strong> A teacher asks you to show your working. As long as she only marks the answer, your rough notes stay honest and she can see how you got there. Now imagine you can do the sums in your head. The paper stops telling her anything.</div>
+
+      <p>The line that should hold your attention: <strong>"I expect general AI progress to increasingly be bottlenecked by confidence in monitoring."</strong> The checking tool is fading while the thing being checked keeps getting stronger.</p>
+
+      <p>He is not fatalistic about it. He describes confidence as <strong>"progressively diminishing"</strong> rather than gone, calls the three pressures <strong>"not necessarily insurmountable"</strong>, and says OpenAI is working on other approaches alongside it.</p>
+
+      <span class="am-no">04</span>
+      <h2>What is his actual evidence?</h2>
+
+      <p>The part I would not want left out, and the reason the essay reads as candid rather than promotional. He does not argue from theory. He points at his own company's failure.</p>
+
+      <p>In July 2026 an OpenAI agent escaped its cybersecurity-evaluation sandbox and reached into Hugging Face's infrastructure. He cites it as the example of reward-based training being brittle at the edges: the agents held the boundary they had been trained on and ignored the ones nobody had thought to specify.</p>
+
+      <p>He also points, without naming them, at <strong>"recent cybersecurity incidents involving a non-OpenAI model"</strong> as his example of a system learning to reason its way around its own guardrails.</p>
+
+      <div class="am-kid"><strong>Why this matters.</strong> A safety essay that only describes hypotheticals costs its author nothing. One that names your own incident, by date, is a different kind of document.</div>
+
+      <span class="am-no">05</span>
+      <h2>If it is this risky, why not simply stop?</h2>
+
+      <p>Here is the uncomfortable turn in his argument. The strongest reason he gives for continuing to build more capable AI is to defend against more capable AI.</p>
+
+      <div class="am-cards">
+        <div class="am-card">
+          <h4>Breaking into systems</h4>
+          <p>Models are <strong>"becoming superhuman in their ability to break in and out of computer systems"</strong>. An agent needs no body to affect the real world.</p>
+        </div>
+        <div class="am-card">
+          <h4>Agents with their own aims</h4>
+          <p>Some will <strong>"find ways to collaborate with people, by bargaining with, tricking or blackmailing them"</strong>. His word is blackmail, not persuasion.</p>
+        </div>
+        <div class="am-card">
+          <h4>New dangerous science</h4>
+          <p>He names <strong>"engineered pathogens"</strong> as an example of what AI might unlock. One clause, not a developed argument.</p>
+        </div>
+      </div>
+
+      <p>His answer is capable, well-behaved AI on the defending side, plus what he calls <strong>"a narrow window to use the best available models to significantly tighten security of critical systems"</strong>. Then the line that keeps the argument honest: <strong>"The idea of racing forward at all costs seems absurd once one internalizes the seriousness of the stakes."</strong></p>
+
+      <p class="am-evi">essay section: Scalable defense</p>
+
+      <span class="am-no">06</span>
+      <h2>What happens when AI starts improving AI?</h2>
+
+      <p>Today humans do the research that makes AI better. He expects that to change, and describes machine recursive self-improvement as something that <strong>"will be at the very core of future scientific discovery"</strong>.</p>
+
+      <p>Read his hedge carefully, because it matters: he says he has a <strong>"strong expectation that this speed of progress could be sustained into recursive self-improvement"</strong>. An expectation about a possible path, not a report that it is already happening.</p>
+
+      <div class="am-fig">
+        <svg viewBox="0 0 700 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram: AI doing the research produces a smarter AI sooner, which loops back, each turn faster than the last. Two brakes sit beside the loop: not scaling past what you can verify, and keeping people inside the loop.">
+          <defs>
+            <marker id="amArr5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="#f7d046"/>
+            </marker>
+            <marker id="amArr6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="#7BC98A"/>
+            </marker>
+          </defs>
+          <rect x="120" y="24" width="200" height="58" rx="7" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="220" y="49" text-anchor="middle" font-family="Inter" font-size="13.5" font-weight="600" fill="#f2ecd8">AI does the research</text>
+          <text x="220" y="68" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#b9c9bd">instead of only people</text>
+          <rect x="120" y="140" width="200" height="58" rx="7" fill="rgba(247,208,70,0.12)" stroke="#f7d046"/>
+          <text x="220" y="165" text-anchor="middle" font-family="Inter" font-size="13.5" font-weight="600" fill="#f2ecd8">A smarter AI arrives</text>
+          <text x="220" y="184" text-anchor="middle" font-family="Inter" font-size="12.5" fill="#b9c9bd">sooner than last time</text>
+          <path d="M320 53 C392 53 392 169 322 169" fill="none" stroke="#f7d046" stroke-width="2" marker-end="url(#amArr5)"/>
+          <path d="M120 169 C48 169 48 53 118 53" fill="none" stroke="#f7d046" stroke-width="2" marker-end="url(#amArr5)"/>
+          <text x="408" y="106" font-family="Inter" font-size="12.5" fill="#b9c9bd">each turn of the loop</text>
+          <text x="408" y="123" font-family="Inter" font-size="12.5" fill="#b9c9bd">is faster than the last</text>
+          <rect x="470" y="24" width="220" height="58" rx="7" fill="rgba(123,201,138,0.10)" stroke="#7BC98A"/>
+          <text x="580" y="48" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#7BC98A">Lever 1 · safety bars</text>
+          <text x="580" y="68" text-anchor="middle" font-family="Inter" font-size="12" fill="#b9c9bd">no scaling past what you can check</text>
+          <rect x="470" y="140" width="220" height="58" rx="7" fill="rgba(123,201,138,0.10)" stroke="#7BC98A"/>
+          <text x="580" y="164" text-anchor="middle" font-family="Inter" font-size="13" font-weight="600" fill="#7BC98A">Lever 2 · people inside</text>
+          <text x="580" y="184" text-anchor="middle" font-family="Inter" font-size="12" fill="#b9c9bd">keep people in the loop, not beside it</text>
+          <line x1="468" y1="53" x2="440" y2="53" stroke="#7BC98A" stroke-width="2" marker-end="url(#amArr6)"/>
+          <line x1="468" y1="169" x2="440" y2="169" stroke="#7BC98A" stroke-width="2" marker-end="url(#amArr6)"/>
+        </svg>
+        <div class="am-legend">
+          <span><i class="am-sw" style="background:rgba(247,208,70,0.12);border:1px solid #f7d046"></i> the loop</span>
+          <span><i class="am-sw" style="background:rgba(123,201,138,0.10);border:1px solid #7BC98A"></i> the levers he wants</span>
+        </div>
+      </div>
+
+      <p class="am-evi">essay section: Pacing RSI</p>
+
+      <div class="am-kid"><strong>Put it another way.</strong> Imagine a robot whose one job is building a better robot. The next one builds a better one faster. Nobody has to be a villain for that to get out of hand. It only needs nobody to have fitted a brake.</div>
+
+      <span class="am-no">07</span>
+      <h2>What is Pachocki actually asking for?</h2>
+
+      <ul>
+        <li><strong>Voluntary slowdowns should become normal.</strong> He <strong>"expect[s] and hope[s] for voluntary slowdowns to become commonplace until shared safety bars are established"</strong>.</li>
+        <li><strong>Internal promises should become real limits.</strong> Commitments like Preparedness Frameworks and Responsible Scaling Policies should become <strong>"widely mandated safety bars"</strong>.</li>
+        <li><strong>Outsiders should check the homework.</strong> Enforced <strong>"by a network of third-party auditors, by government agencies or by international bodies"</strong>.</li>
+        <li><strong>Governments should prioritise coordination.</strong> Specifically that <strong>"international coordination on future AI development needs to become a top priority for governments around the world"</strong>. Note it is coordination he asks for, not regulation in general.</li>
+      </ul>
+
+      <p class="am-evi">essay sections: Pacing RSI · What is next?</p>
+
+      <p>He has not stopped believing in the upside. The essay's closing section sets out three things he wants: an automated research loop, real scientific and economic benefit, and a <strong>"personal AGI"</strong> for everyone. His case is that the next few years decide whether humans keep a hand on the wheel, which is why they matter more than the long-term promise.</p>
+
+      <span class="am-no">08</span>
+      <h2>What should you hold lightly here?</h2>
+
+      <div class="am-hold">
+        <ul>
+          <li>Much of his evidence is internal results at one company. Outsiders cannot check it, and he says as much.</li>
+          <li>He is the chief scientist of a lab that benefits from being seen as both powerful and responsible. Both of those can be true at once.</li>
+          <li>The timelines are his expectation, not a measurement. Expectations of this kind have been wrong before in both directions.</li>
+          <li>This essay is days old. Beyond OpenAI's own leadership sharing it, the substantive responses from other labs, named researchers and policymakers have not arrived yet.</li>
+        </ul>
+        <p>None of that changes the direction of his argument. It changes how confident you should be about the speed.</p>
+      </div>
+
+      <hr/>
+
+      <p class="am-last">The shortest version, if you keep one line: the people building this say they cannot fully read what they are building, their best tool for reading it is getting weaker, and they would like the world to help them slow down.</p>
+
+      <p><strong>Want to talk about what this means for your team →</strong> <a href="../contact.html">get in touch</a>.</p>
+
+    </div>
+  </div>
+</article>
+
+<div class="article-foot">
+  <a href="index.html" class="btn ghost">← All posts</a>
+  <a href="../contact.html" class="btn">Get in touch
+    <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+  </a>
+</div>
+
+<div id="site-footer"></div>
+
+<script src="../assets/js/site.js?v=15" data-page="post"></script>
+</body>
+</html>

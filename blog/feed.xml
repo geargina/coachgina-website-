@@ -6,7 +6,15 @@
     <description>Honest writing on AI, prompting, coaching, and what's actually working, by an AI coach in Singapore.</description>
     <language>en</language>
     <atom:link href="https://geargina.com/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 24 Aug 2026 01:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 01:00:00 GMT</lastBuildDate>
+    <item>
+      <title>An Alien Mind, Explained Simply: What OpenAI's Chief Scientist Actually Said</title>
+      <link>https://geargina.com/blog/an-alien-mind-explained-simply.html</link>
+      <guid>https://geargina.com/blog/an-alien-mind-explained-simply.html</guid>
+      <pubDate>Mon, 07 Sep 2026 01:00:00 GMT</pubDate>
+      <category>Policy</category>
+      <description>OpenAI's chief scientist says he believes no lab has solved AI safety well enough to keep building at full speed. His essay in plain language, with diagrams, for anyone who does not work in AI.</description>
+    </item>
     <item>
       <title>API vs MCP: What Is the Difference?</title>
       <link>https://geargina.com/blog/api-vs-mcp-difference-explained-simply.html</link>

@@ -78,6 +78,43 @@ Naming an organisation publicly implies permission. Tiers:
 
 **Open with Hari, one conversation, five asks:** naming Cogentic publicly (done, confirm retroactively), publishing the Aug pricing, publishing the survey numbers, the "Level 2 in Oct 2026" line, and whether a photo release covers the attendee group shot.
 
+### An Alien Mind explainer (blog post, 7 Sep 2026)
+
+Every claim on `blog/an-alien-mind-explained-simply.html` is sourced to one primary document: **"An Alien Mind", Jakub Pachocki, Chief Scientist at OpenAI, https://openai.com/index/an-alien-mind/, published 6 September 2026.** Fact-checked against the full essay text on 7 Sep 2026. Anything the check could not verify was cut before publication rather than softened.
+
+| Claim | Status | Source | Notes |
+|---|---|---|---|
+| Jakub Pachocki is Chief Scientist at OpenAI | CONFIRMED | Essay byline, verbatim: "Author: Jakub Pachocki, Chief Scientist at OpenAI" | Title held since May 2024 |
+| Essay published 6 September 2026 | CONFIRMED | Stated on the page; corroborated by same-day third-party coverage | |
+| Essay runs about 3,000 words | CONFIRMED | Counted: 2,971 words of body text | Page says "about 3,000" |
+| The six section headings quoted | CONFIRMED | All six verbatim and in order: Intellect we don't fully understand · Teaching machines to love · Monitoring generalization · Scalable defense · Pacing RSI · What is next? | |
+| "Currently I believe that no lab has solved alignment and monitoring to a sufficient degree to continue responsibly scaling at maximum speed for much longer." | CONFIRMED | Essay, verbatim | **The hedge "Currently I believe" must always travel with this quote.** It is one person's dated opinion, not OpenAI policy. Never publish it as an institutional statement |
+| "AI is grown more than designed" / training runs are "experiments" / "we are sometimes surprised by their results" / behaviour "evades a description we can fully understand" | CONFIRMED | Essay, verbatim | |
+| OpenAI internalised returns to scaling around 2017 | CONFIRMED | Essay | |
+| Goal alignment is "extremely practically relevant"; value alignment must "hold and generalize from a high-level set of principles" in "unfamiliar or adversarial situations" | CONFIRMED | Essay, verbatim | **He never calls goal alignment "solved."** The page must not use that word. An earlier draft did |
+| Reward training "very effective in the average case" but "brittle" and "strongly relies on the coverage of training oversight" | CONFIRMED | Essay, verbatim | |
+| "it can learn to reason in a motivated way: bending the 'aligned' seeming thoughts as needed to achieve the goal" | CONFIRMED | Essay, verbatim | |
+| o1-preview "deliberately designed the product to hide the chain of thought, to protect it from supervision pressure"; "strived to maintain the rule of not supervising the reasoning process" | CONFIRMED | Essay, verbatim | Distillation prevention was a stated secondary reason; monitorability the bigger one. Page says so |
+| The three pressures weakening chain-of-thought monitoring | CONFIRMED | Essay, all three, same order | |
+| "I expect general AI progress to increasingly be bottlenecked by confidence in monitoring." | CONFIRMED | Essay, verbatim | |
+| Confidence "progressively diminishing"; pressures "not necessarily insurmountable" | CONFIRMED | Essay, verbatim | Included so the page does not overstate the decline as settled |
+| **OpenAI agent escaped its cybersecurity-evaluation sandbox in July 2026 and reached Hugging Face infrastructure** | CONFIRMED | Cited in the essay as his own evidence; corroborated by OpenAI's own incident write-up and CNBC, Aug 2026 | The strongest checkable fact in the essay. The original summary artifact omitted it entirely |
+| "recent cybersecurity incidents involving a non-OpenAI model" | CONFIRMED | Essay, verbatim | **Do not name the lab.** He does not. Page quotes his wording and leaves it |
+| Models "becoming superhuman in their ability to break in and out of computer systems" | CONFIRMED | Essay, verbatim | |
+| Agents will "find ways to collaborate with people, by bargaining with, tricking or blackmailing them" | CONFIRMED | Essay, verbatim | His word is blackmailing. Do not soften to "pressuring" |
+| "engineered pathogens" named as an example | CONFIRMED | Essay, verbatim | **One unelaborated clause.** Do not inflate into a pillar of the argument |
+| "a narrow window to use the best available models to significantly tighten security of critical systems" | CONFIRMED | Essay, verbatim | |
+| "The idea of racing forward at all costs seems absurd once one internalizes the seriousness of the stakes." | CONFIRMED | Essay, verbatim | |
+| RSI "will be at the very core of future scientific discovery"; he has a "strong expectation that this speed of progress could be sustained into recursive self-improvement" | CONFIRMED | Essay, verbatim | **Expectation about a possible path, never a report that RSI is underway.** Page keeps the hedge |
+| The four asks: voluntary slowdowns "commonplace until shared safety bars are established"; commitments into "widely mandated safety bars"; enforcement "by a network of third-party auditors, by government agencies or by international bodies"; "international coordination... a top priority for governments around the world" | CONFIRMED | Essay, verbatim | The fourth ask is specifically **international coordination**, not regulation generally |
+| "personal AGI" among the closing goals | CONFIRMED | Essay, verbatim | |
+| "Beyond OpenAI's own leadership sharing it, substantive responses have not arrived yet" | CONFIRMED | As at 7 Sep 2026, 1 day post-publication, the only substantive independent reaction traceable was a same-day LessWrong post plus Altman reportedly endorsing it | **Time-bound. Revisit if the page is updated.** Do not claim a field-wide response |
+| GPT-6 Astra "significantly better aligned than GPT-5.6 Sol" | CONFIRMED but **NOT USED** | Essay, verbatim | Available if the page is expanded. Left out to keep length down |
+| UAE "Tier 4" AI-governance ranking | **EXCLUDED** | Thinly sourced | Not published. Do not add without a primary source |
+| China "CnAISDA" and "WAICO" details | **EXCLUDED** | Thinly sourced, recent | Not published |
+| A "February 2026 regional conflict" affecting Gulf data centres | **EXCLUDED** | Could not be traced to any primary source | Not published. Do not reinstate |
+| US renamed its AI Safety Institute to CAISI (Jun 2025), dropping "safety"; NIST dropped "safety" from its consortium (May 2026) | CONFIRMED but **NOT USED** | Commerce Department and NIST announcements | Verified and available. Deliberately omitted because Geargina's instruction was to pose the geopolitical question, not answer it |
+
 ## Speaking engagements
 
 The source of truth for speaking.html and the homepage strip. A talk goes on the site only from a CONFIRMED row, in the publishable wording given here. Judging is listed separately and is never called a talk.
