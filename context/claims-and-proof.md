@@ -160,7 +160,7 @@ Bio, publishable form:
 |---|---|---|
 | `assets/photos/masterclass-n1.jpg` | PUBLISHED (speaking.html photo grid since 6 Sep 2026) | Attendees shot from behind and in profile. No individual identifiable. |
 | `assets/photos/masterclass-n2.jpg` | PUBLISHED | Same. |
-| `assets/photos/friday-demo.jpg` | PUBLISHED, cropped | Original showed a laptop with a legible travel itinerary naming 6 cities. Cropped to the top 56% to remove it. Verified at 3x zoom that remaining dashboard text is illegible. A public follower count is visible. |
+| `assets/photos/friday-demo.jpg` | PUBLISHED, cropped. Occasion recorded 9 Sep 2026: Claude Masterclass 101, night one, 20 Aug 2026 (source WhatsApp Image 2026-08-20 at 20.04.58 from Hari's group). Captions may name the masterclass and month. | Original showed a laptop with a legible travel itinerary naming 6 cities. Cropped to the top 56% to remove it. Verified at 3x zoom that remaining dashboard text is illegible. A public follower count is visible. |
 | `assets/photos/speaking-hall.jpg` | PUBLISHED | No audience in frame. Her, the lectern, her own intro slide. |
 | `assets/photos/bnf-retreat.jpg` | PUBLISHED (homepage Team Workshops card since 23 Aug 2026; hub and BNF case study from 9 Sep 2026) | BNF Group strategy retreat, 30 Mar 2026, Ritz-Carlton Singapore. Cleared with the client name by Geargina 23 Aug 2026 (see Named third parties, BNF Group). Presenter on stage, attendees from behind. 1600x1202, meets the Article image width rule. |
 | `assets/photos/bnf-retreat-room.jpg` | PUBLISHED | Boss-supplied screenshot 6 Sep 2026 of the BNF Group retreat room, 30 Mar 2026. Attendees from behind. Screenshot resolution (about 800px). |
