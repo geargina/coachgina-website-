@@ -6,7 +6,7 @@ Every public number, price, offer specification, testimonial and named third par
 
 Why this file exists: the site published 3 invented testimonials, a fabricated "5.0 average" rating, and the statistics "20+ Workshops delivered" and "150+ Humans coached 1:1" under a heading reading "Receipts". The earliest design mockup shows that block shipped as `0+ / 0+ / $0mil / 0%` placeholders, so those numbers were never data. They were template slots filled with plausible-sounding values, and they stayed live for roughly 4 months.
 
-Last reviewed: 6 Sep 2026
+Last reviewed: 9 Sep 2026
 
 ---
 
@@ -39,7 +39,7 @@ A price is a claim. This is the only file that states one.
 | Offer | Price | Status | Notes |
 |---|---|---|---|
 | Claude Masterclass 101 | S$399 standard, S$349 early bird, S$299 community partner | CONFIRMED as charged | Hari's pricing email, 9 Jul 2026. **Publishing these figures is NOT cleared.** Hari set them and owned pricing contractually. Site currently says "Per-seat pricing, set with the host partner". |
-| Team Workshops | Not stated | CONFIRMED approach | Was "From S$3,500 per team". No sale validated that floor, so it is now "Scoped per team". |
+| Team Workshops | Not stated | CONFIRMED approach | Was "From S$3,500 per team". No sale validated that floor, so it is now "Scoped per team". **9 Sep 2026:** Boss allows ranges only, no figures, and has not yet supplied a range. Until she does, the hub and the cost FAQ answer with the drivers (audience size, format length, prep on your own documents, in person or online) and "scoped per team". |
 | 1:1 Coaching | From S$1,200 for 4 sessions | UNCONFIRMED as sold | Fine to offer at a price. No completed engagement on record, so no track record may be implied. |
 | Partner revenue share | 60/40 on the Aug 2026 run | CONFIRMED | **Never publish partner economics.** The site describes the model without numbers. |
 | Level 2, Claude Code and the Second Brain | Not stated | CONFIRMED as planned | Oct 2026 target, date and price still open. Published as "planned", which is accurate. |
@@ -160,8 +160,9 @@ Bio, publishable form:
 |---|---|---|
 | `assets/photos/masterclass-n1.jpg` | PUBLISHED (speaking.html photo grid since 6 Sep 2026) | Attendees shot from behind and in profile. No individual identifiable. |
 | `assets/photos/masterclass-n2.jpg` | PUBLISHED | Same. |
-| `assets/photos/friday-demo.jpg` | PUBLISHED, cropped | Original showed a laptop with a legible travel itinerary naming 6 cities. Cropped to the top 56% to remove it. Verified at 3x zoom that remaining dashboard text is illegible. A public follower count is visible. |
+| `assets/photos/friday-demo.jpg` | PUBLISHED, cropped. Occasion recorded 9 Sep 2026: Claude Masterclass 101, night one, 20 Aug 2026 (source WhatsApp Image 2026-08-20 at 20.04.58 from Hari's group). Captions may name the masterclass and month. | Original showed a laptop with a legible travel itinerary naming 6 cities. Cropped to the top 56% to remove it. Verified at 3x zoom that remaining dashboard text is illegible. A public follower count is visible. |
 | `assets/photos/speaking-hall.jpg` | PUBLISHED | No audience in frame. Her, the lectern, her own intro slide. |
+| `assets/photos/bnf-retreat.jpg` | PUBLISHED (homepage Team Workshops card since 23 Aug 2026; hub and BNF case study from 9 Sep 2026) | BNF Group strategy retreat, 30 Mar 2026, Ritz-Carlton Singapore. Cleared with the client name by Geargina 23 Aug 2026 (see Named third parties, BNF Group). Presenter on stage, attendees from behind. 1600x1202, meets the Article image width rule. |
 | `assets/photos/bnf-retreat-room.jpg` | PUBLISHED | Boss-supplied screenshot 6 Sep 2026 of the BNF Group retreat room, 30 Mar 2026. Attendees from behind. Screenshot resolution (about 800px). |
 | `assets/photos/ai-power-users-meetup.jpg` | PUBLISHED | Boss-supplied screenshot 6 Sep 2026: group selfie at the first AI Power Users Meetup, 22 May 2026. About 30 identifiable attendees at a public community meetup; Boss chose to publish. Remove any face on request. |
 | `assets/photos/podium-insight-hour-1.jpg`, `-2.jpg` | PUBLISHED | Boss-supplied composite 6 Sep 2026, split in two: her at the screen, and the attendee selfie. Podium Insight Hour, 18 Jun 2026. Identifiable attendees; Boss chose to publish. |
@@ -171,6 +172,7 @@ Bio, publishable form:
 | CJC lecture theatre photo | **PUBLISHED** as `assets/photos/cjc-talk.jpg` | Geargina confirms 23 Aug 2026 these are from her time at CJC and cleared them ("good to go"). Students in uniform are visible in the wide shot. If CJC has a media policy or anyone objects, remove on request. The second, cluttered AV-desk frame remains unpublished on quality grounds. **Reclassified 4 Sep 2026:** the occasion was the Bizcomp 2026 judging panel (15 May 2026), not a talk. The filename stays; every caption and alt text must say judging. |
 | BNF Group conference room | Not in repo | Sent inline, no file on disk. Request as a file if wanted. |
 | `assets/video/masterclass-trailer-oct-2026.mp4` (plus poster jpg) | **PUBLISHED** 4 Sep 2026, homepage `#trailer` section, labelled "// AI generated visual" (rule 4). **Expiry: remove or re-cut after 1 Oct 2026.** | HeyGen render, 1 Sep 2026, of the 9:16 Instagram promo for the Cogentic Claude Masterclass October cohort: AI avatar of Geargina with voice clone, real workshop photo cutaways, captions burned in, end card cogentic-ai.com/claude-masterclass. Script: vault `cogentic-masterclass/heygen-ig-promo-script.md`. Spoken claims and their rows: 21 professionals in August (Statistics); confidence "up a full point" (Statistics, 2.5 to 3.7; the 31 Aug cut note also carries 2.7 to 3.7 and 2.1 to 3.2, every pair at least 1.0); two testimonials, Viju and the anonymous survey respondent, both cleared in Testimonials; "First of October, Singapore" (Hari's 29 Aug email, 1 Oct 2026 is a Thursday). **"Email check from forty-five minutes to ten" has NO row.** It stays inside the video and must not be repeated in any HTML, caption, transcript or alt text. No pricing is spoken (Hari owns pricing). |
+| `claude-workshop-singapore.html` cohort references | PUBLISHED from 9 Sep 2026 | The page names the 1 Oct 2026 cohort and links cogentic-ai.com/claude-masterclass. **Expiry: after 1 Oct 2026** rewrite the cohort paragraph to "next cohort to be announced" (or the next date Hari confirms) and drop the trailer section on that page together with the homepage `#trailer`. |
 
 ## Biography
 
@@ -180,3 +182,6 @@ Bio, publishable form:
 | Came to AI with no technical background | CONFIRMED | Her own framing, and the spine of the Promise. |
 | Universal Studios Singapore, Jewel Changi Airport, Amazon, FinTech | CONFIRMED | Geargina confirmed 23 Aug 2026: "yes this hold true". |
 | API vs MCP post reach | CONFIRMED | 43,812 impressions per the Notion Performance DB, 44,790 per her own LinkedIn audit. Cite "over 43,000" as the safe lower bound. |
+| **Entity sentence** (third person): "Geargina Tan is a Singapore-based AI workshop facilitator who gets business teams using Claude and ChatGPT for real work. She is co-founder and COO of WTFox.ai and writes as Coach Gina." | CONFIRMED | Boss decision 6 Sep 2026 (hybrid positioning). Each clause is covered: Singapore-based (Biography), co-founder and COO (row above), writes as Coach Gina (site-wide), "gets business teams using Claude and ChatGPT for real work" is the Team Workshops offer as already published. Used verbatim in `Person.description` and as the opener on the hub, Claude page and case studies. First-person variant for `#about` and LinkedIn About: "I'm a Singapore-based AI workshop facilitator. I get business teams using Claude and ChatGPT for real work. Co-founder and COO of WTFox.ai, and I write here as Coach Gina." |
+| **One role phrase: "AI workshop facilitator"** | CONFIRMED | 9 Sep 2026. Replaces the mixed "AI trainer" / "AI coach" / "Trainer and Workshop Facilitator" wording in `Person.jobTitle`, the "Who is Coach Gina?" FAQ, LinkedIn headline, Instagram name field and every third-party credit line ("Geargina Tan, AI workshop facilitator, Singapore"). "Coach" survives only in the brand name and the warm H1. |
+| Rooms she has taught, publishable list | CONFIRMED | Only engagements with a row in Speaking engagements. **Do not ship** "monks", "government teams" (no record anywhere in the vault) or "accountants" (PICPA is 24 Oct 2026 and undelivered). Also no seat counts ("3 seats left") for the Oct cohort unless Hari supplies one. |

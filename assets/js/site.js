@@ -11,7 +11,7 @@
   const prefix = inBlog ? "../" : "";
 
   const navLinks = [
-    { href: prefix + "index.html#offerings", label: "Work with me", page: "home" },
+    { href: prefix + "ai-workshops-singapore.html", label: "Workshops", page: "workshops" },
     { href: prefix + "index.html#about",     label: "About",        page: "home" },
     { href: prefix + "speaking.html",        label: "Speaking",     page: "speaking" },
     { href: prefix + "blog/index.html",      label: "Blog",         page: "blog" },
@@ -52,8 +52,10 @@
           <div>
             <h2 class="foot-h">Work</h2>
             <ul>
-              <li><a href="${prefix}index.html#offerings">Workshops</a></li>
+              <li><a href="${prefix}ai-workshops-singapore.html">Workshops</a></li>
+              <li><a href="${prefix}claude-workshop-singapore.html">Claude workshop</a></li>
               <li><a href="${prefix}speaking.html">Speaking</a></li>
+              <li><a href="${prefix}case-studies.html">Case studies</a></li>
               <li><a href="${prefix}index.html#offerings">1:1 Coaching</a></li>
               <li><a href="${prefix}contact.html">Get in touch</a></li>
             </ul>
@@ -71,6 +73,7 @@
             <ul>
               <li><a href="mailto:hello@iamcoachgina.com">hello@iamcoachgina.com</a></li>
               <li><a href="https://www.linkedin.com/in/gearginatan/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/i_am_coachgina/" target="_blank" rel="noopener">Instagram</a></li>
               <li><a href="${prefix}contact.html">Contact form</a></li>
               <li><a href="${prefix}privacy.html">Privacy</a></li>
               <li><a href="${prefix}terms.html">Terms</a></li>
