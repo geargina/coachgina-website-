@@ -9,6 +9,9 @@ Better than most. Every page has a title, meta description, canonical, and full 
 Schema in use:
 - `index.html`: an `@graph` with `Person`, `Organization`, `WebSite` and 4 `Service` blocks, plus a `VideoObject` for the trailer and a 6-question `FAQPage` that mirrors the visible `#faq` section. The homepage FAQ was cut from 10 invisible questions to 6 visible ones on 4 Sep 2026.
 - `speaking.html`: `WebPage` + `BreadcrumbList` + `FAQPage` (5, mirrored)
+- `ai-workshops-singapore.html`, `claude-workshop-singapore.html`: `WebPage` (with `dateModified`) + `BreadcrumbList` + `FAQPage` (4 and 3, mirrored) + `Service` references by `@id`
+- `case-study-*.html`: `Article` + `BreadcrumbList`; `case-studies.html`: `CollectionPage`
+- `links.html`: minimal `WebPage`, indexable, self-canonical
 - `contact.html`: `ContactPage`
 - `blog/index.html`: `Blog`
 - every post: `BlogPosting` + `BreadcrumbList`
@@ -28,6 +31,18 @@ Schema in use:
 **`Service` descriptions must match the visible offer copy exactly**, including price. If the visible card says "scoped per team", the schema does not carry a number.
 
 **No `Event` or `Course` schema for past sessions.** The Aug 2026 masterclass was Cogentic-branded and registration lived on cogentic-ai.com, so Event schema here would describe someone else's page's event after the fact and invite "expired event" flags. Revisit only when Level 2 has a confirmed date **and** a landing page on this domain.
+
+**`@id` contract (9 Sep 2026).** Five reusable nodes are DEFINED once, on the homepage, and only REFERENCED everywhere else: `https://geargina.com/#svc-masterclass`, `https://geargina.com/#svc-team`, `https://geargina.com/#svc-partner`, `https://geargina.com/#svc-coaching`, `https://geargina.com/#video-trailer`. Plus the existing `#gina`, `#org`, `#website`. A reference is `{"@type": "Service", "@id": "https://geargina.com/#svc-team", "name": "Team Workshops"}` (type, id, name only, so the Rich Results Test does not flag a missing field). Never redefine a description or price on a second page; that is how two versions of one offer end up in the index.
+
+**FAQ contract (9 Sep 2026).** The homepage carries 8 questions. `ai-workshops-singapore.html` carries 4, `claude-workshop-singapore.html` 3, `speaking.html` 5. No question text appears on two pages. Every answer is 40 to 80 words and its first sentence is the answer. No self-referential superlative ("best AI workshop facilitator") is ever asked or answered on this domain; "How do I choose an AI workshop facilitator in Singapore?" is answered as an honest checklist.
+
+**Intent pages carry first-hand delivery detail.** A page earns its URL by holding things the homepage cannot: the run sheet, the scoping questions, the survey instrument, a formats table, what went wrong and what changed, screenshots of her own setup. No location swaps, no tool swaps, no rewording of an offer card into a page. Two intent pages exist (`ai-workshops-singapore.html`, `claude-workshop-singapore.html`); a third needs 60 days of Search Console data first.
+
+**Title ownership.** The homepage title is the person ("Geargina Tan | AI Workshop Facilitator, Singapore | Coach Gina"). The hub owns "AI Workshops in Singapore". The Claude page owns "Claude Workshop in Singapore". Two pages never share a head term.
+
+**Case studies** are flat root files (`case-study-*.html`, indexed by `case-studies.html` as a `CollectionPage`) with `Article` schema: `headline`, `image` at least 1200px wide, `datePublished`, `dateModified`, `author` → `#gina`, `publisher` → `#org`, `mainEntityOfPage`, plus `BreadcrumbList`. Never `Review` or `aggregateRating`. Facts only from the register; a client with no cleared quote gets no testimonial block.
+
+**Recency.** After every delivered event: the Speaking page stage moves from upcoming to past, its visible "Last updated" line and sitemap `lastmod` bump, and the hub's "Last updated" bumps when its proof changes. Pages under 3 months old are cited far more often; an edit that changes facts earns the bump, a cosmetic edit does not.
 
 **Do not hand-bump `lastmod` on posts whose content did not change.** Fake freshness churn is a known negative signal.
 
