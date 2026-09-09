@@ -7,7 +7,7 @@ What this site already does, and the rules for keeping it consistent. Procedure 
 Better than most. Every page has a title, meta description, canonical, and full Open Graph plus Twitter tags.
 
 Schema in use:
-- `index.html`: an `@graph` with `Person`, `Organization`, `WebSite` and 4 `Service` blocks, plus a `VideoObject` for the trailer and a 6-question `FAQPage` that mirrors the visible `#faq` section. The homepage FAQ was cut from 10 invisible questions to 6 visible ones on 4 Sep 2026.
+- `index.html`: an `@graph` with `Person`, `Organization`, `WebSite` and 4 `Service` blocks, plus a `VideoObject` for the trailer and an 8-question `FAQPage` that mirrors the visible `#faq` section. The homepage FAQ was cut from 10 invisible questions to 6 visible ones on 4 Sep 2026.
 - `speaking.html`: `WebPage` + `BreadcrumbList` + `FAQPage` (5, mirrored)
 - `ai-workshops-singapore.html`, `claude-workshop-singapore.html`: `WebPage` (with `dateModified`) + `BreadcrumbList` + `FAQPage` (4 and 3, mirrored) + `Service` references by `@id`
 - `case-study-*.html`: `Article` + `BreadcrumbList`; `case-studies.html`: `CollectionPage`

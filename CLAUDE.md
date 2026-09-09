@@ -14,7 +14,11 @@ Static site for Geargina Tan (Coach Gina). Plain HTML, CSS and JS. No build step
 
 | Path | What |
 |---|---|
-| `index.html` | Homepage. Sections in order: nav, hero, ticker, `.hosts`, `#offerings`, `#trailer`, `#ladder`, help grid, `#about`, `#testi`, `#blog`, `#faq`, `#cta`, footer. |
+| `index.html` | Homepage. Sections in order: nav, hero, ticker, `.hosts`, `#offerings`, `#trailer`, `#ladder`, help grid, `#about`, `#testi`, `#blog`, `#faq`, `#cta`, footer. Now carries an 8-question FAQ and the entity sentence ("Geargina Tan is a Singapore-based AI workshop facilitator...") under the H1. |
+| `ai-workshops-singapore.html` | The AI workshops hub. Run sheet, formats table, survey instrument, partners section, 4 FAQs. |
+| `claude-workshop-singapore.html` | Claude workshop page. Ladder, Claude Masterclass 101 section, trailer, Oct cohort link with expiry, 3 FAQs. |
+| `case-studies.html` + `case-study-*.html` | Case studies index plus two flat root files (`case-study-claude-masterclass-101.html`, `case-study-bnf-group-ai-workshop.html`), each carrying Article schema. |
+| `links.html` | Instagram link-in-bio page. Indexable. |
 | `speaking.html` | Topics, upcoming, past stages, bio, FAQ. Every fact must trace to `context/claims-and-proof.md`, "Speaking engagements". |
 | `contact.html` | Enquiry form. Posts to Web3Forms, delivers to `hello@iamcoachgina.com`. |
 | `blog/` | Posts, hand-maintained index, `feed.xml`, and `post-template.html`. |
@@ -30,19 +34,21 @@ Static site for Geargina Tan (Coach Gina). Plain HTML, CSS and JS. No build step
 
 ## Traps that will bite you
 
-1. **`#offerings` and `#testi` ids are load-bearing.** The nav links to `#offerings` and the footer links to `#testi`, both from `site.js`.
+1. **`#testi` is load-bearing, `#offerings` only partly is now.** The footer's 1:1 Coaching link still points at `#offerings` on `index.html`, and the footer's Reviews link still points at `#testi`, both from `site.js`. The nav's primary link no longer points at `#offerings`, it points at the `ai-workshops-singapore.html` hub instead.
 2. **New `contact.html?topic=` values need a matching `<option>`** or the preselect silently no-ops.
 3. **The FAQ JSON-LD is the copy answer engines quote.** Change it in the same commit as the visible copy, never later.
 4. **Blog covers are forced to 16:9 with `object-fit:cover`.** Portrait source art must be composed onto a 16:9 canvas first or it gets cropped through the middle.
 5. **`.article .body` has no `table` styles.** A post needing a table gets a scoped `<style>` in its own head, so one post does not force a cache-bust across every file.
-6. **`#trailer` on the homepage advertises the 1 Oct 2026 cohort and links to cogentic-ai.com.** Remove or re-cut it after that date; the claims register row carries the expiry.
+6. **`#trailer` on the homepage, and the trailer on `claude-workshop-singapore.html`, both advertise the 1 Oct 2026 cohort and link to cogentic-ai.com.** Remove or re-cut both after that date; the claims register row carries the expiry.
 7. **The trailer `<video>` uses `data-trailer-src`.** The IntersectionObserver loader at the bottom of `index.html` auto-downloads and auto-plays every `video[data-src]`. Giving the trailer `data-src` would start a 5.5MB download with sound on scroll.
 8. **FAQ schema must mirror a visible `<details>` block.** Homepage `#faq` and `speaking.html` both do this. Never add a Question to JSON-LD without its visible twin.
 9. **Mobile nav is a real `<button class="nav-toggle">` bound in `site.js` after injection.** If you re-render the nav markup, rebind it or the menu dies silently.
+10. **`@id` contract: the five Service/VideoObject nodes are defined once on `index.html` and only referenced elsewhere.** See `context/seo-conventions.md`.
+11. **Homepage title is the person; the hub owns "AI Workshops in Singapore".** Do not put that phrase back in the homepage title.
 
 ## Cache busting
 
-CSS and JS are versioned by hand with `?v=N`, currently `?v=15`, 32 references across 16 HTML files (including `404.html` and `blog/post-template.html`). Bumping it means editing **every** file. Forgetting one serves stale CSS to returning visitors.
+CSS and JS are versioned by hand with `?v=N`, currently `?v=16`, 46 references across 23 HTML files (including `404.html` and `blog/post-template.html`). Bumping it means editing **every** file. Forgetting one serves stale CSS to returning visitors.
 
 ```
 grep -rhoE 'site\.(css|js)\?v=' --include='*.html' . | wc -l
@@ -63,6 +69,8 @@ A manual 4-file operation with no automation. See `context/seo-conventions.md` f
 ## Speaking page
 
 Adding a stage: add the row to `context/claims-and-proof.md` first, then a `.stage` article in `speaking.html` (newest first), then bump `speaking.html`'s `lastmod` in `sitemap.xml`. Upcoming events move to past stages once delivered. No Event schema until an event has a landing page on this domain.
+
+**Recency rule.** After every delivered event, move the stage from upcoming to past, bump the visible "Last updated" line and the `sitemap.xml` `lastmod` for that page. Bump the hub's (`ai-workshops-singapore.html`) "Last updated" line whenever its proof changes.
 
 ## Rollback
 
