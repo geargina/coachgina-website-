@@ -48,7 +48,7 @@ Static site for Geargina Tan (Coach Gina). Plain HTML, CSS and JS. No build step
 
 ## Cache busting
 
-CSS and JS are versioned by hand with `?v=N`, currently `?v=16`, 46 references across 23 HTML files (including `404.html` and `blog/post-template.html`). Bumping it means editing **every** file. Forgetting one serves stale CSS to returning visitors.
+CSS and JS are versioned by hand with `?v=N`, currently `?v=17`, 46 references across 23 HTML files (including `404.html` and `blog/post-template.html`). Bumping it means editing **every** file. Forgetting one serves stale CSS to returning visitors.
 
 ```
 grep -rhoE 'site\.(css|js)\?v=' --include='*.html' . | wc -l
