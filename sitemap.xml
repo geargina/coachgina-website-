@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://geargina.com/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -15,25 +15,25 @@
   </url>
   <url>
     <loc>https://geargina.com/ai-workshops-singapore.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://geargina.com/claude-workshop-singapore.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://geargina.com/case-studies.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://geargina.com/case-study-claude-masterclass-101.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>

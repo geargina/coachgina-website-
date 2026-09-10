@@ -58,6 +58,7 @@
               <li><a href="${prefix}case-studies.html">Case studies</a></li>
               <li><a href="${prefix}index.html#offerings">1:1 Coaching</a></li>
               <li><a href="${prefix}contact.html">Get in touch</a></li>
+              <li><a href="https://app.wtfox.ai/signup" target="_blank" rel="noopener">WTFox.ai CRM</a></li>
             </ul>
           </div>
           <div>
