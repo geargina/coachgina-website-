@@ -110,6 +110,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/site.css?v=17">
+<style>
+  /* 3 testimonials across on this page only. Scoped rather than inline so the
+     960px stacking rule in site.css still wins on a phone. */
+  @media (min-width: 961px) { .proof-testi { grid-template-columns: repeat(3, 1fr); } }
+</style>
 </head>
 <body>
 
@@ -120,7 +125,7 @@
     <span class="eyebrow">AI workshops, Singapore</span>
     <h1>AI workshops for business teams<br/>in Singapore.</h1>
     <p>I run hands-on AI workshops for business teams in Singapore, on Claude and ChatGPT, built around the work your people already do. Sessions run 2 hrs, 3 hrs or a full day, in person in Singapore or online.</p>
-    <p style="margin-top:18px; color:var(--ink-mute); font-family:var(--f-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase;">Last updated 9 September 2026</p>
+    <p style="margin-top:18px; color:var(--ink-mute); font-family:var(--f-mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase;">Last updated 22 September 2026</p>
   </div>
 </section>
 
@@ -266,85 +271,6 @@
   </div>
 </section>
 
-<!-- ===== Formats ===== -->
-<section class="s" style="padding-top:0;">
-  <div class="wrap">
-    <h2 class="sec">Three formats, side by side</h2>
-    <p class="lede" style="margin:12px 0 28px; max-width:74ch;">Same ladder every time. The format decides how far up we get in one sitting.</p>
-    <div class="table-wrap">
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th scope="col">Format</th>
-            <th scope="col">Length</th>
-            <th scope="col">Best for</th>
-            <th scope="col">What everyone builds</th>
-            <th scope="col">Laptops</th>
-            <th scope="col">Price guidance</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><b>Short session</b></td>
-            <td>2 hrs</td>
-            <td>A department or a community group that needs one shared starting point</td>
-            <td>Chat and context only. A briefed prompt on a real task, and a Project holding their own documents. Skills and agentic work need longer.</td>
-            <td>Yes, one each</td>
-            <td>Scoped per team</td>
-          </tr>
-          <tr>
-            <td><b>Core workshop</b></td>
-            <td>3 hrs</td>
-            <td>A team that wants to leave using AI on Monday, not thinking about it</td>
-            <td>The full ladder. A Project on their own work, their tools connected, a first custom skill, and one task handed over end to end. This is the format that ran in Aug 2026.</td>
-            <td>Yes, one each</td>
-            <td>Scoped per team</td>
-          </tr>
-          <tr>
-            <td><b>Full day</b></td>
-            <td>9:30 to 16:30</td>
-            <td>A small private cohort going deeper, with time to get properly stuck and unstuck</td>
-            <td>The same ladder with longer build blocks, so groups get further and present what they made. Last run on 20 Jun 2026 for a private cohort of 6 to 7.</td>
-            <td>Yes, one each, plus power at seats</td>
-            <td>Scoped per team</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p style="margin-top:18px; color:var(--ink-dim); font-size:15px; line-height:1.6; max-width:74ch;">Cohort cap is 30. Above that the floor helpers cannot reach everyone during a build block, which is where the workshop is actually won.</p>
-  </div>
-</section>
-
-<!-- ===== Measurement ===== -->
-<section class="s" style="padding-top:0;">
-  <div class="wrap">
-    <h2 class="sec">What we measure</h2>
-    <p class="lede" style="margin:12px 0 28px; max-width:74ch;">Same short anonymous survey before the session and again after it, so you get something to look at other than the room nodding.</p>
-
-    <div class="info-card" style="max-width:74ch; padding:28px;">
-      <h3 style="margin:0 0 12px; font-family:var(--f-display); font-weight:700; font-size:18px;">The instrument</h3>
-      <p style="margin:0 0 12px; color:var(--ink-dim); font-size:15px; line-height:1.6;">Three self-rated confidence questions, each on a 1 to 5 scale, asked identically before and after.</p>
-      <ul style="margin:0 0 14px; padding-left:20px; color:var(--ink-dim); font-size:15px; line-height:1.7;">
-        <li>How confident are you setting up a Project?</li>
-        <li>How confident are you writing a custom skill?</li>
-        <li>How confident are you delegating a piece of end-to-end work?</li>
-      </ul>
-      <p style="margin:0; color:var(--ink-dim); font-size:15px; line-height:1.6;">The post survey adds a pacing question and a free-text box. Both surveys are anonymous, which is why the free text is worth reading.</p>
-    </div>
-
-    <p style="margin-top:26px; max-width:74ch; color:var(--ink-dim); font-size:16px; line-height:1.7;">From the Aug 2026 Claude Masterclass, 91% of survey respondents rated the pacing just right. Self-rated confidence in setting up a Claude Project rose 48%. The caveat travels with the number: the before and after surveys were answered by different people, so this is post-session feedback rather than a study. Anyone who tells you a 3 hr workshop produced a measured productivity gain is selling you something.</p>
-  </div>
-</section>
-
-<!-- ===== What went wrong ===== -->
-<section class="s" style="padding-top:0;">
-  <div class="wrap">
-    <h2 class="sec">What went wrong, and what changed</h2>
-    <p style="margin-top:16px; max-width:74ch; color:var(--ink-dim); font-size:16px; line-height:1.7;">Logins. In earlier sessions the first 15 min went to people who could not get into their account, and that time comes straight out of the block you least want to lose. What changed: doors now open 15 min before the hard start purely for login triage, the pre-work note asks everyone to log in before they arrive, and the Projects block does not begin with anyone still locked out.</p>
-    <p style="margin-top:16px; max-width:74ch; color:var(--ink-dim); font-size:16px; line-height:1.7;">Still open, and worth saying out loud. Two people in Aug asked for one diagram placing Projects, Skills, Artifacts, Connectors and Cowork in a single picture, because the vocabulary arrived one term at a time and never as one image. Fair hit. That slide is top of the fix list and it is not built yet.</p>
-  </div>
-</section>
-
 <!-- ===== Proof ===== -->
 <section class="s" style="padding-top:0;">
   <div class="wrap">
@@ -365,7 +291,7 @@
       </figure>
     </div>
 
-    <div class="testi-grid" style="margin-top:32px;">
+    <div class="testi-grid proof-testi" style="margin-top:32px;">
       <div class="testi-card">
         <blockquote>"Geargina has very good 'trainer' skills. She knows the stuff well and is able to articulate the approach very clearly with simple illustrations and drawing comparisons to things we easily understand."</blockquote>
         <div class="who">
@@ -378,6 +304,13 @@
         <div class="who">
           <div class="av">V</div>
           <div><b>Viju</b><span>Masterclass attendee</span></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <blockquote>"Geargina helped me see ChatGPT as far more than a chat layer. She clearly explained how skills, agents, connectors, scheduler, and project context can turn repeatable processes... What I valued most was how she connected these tools to practical business outcomes... I left the session with a much clearer picture of how to build my own AI-enabled way of working."</blockquote>
+        <div class="who">
+          <div class="av">B</div>
+          <div><b>Bryce</b><span>1:1 AI coaching &middot; Sep 2026</span></div>
         </div>
       </div>
     </div>

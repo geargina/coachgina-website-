@@ -32,6 +32,12 @@ Last reviewed: 10 Sep 2026
 | "Buy yourself back two afternoons a week" | **RETIRED** | No source | Removed 4 Sep 2026. Same card. A time-saved claim with no measurement behind it. |
 | Teenagers to retirees age range | UNCONFIRMED | Geargina's own framing, 23 Aug 2026 | Plausible: she has taught secondary students and career-transition cohorts. Confirm the actual youngest and oldest before publishing a numeric span. |
 
+## Testimonials
+
+| Quote | Status | Source | Notes |
+|---|---|---|---|
+| Bryce, 1:1 AI coaching, Sep 2026 | CONFIRMED | Written testimonial sent to Geargina, 16 Sep 2026, passed on 22 Sep 2026 | Published on `ai-workshops-singapore.html` as an excerpt. His full text runs 3 paragraphs and contains typos ("actualy", "impt", "havent") and one garbled clause, so the site quotes 3 clean fragments of his own words joined by ellipses. Nothing is reworded. Full original text is in the session log; ask before publishing more of it, and ask him before using a surname or a photo. |
+
 ## Offers and pricing
 
 A price is a claim. This is the only file that states one.
