@@ -35,6 +35,12 @@ Last reviewed: 22 Sep 2026
 | ChatGPT 13 to 17 needs parental permission; Claude is 18+ | CONFIRMED | OpenAI Terms of Use (openai.com/policies/row-terms-of-use, checked 22 Sep 2026); Anthropic Consumer Terms (anthropic.com/legal/consumer-terms, checked 22 Sep 2026) | Anthropic: "You must be at least 18 years old or the minimum age required to consent to use the Services in your location, whichever is higher." No parental consent route. OpenAI: 13+, and under 18s need a parent or guardian's permission. Published on `ai-for-teens-singapore.html`. **Decision 22 Sep 2026: the teen workshop runs on ChatGPT.** Gemini was considered and dropped: its 13 to 17 teen experience blocks image generation, Drive file upload and Deep Research, and Family Link gives a parent an on/off toggle only, with no conversation visibility. **Re-check before every teen cohort, both providers change these.** Consequence for the offer: a 13 to 17 room cannot run on Claude. |
 | Teenagers to retirees age range | UNCONFIRMED | Geargina's own framing, 23 Aug 2026 | Plausible: she has taught secondary students and career-transition cohorts. Confirm the actual youngest and oldest before publishing a numeric span. |
 
+## Testimonials
+
+| Quote | Status | Source | Notes |
+|---|---|---|---|
+| Bryce, 1:1 AI coaching, Sep 2026 | CONFIRMED | Written testimonial sent to Geargina, 16 Sep 2026, passed on 22 Sep 2026 | Published on `ai-workshops-singapore.html` as an excerpt. His full text runs 3 paragraphs and contains typos ("actualy", "impt", "havent") and one garbled clause, so the site quotes 3 clean fragments of his own words joined by ellipses. Nothing is reworded. Full original text is in the session log; ask before publishing more of it, and ask him before using a surname or a photo. |
+
 ## Offers and pricing
 
 A price is a claim. This is the only file that states one.
