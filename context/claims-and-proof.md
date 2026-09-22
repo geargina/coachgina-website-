@@ -6,7 +6,7 @@ Every public number, price, offer specification, testimonial and named third par
 
 Why this file exists: the site published 3 invented testimonials, a fabricated "5.0 average" rating, and the statistics "20+ Workshops delivered" and "150+ Humans coached 1:1" under a heading reading "Receipts". The earliest design mockup shows that block shipped as `0+ / 0+ / $0mil / 0%` placeholders, so those numbers were never data. They were template slots filled with plausible-sounding values, and they stayed live for roughly 4 months.
 
-Last reviewed: 10 Sep 2026
+Last reviewed: 22 Sep 2026
 
 ---
 
@@ -30,6 +30,9 @@ Last reviewed: 10 Sep 2026
 | "teams of 5 to 30" (was in FAQ schema) | **RETIRED** | Invented | Replaced with the real cohort cap of 30. |
 | "Automate the boring 40%" | **RETIRED** | No source | Removed 4 Sep 2026. Homepage How I can help, item 03. An invented percentage. Do not reinstate without a measured figure. |
 | "Buy yourself back two afternoons a week" | **RETIRED** | No source | Removed 4 Sep 2026. Same card. A time-saved claim with no measurement behind it. |
+| 3 parents asked about AI workshops for students | CONFIRMED | Geargina, 22 Sep 2026 | Over "the last few months of workshops and coaching", 3 separate people asked whether she runs sessions for students. This is the entire evidence base for `ai-for-teens-singapore.html`, so the page states the number rather than "parents keep asking me". Do not inflate it. If more come in through the form, update this row with the count and the date. |
+| Her daughter is years away from a teen workshop | CONFIRMED | Geargina, 22 Sep 2026; `05-resources/` family notes | Used on `ai-for-teens-singapore.html` as motivation, not as proof of anything. Must stay consistent with `blog/singapore-ai-education-moe-primary-school-framework.html`, which already tells the public the daughter enters primary school in the next couple of years. Never phrase it so a reader thinks the child is in the 13 to 18 band. |
+| ChatGPT 13 to 17 needs parental permission; Claude is 18+ | CONFIRMED | OpenAI Terms of Use (openai.com/policies/row-terms-of-use, checked 22 Sep 2026); Anthropic Consumer Terms (anthropic.com/legal/consumer-terms, checked 22 Sep 2026) | Anthropic: "You must be at least 18 years old or the minimum age required to consent to use the Services in your location, whichever is higher." No parental consent route. OpenAI: 13+, and under 18s need a parent or guardian's permission. Published on `ai-for-teens-singapore.html`. **Decision 22 Sep 2026: the teen workshop runs on ChatGPT.** Gemini was considered and dropped: its 13 to 17 teen experience blocks image generation, Drive file upload and Deep Research, and Family Link gives a parent an on/off toggle only, with no conversation visibility. **Re-check before every teen cohort, both providers change these.** Consequence for the offer: a 13 to 17 room cannot run on Claude. |
 | Teenagers to retirees age range | UNCONFIRMED | Geargina's own framing, 23 Aug 2026 | Plausible: she has taught secondary students and career-transition cohorts. Confirm the actual youngest and oldest before publishing a numeric span. |
 
 ## Offers and pricing
