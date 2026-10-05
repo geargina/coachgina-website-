@@ -2,79 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GEARGINA | Coach Gina</title>
-    <link>https://geargina.com/blog/</link>
+    <link>https://www.geargina.com/blog/</link>
     <description>Honest writing on AI, prompting, coaching, and what's actually working, by an AI coach in Singapore.</description>
     <language>en</language>
-    <atom:link href="https://geargina.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.geargina.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     <lastBuildDate>Mon, 07 Sep 2026 01:00:00 GMT</lastBuildDate>
     <item>
       <title>An Alien Mind, Explained Simply: What OpenAI's Chief Scientist Said</title>
-      <link>https://geargina.com/blog/an-alien-mind-explained-simply.html</link>
-      <guid>https://geargina.com/blog/an-alien-mind-explained-simply.html</guid>
+      <link>https://www.geargina.com/blog/an-alien-mind-explained-simply.html</link>
+      <guid>https://www.geargina.com/blog/an-alien-mind-explained-simply.html</guid>
       <pubDate>Mon, 07 Sep 2026 01:00:00 GMT</pubDate>
       <category>Policy</category>
       <description>OpenAI's chief scientist says he believes no lab has solved AI safety well enough to keep building at full speed. His essay in plain language, with diagrams, for anyone who does not work in AI.</description>
     </item>
     <item>
       <title>API vs MCP: What Is the Difference?</title>
-      <link>https://geargina.com/blog/api-vs-mcp-difference-explained-simply.html</link>
-      <guid>https://geargina.com/blog/api-vs-mcp-difference-explained-simply.html</guid>
+      <link>https://www.geargina.com/blog/api-vs-mcp-difference-explained-simply.html</link>
+      <guid>https://www.geargina.com/blog/api-vs-mcp-difference-explained-simply.html</guid>
       <pubDate>Mon, 24 Aug 2026 01:00:00 GMT</pubDate>
       <category>Tools</category>
       <description>An API lets 2 apps talk to each other. MCP is the single plug that lets AI connect to many apps at once. Explained simply for non-technical professionals.</description>
     </item>
     <item>
       <title>Singapore Budget 2026: Every AI Initiative You Need to Know</title>
-      <link>https://geargina.com/blog/singapore-budget-2026-ai-business-owners-workers-guide.html</link>
-      <guid>https://geargina.com/blog/singapore-budget-2026-ai-business-owners-workers-guide.html</guid>
+      <link>https://www.geargina.com/blog/singapore-budget-2026-ai-business-owners-workers-guide.html</link>
+      <guid>https://www.geargina.com/blog/singapore-budget-2026-ai-business-owners-workers-guide.html</guid>
       <pubDate>Wed, 22 Apr 2026 01:00:00 GMT</pubDate>
       <category>Policy</category>
       <description>400% tax deductions, free premium AI tools, a PM-chaired National AI Council. Every Singapore Budget 2026 AI initiative, broken down.</description>
     </item>
     <item>
       <title>Singapore Is Introducing AI in Schools From Primary 4</title>
-      <link>https://geargina.com/blog/singapore-ai-education-moe-primary-school-framework.html</link>
-      <guid>https://geargina.com/blog/singapore-ai-education-moe-primary-school-framework.html</guid>
+      <link>https://www.geargina.com/blog/singapore-ai-education-moe-primary-school-framework.html</link>
+      <guid>https://www.geargina.com/blog/singapore-ai-education-moe-primary-school-framework.html</guid>
       <pubDate>Sat, 18 Apr 2026 01:00:00 GMT</pubDate>
       <category>Policy</category>
       <description>MOE's 'four Learns' framework brings AI into Singapore primary schools. What it gets right and what's still missing.</description>
     </item>
     <item>
       <title>5 Prompting Techniques That Separate the Top 1% of AI Users</title>
-      <link>https://geargina.com/blog/ai-prompting-techniques-claude-chatgpt-gemini.html</link>
-      <guid>https://geargina.com/blog/ai-prompting-techniques-claude-chatgpt-gemini.html</guid>
+      <link>https://www.geargina.com/blog/ai-prompting-techniques-claude-chatgpt-gemini.html</link>
+      <guid>https://www.geargina.com/blog/ai-prompting-techniques-claude-chatgpt-gemini.html</guid>
       <pubDate>Wed, 15 Apr 2026 01:00:00 GMT</pubDate>
       <category>Prompting</category>
       <description>Memory injection, reverse prompting, constraint cascade, role stacking, and the verification loop. Works on Claude, ChatGPT, and Gemini.</description>
     </item>
     <item>
       <title>40 Professionals Walked Into an AI Workshop Not Knowing What Claude Was</title>
-      <link>https://geargina.com/blog/ai-workshop-singapore-teams-claude-adoption.html</link>
-      <guid>https://geargina.com/blog/ai-workshop-singapore-teams-claude-adoption.html</guid>
+      <link>https://www.geargina.com/blog/ai-workshop-singapore-teams-claude-adoption.html</link>
+      <guid>https://www.geargina.com/blog/ai-workshop-singapore-teams-claude-adoption.html</guid>
       <pubDate>Fri, 10 Apr 2026 01:00:00 GMT</pubDate>
       <category>Workshops</category>
       <description>AI adoption is rarely a technology problem. It is a confidence problem. A case study from a 40-person Claude workshop in Singapore.</description>
     </item>
     <item>
       <title>A 15-Year Industry Veteran Asked for Distribution Rights After 30 Seconds</title>
-      <link>https://geargina.com/blog/wtfox-ai-whatsapp-crm-sales-automation.html</link>
-      <guid>https://geargina.com/blog/wtfox-ai-whatsapp-crm-sales-automation.html</guid>
+      <link>https://www.geargina.com/blog/wtfox-ai-whatsapp-crm-sales-automation.html</link>
+      <guid>https://www.geargina.com/blog/wtfox-ai-whatsapp-crm-sales-automation.html</guid>
       <pubDate>Sun, 05 Apr 2026 01:00:00 GMT</pubDate>
       <category>Building</category>
       <description>The sales problem WTFox.ai is solving, a WhatsApp-native CRM with sales automation built for high-velocity teams.</description>
     </item>
     <item>
       <title>Five Prompts I Use Every Week</title>
-      <link>https://geargina.com/blog/five-prompts-i-use-every-week.html</link>
-      <guid>https://geargina.com/blog/five-prompts-i-use-every-week.html</guid>
+      <link>https://www.geargina.com/blog/five-prompts-i-use-every-week.html</link>
+      <guid>https://www.geargina.com/blog/five-prompts-i-use-every-week.html</guid>
       <pubDate>Thu, 12 Mar 2026 01:00:00 GMT</pubDate>
       <category>Prompting</category>
       <description>The Claude and ChatGPT prompts I actually run every week, for editing, decision-making, and resetting messy thinking.</description>
     </item>
     <item>
       <title>Why "Just Use ChatGPT" Is the Worst AI Advice</title>
-      <link>https://geargina.com/blog/just-use-chatgpt-is-bad-advice.html</link>
-      <guid>https://geargina.com/blog/just-use-chatgpt-is-bad-advice.html</guid>
+      <link>https://www.geargina.com/blog/just-use-chatgpt-is-bad-advice.html</link>
+      <guid>https://www.geargina.com/blog/just-use-chatgpt-is-bad-advice.html</guid>
       <pubDate>Fri, 20 Feb 2026 01:00:00 GMT</pubDate>
       <category>Coaching</category>
       <description>A short rant about tool-dropping in AI advice, plus the framework I use with clients to pick the right AI stack.</description>
