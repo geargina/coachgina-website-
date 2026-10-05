@@ -1,0 +1,35 @@
+# Geargina Tan
+
+> AI workshop facilitator in Singapore. Geargina Tan (Coach Gina) gets business teams using Claude and ChatGPT for real work, with hands-on sessions for people new to AI.
+
+## Workshops and speaking
+
+- [Home](https://www.geargina.com/): AI workshop facilitator in Singapore. Hands-on sessions for business teams new to AI.
+- [AI workshops for business teams](https://www.geargina.com/ai-workshops-singapore.html): Hands-on AI workshops for business teams in Singapore, on Claude and ChatGPT, built around the work your people already do.
+- [Claude workshops](https://www.geargina.com/claude-workshop-singapore.html): Claude workshops in Singapore, from first chat to your own agent, plus private Claude sessions for teams.
+- [AI workshop for teenagers](https://www.geargina.com/ai-for-teens-singapore.html): Register interest in an AI workshop for teenagers in Singapore. How AI works, and how to use it without outsourcing your thinking.
+- [Speaking](https://www.geargina.com/speaking.html): Conference talks, panels and hands-on workshops across Southeast Asia, in person and online.
+- [Contact](https://www.geargina.com/contact.html): Book an AI workshop for your team, a 1:1 AI coaching session, or just say hi.
+
+## Case studies
+
+- [Case studies](https://www.geargina.com/case-studies.html): AI workshops delivered in Singapore, written up in full.
+- [BNF Group AI workshop](https://www.geargina.com/case-study-bnf-group-ai-workshop.html): A hands-on Claude workshop for senior managers at the BNF Group strategy retreat.
+- [Claude Masterclass 101](https://www.geargina.com/case-study-claude-masterclass-101.html): Evening cohorts with Cogentic AI Partners where the room built Claude Projects, a custom skill and one delegated task.
+
+## Blog
+
+- [Blog](https://www.geargina.com/blog/): Practical writing on AI, prompting and coaching, by an AI workshop facilitator in Singapore.
+- [API vs MCP, explained simply](https://www.geargina.com/blog/api-vs-mcp-difference-explained-simply.html): The difference between an API and MCP, explained simply for beginners.
+- [Singapore Budget 2026 AI guide](https://www.geargina.com/blog/singapore-budget-2026-ai-business-owners-workers-guide.html): Every Singapore Budget 2026 AI initiative, broken down by who it affects.
+- [AI in Singapore schools](https://www.geargina.com/blog/singapore-ai-education-moe-primary-school-framework.html): A parent-friendly breakdown of MOE's framework for AI in primary schools, what it gets right and what it misses.
+- [Prompting techniques for Claude, ChatGPT and Gemini](https://www.geargina.com/blog/ai-prompting-techniques-claude-chatgpt-gemini.html): Memory injection, reverse prompting, constraint cascade, role stacking and the verification loop.
+- [AI workshop case study: team Claude adoption](https://www.geargina.com/blog/ai-workshop-singapore-teams-claude-adoption.html): Why AI adoption is a confidence problem, and how a well-run workshop fixes it.
+- [WTFox.ai and WhatsApp sales automation](https://www.geargina.com/blog/wtfox-ai-whatsapp-crm-sales-automation.html): The sales problem WTFox.ai is solving with a WhatsApp-native CRM for high-velocity teams.
+- [Five prompts I use every week](https://www.geargina.com/blog/five-prompts-i-use-every-week.html): The Claude and ChatGPT prompts I run every week for editing, decisions, learning and resetting messy thinking.
+- [Why "just use ChatGPT" is bad advice](https://www.geargina.com/blog/just-use-chatgpt-is-bad-advice.html): The framework I use in workshops to pick the right AI stack for what you need.
+- [An alien mind, explained simply](https://www.geargina.com/blog/an-alien-mind-explained-simply.html): OpenAI's chief scientist's essay on alignment, in plain language with diagrams.
+
+## Optional
+
+- [Links](https://www.geargina.com/links.html): AI workshops, the Claude workshop, speaking, blog and LinkedIn.
