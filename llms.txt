@@ -4,7 +4,7 @@
 
 ## Workshops and speaking
 
-- [Home](https://www.geargina.com/): AI workshop facilitator in Singapore. Hands-on sessions for business teams new to AI.
+- [Home](https://www.geargina.com/): AI educator and operator in Singapore. Co-Founder and COO of WTFox.ai. Hands-on AI workshops, the Claude Masterclass and 1:1 tutoring on Claude and ChatGPT for business teams.
 - [AI workshops for business teams](https://www.geargina.com/ai-workshops-singapore.html): Hands-on AI workshops for business teams in Singapore, on Claude and ChatGPT, built around the work your people already do.
 - [Claude workshops](https://www.geargina.com/claude-workshop-singapore.html): Claude workshops in Singapore, from first chat to your own agent, plus private Claude sessions for teams.
 - [AI workshop for teenagers](https://www.geargina.com/ai-for-teens-singapore.html): Register interest in an AI workshop for teenagers in Singapore. How AI works, and how to use it without outsourcing your thinking.
