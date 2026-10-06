@@ -6,7 +6,7 @@ Every public number, price, offer specification, testimonial and named third par
 
 Why this file exists: the site published 3 invented testimonials, a fabricated "5.0 average" rating, and the statistics "20+ Workshops delivered" and "150+ Humans coached 1:1" under a heading reading "Receipts". The earliest design mockup shows that block shipped as `0+ / 0+ / $0mil / 0%` placeholders, so those numbers were never data. They were template slots filled with plausible-sounding values, and they stayed live for roughly 4 months.
 
-Last reviewed: 22 Sep 2026
+Last reviewed: 6 Oct 2026
 
 ---
 
@@ -34,6 +34,8 @@ Last reviewed: 22 Sep 2026
 | Her daughter is years away from a teen workshop | CONFIRMED | Geargina, 22 Sep 2026; `05-resources/` family notes | Used on `ai-for-teens-singapore.html` as motivation, not as proof of anything. Must stay consistent with `blog/singapore-ai-education-moe-primary-school-framework.html`, which already tells the public the daughter enters primary school in the next couple of years. Never phrase it so a reader thinks the child is in the 13 to 18 band. |
 | ChatGPT 13 to 17 needs parental permission; Claude is 18+ | CONFIRMED | OpenAI Terms of Use (openai.com/policies/row-terms-of-use, checked 22 Sep 2026); Anthropic Consumer Terms (anthropic.com/legal/consumer-terms, checked 22 Sep 2026) | Anthropic: "You must be at least 18 years old or the minimum age required to consent to use the Services in your location, whichever is higher." No parental consent route. OpenAI: 13+, and under 18s need a parent or guardian's permission. Published on `ai-for-teens-singapore.html`. **Decision 22 Sep 2026: the teen workshop runs on ChatGPT.** Gemini was considered and dropped: its 13 to 17 teen experience blocks image generation, Drive file upload and Deep Research, and Family Link gives a parent an on/off toggle only, with no conversation visibility. **Re-check before every teen cohort, both providers change these.** Consequence for the offer: a 13 to 17 room cannot run on Claude. |
 | Teenagers to retirees age range | UNCONFIRMED | Geargina's own framing, 23 Aug 2026 | Plausible: she has taught secondary students and career-transition cohorts. Confirm the actual youngest and oldest before publishing a numeric span. |
+| 3 Claude Masterclass cohorts run (Aug 20, Aug 21, Oct 1 2026) | CONFIRMED | Geargina, 6 Oct 2026, in session | Published on the new portfolio homepage draft. Earlier rows cover the two Aug cohorts; the 1 Oct AmCham run is the third. |
+| Masterclass students have joined from London, Spain, Singapore, Malaysia and India | CONFIRMED | Geargina, 6 Oct 2026 | Supersedes the earlier "online attendees from Indonesia and the Philippines" row for the portfolio copy. Do not publish a numeric count of countries beyond these five. |
 
 ## Testimonials
 
@@ -52,6 +54,7 @@ A price is a claim. This is the only file that states one.
 | 1:1 Coaching | From S$1,200 for 4 sessions | UNCONFIRMED as sold | Fine to offer at a price. No completed engagement on record, so no track record may be implied. |
 | Partner revenue share | 60/40 on the Aug 2026 run | CONFIRMED | **Never publish partner economics.** The site describes the model without numbers. |
 | Level 2, Claude Code and the Second Brain | Not stated | CONFIRMED as planned | Oct 2026 target, date and price still open. Published as "planned", which is accurate. |
+| Claude Masterclass | S$349 per seat (published) | CONFIRMED as charged, PUBLISHING CLEARED BY GEARGINA 6 Oct 2026 | Source: Hari's pricing email 9 Jul 2026 + Geargina's instruction 6 Oct 2026. Overrides the earlier note that publishing figures was not cleared. Heads-up to Hari recommended if the next cohort stays under the Cogentic arrangement. |
 
 ## Testimonials
 
@@ -63,6 +66,7 @@ A price is a claim. This is the only file that states one.
 | Willis | **PUBLISHED** | Public LinkedIn comment, cleared 23 Aug 2026 | Published as: "Enjoyed the session. I'm gonna build my own Obsidian coming week." Attributed "Willis, Masterclass attendee" per her instruction to keep it generic. **Caveat: I only ever had the ellipsis-truncated version of his comment.** The published line uses only the parts that were unambiguous. Worth checking against the original comment when convenient. |
 | "In Chong, CEO of BHB" | **RETIRED** | n/a | Appears in no record. Removed 23 Aug 2026. |
 | "Wee Kiat, Founder, Agency" | **RETIRED** | n/a | Appears in no record. Removed 23 Aug 2026. |
+| Keith | DRAFTED, consent pending | WhatsApp group post, 6 Oct 2026, screenshot in SecondBrain-Media/portfolio-site/. Ask Keith before it goes live, and before any surname or photo. | "If anyone here wants to know more about what AI can do, I seriously recommend contacting Geargina. In less than 30 mins she showed me how little I knew about AI, with her 'second brain'... Now I can't unsee what AI can do." First name only. |
 
 Further source: Prasad at Cogentic is publishing testimonials on the Cogentic site. Link out to them rather than copying their copy.
 
