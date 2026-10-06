@@ -76,7 +76,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=17">
+<link rel="stylesheet" href="/assets/fonts/portfolio/fonts.css">
+<link rel="stylesheet" href="assets/css/site.css?v=18">
 <style>
   /* Scoped to this page so one form does not force a cache bust across every file.
      A select's intrinsic width is its longest option, which blew the grid track
@@ -87,7 +88,7 @@
   #teen-form select,
   #teen-form textarea { min-width: 0; max-width: 100%; }
   #teen-form input[type="checkbox"] { width: 18px; height: 18px; min-width: 18px;
-    flex: 0 0 18px; accent-color: var(--yellow); }
+    flex: 0 0 18px; accent-color: var(--deep); }
 </style>
 </head>
 <body>
@@ -181,7 +182,7 @@
 
           <label style="display:flex; gap:10px; align-items:flex-start; margin:4px 0 8px; color:var(--ink-dim); font-size:13px; line-height:1.5; cursor:pointer;">
             <input type="checkbox" name="consent" value="yes" required style="margin-top:3px; width:auto;" />
-            <span>Email me about this workshop. Nothing else, and you can tell me to stop any time. See the <a href="privacy.html" style="color:var(--yellow); text-decoration:underline;">privacy page</a>.</span>
+            <span>Email me about this workshop. Nothing else, and you can tell me to stop any time. See the <a href="privacy.html" style="color:var(--deep); font-weight:500; text-decoration:underline; text-decoration-color:var(--yellow); text-decoration-thickness:3px; text-underline-offset:3px;">privacy page</a>.</span>
           </label>
 
           <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-top:8px;">
@@ -192,7 +193,7 @@
             </button>
           </div>
 
-          <div id="form-status" style="margin-top:16px; display:none; padding:18px 20px; border-radius:14px; background:rgba(247,208,70,.12); border:1px solid rgba(247,208,70,.3); color:var(--yellow); font-size:14px; line-height:1.6;"></div>
+          <div id="form-status" style="margin-top:16px; display:none; padding:18px 20px; border-radius:14px; background:rgba(247,208,70,.28); border:1px solid var(--yellow); color:var(--deep); font-size:14px; line-height:1.6;"></div>
         </form>
       </div>
 
@@ -215,12 +216,12 @@
         </div>
         <div class="info-card">
           <h2>👩‍💻 Who runs it</h2>
-          <p>I teach AI to working adults, mostly here in Singapore, and I'm co-founder of <a href="https://wtfox.ai" target="_blank" rel="noopener" style="color:var(--yellow); text-decoration:underline;">WTFox.ai</a>.</p>
+          <p>I teach AI to working adults, mostly here in Singapore, and I'm co-founder of <a href="https://wtfox.ai" target="_blank" rel="noopener" style="color:var(--deep); font-weight:500; text-decoration:underline; text-decoration-color:var(--yellow); text-decoration-thickness:3px; text-underline-offset:3px;">WTFox.ai</a>.</p>
           <p style="margin-top:10px;">Why am i running it? It is my personal belief that my daughter will be using AI the way we are using the internet now. I rather teach her the right way to use it and harness its potential.</p>
         </div>
         <div class="info-card">
           <h2>✉️ Rather just email me?</h2>
-          <p>Go for it! <a href="mailto:hello@iamcoachgina.com" style="color:var(--yellow); text-decoration:underline;">hello@iamcoachgina.com</a>. Or DM me on <a href="https://www.linkedin.com/in/gearginatan/" target="_blank" rel="noopener" style="color:var(--yellow); text-decoration:underline;">LinkedIn</a> if that is easier.</p>
+          <p>Go for it! <a href="mailto:hello@iamcoachgina.com" style="color:var(--deep); font-weight:500; text-decoration:underline; text-decoration-color:var(--yellow); text-decoration-thickness:3px; text-underline-offset:3px;">hello@iamcoachgina.com</a>. Or DM me on <a href="https://www.linkedin.com/in/gearginatan/" target="_blank" rel="noopener" style="color:var(--deep); font-weight:500; text-decoration:underline; text-decoration-color:var(--yellow); text-decoration-thickness:3px; text-underline-offset:3px;">LinkedIn</a> if that is easier.</p>
         </div>
       </div>
 
@@ -283,7 +284,7 @@
 </main>
 <div id="site-footer"></div>
 
-<script src="assets/js/site.js?v=17" data-page="teens"></script>
+<script src="assets/js/site.js?v=18" data-page="teens"></script>
 <script>
   async function handleSubmit(e) {
     e.preventDefault();
@@ -316,10 +317,10 @@
       if (result.success) {
         form.reset();
         status.style.display = "block";
-        status.style.background = "rgba(247,208,70,.12)";
-        status.style.borderColor = "rgba(247,208,70,.3)";
-        status.style.color = "var(--yellow)";
-        status.innerHTML = `You're on the interest list. If this runs, I'll email you from <strong>hello@iamcoachgina.com</strong>.<br/><br/>Have a look around while you're here: <a href="ai-workshops-singapore.html" style="color:var(--yellow); text-decoration:underline;">the workshops I run for adults</a>, <a href="blog/" style="color:var(--yellow); text-decoration:underline;">the blog</a>, or <a href="index.html#about" style="color:var(--yellow); text-decoration:underline;">who I am</a>.`;
+        status.style.background = "rgba(247,208,70,.28)";
+        status.style.borderColor = "#f7d046";
+        status.style.color = "var(--deep)";
+        status.innerHTML = `You're on the interest list. If this runs, I'll email you from <strong>hello@iamcoachgina.com</strong>.<br/><br/>Have a look around while you're here: <a href="ai-workshops-singapore.html" style="color:var(--deep); font-weight:500; text-decoration:underline; text-decoration-color:var(--yellow); text-decoration-thickness:3px; text-underline-offset:3px;">the workshops I run for adults</a>, <a href="blog/" style="color:var(--deep); font-weight:500; text-decoration:underline; text-decoration-color:var(--yellow); text-decoration-thickness:3px; text-underline-offset:3px;">the blog</a>, or <a href="index.html#about" style="color:var(--deep); font-weight:500; text-decoration:underline; text-decoration-color:var(--yellow); text-decoration-thickness:3px; text-underline-offset:3px;">who I am</a>.`;
         status.scrollIntoView({ behavior: "smooth", block: "center" });
         btn.textContent = "Noted ✓";
       } else {
@@ -327,10 +328,10 @@
       }
     } catch (err) {
       status.style.display = "block";
-      status.style.background = "rgba(255,90,90,.12)";
-      status.style.borderColor = "rgba(255,90,90,.3)";
-      status.style.color = "#ff8080";
-      status.innerHTML = `Something went wrong. Please email <a href="mailto:hello@iamcoachgina.com" style="color:#ff8080; text-decoration:underline;">hello@iamcoachgina.com</a> directly and I'll add you by hand.`;
+      status.style.background = "rgba(180,35,24,.06)";
+      status.style.borderColor = "rgba(180,35,24,.35)";
+      status.style.color = "#b42318";
+      status.innerHTML = `Something went wrong. Please email <a href="mailto:hello@iamcoachgina.com" style="color:#b42318; text-decoration:underline;">hello@iamcoachgina.com</a> directly and I'll add you by hand.`;
       btn.disabled = false;
       btn.style.opacity = "1";
       btn.textContent = "Count me in";

@@ -151,45 +151,47 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/css/site.css?v=17">
+<link rel="stylesheet" href="/assets/fonts/portfolio/fonts.css">
+<link rel="stylesheet" href="../assets/css/site.css?v=18">
 
 <style>
-/* Scoped explainer components. Namespaced .am- so nothing here can touch site.css. */
-.am-src{border:1px solid rgba(247,208,70,0.45);border-left:3px solid #f7d046;background:rgba(247,208,70,0.07);
+/* Scoped explainer components. Namespaced .am- so nothing here can touch site.css.
+   Paper theme (Oct 2026): text panels are light; .am-fig diagrams stay as framed dark panels. */
+.am-src{border:1px solid rgba(15,42,32,0.14);border-left:4px solid #f7d046;background:#ffffff;
   border-radius:0 10px 10px 0;padding:16px 18px;margin:0 0 28px}
 .am-src p{margin:0 0 8px}
 .am-src p:last-child{margin:0}
-.am-src a{color:#f7d046;text-decoration:underline;text-underline-offset:2px}
-.am-verdict{background:#12382a;border:1px solid rgba(242,236,216,0.18);border-left:4px solid #f7d046;
+.am-src a{color:#14352A;font-weight:500;text-decoration:underline;text-decoration-color:#f7d046;text-decoration-thickness:3px;text-underline-offset:3px}
+.am-verdict{background:#ffffff;border:1px solid rgba(15,42,32,0.14);border-left:4px solid #f7d046;
   border-radius:10px;padding:18px 20px;margin:26px 0}
-.am-verdict p{margin:0;font-size:17px;line-height:1.55}
+.am-verdict p{margin:0;font-size:17px;line-height:1.55;color:#14352A}
 .am-no{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.14em;
-  text-transform:uppercase;color:#f7d046;display:block;margin:36px 0 4px}
+  text-transform:uppercase;color:#14352A;display:block;margin:36px 0 4px}
 .am-fig{background:#16402f;border:1px solid rgba(242,236,216,0.26);border-radius:12px;
   padding:20px 16px 12px;margin:26px 0;overflow-x:auto;
-  box-shadow:0 1px 0 rgba(242,236,216,0.06) inset, 0 8px 24px rgba(0,0,0,0.28)}
+  box-shadow:0 18px 40px -24px rgba(15,42,32,0.45)}
 .am-fig svg{width:100%;height:auto;display:block;min-width:560px}
 .am-legend{display:flex;gap:16px;flex-wrap:wrap;font-size:11.5px;color:#92a499;
   border-top:1px solid rgba(242,236,216,0.12);margin-top:12px;padding-top:9px}
 .am-legend span{display:inline-flex;align-items:center;gap:6px}
 .am-sw{width:12px;height:12px;border-radius:3px;display:inline-block}
-.am-kid{border-left:3px solid #f7d046;background:rgba(247,208,70,0.06);border-radius:0 8px 8px 0;
+.am-kid{border-left:4px solid #f7d046;background:rgba(247,208,70,0.16);border-radius:0 8px 8px 0;
   padding:12px 16px;margin:18px 0}
-.am-kid strong{color:#f7d046}
+.am-kid strong{color:#14352A}
 .am-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:20px 0}
-.am-card{background:#12382a;border:1px solid rgba(242,236,216,0.16);border-radius:10px;padding:16px}
-.am-card h4{margin:0 0 6px;font-size:15px;font-family:"Archivo",sans-serif;font-weight:700;color:#f2ecd8}
-.am-card p{margin:0;font-size:14px;color:#b9c9bd;line-height:1.5}
-.am-evi{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:11.5px;color:#92a499;margin:-6px 0 18px}
-.am-hold{background:#12382a;border:1px solid rgba(242,236,216,0.16);border-radius:10px;padding:18px 20px}
+.am-card{background:#ffffff;border:1px solid rgba(15,42,32,0.14);border-radius:10px;padding:16px}
+.am-card h4{margin:0 0 6px;font-size:15px;font-family:"Inter Tight","Inter",sans-serif;font-weight:700;letter-spacing:-0.02em;color:#14352A}
+.am-card p{margin:0;font-size:14px;color:#44604F;line-height:1.5}
+.am-evi{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:11.5px;color:#5f6e66;margin:-6px 0 18px}
+.am-hold{background:#ffffff;border:1px solid rgba(15,42,32,0.14);border-radius:10px;padding:18px 20px}
 .am-hold ul{margin:0 0 10px;padding-left:20px}
-.am-hold li{font-size:14.5px;color:#b9c9bd;margin-bottom:8px}
-.am-hold p{margin:0;font-size:14px;color:#92a499}
-.am-last{font-size:18px;line-height:1.55;border-top:1px solid rgba(242,236,216,0.18);padding-top:22px;margin-top:8px}
+.am-hold li{font-size:14.5px;color:#44604F;margin-bottom:8px}
+.am-hold p{margin:0;font-size:14px;color:#5f6e66}
+.am-last{font-size:18px;line-height:1.55;border-top:1px solid rgba(15,42,32,0.14);padding-top:22px;margin-top:8px}
 .am-figure{margin:30px 0;padding:0}
-.am-figure img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid rgba(242,236,216,0.26)}
-.am-figure figcaption{font-size:14.5px;color:#92a499;line-height:1.5;margin-top:12px;
-  border-left:2px solid rgba(247,208,70,0.45);padding-left:14px}
+.am-figure img{width:100%;height:auto;display:block;border-radius:12px;border:1px solid rgba(15,42,32,0.14)}
+.am-figure figcaption{font-size:14.5px;color:#5f6e66;line-height:1.5;margin-top:12px;
+  border-left:3px solid #f7d046;padding-left:14px}
 @media (max-width:560px){ .am-fig{padding:12px 10px 8px} }
 </style>
 </head>
@@ -535,6 +537,6 @@
 
 <div id="site-footer"></div>
 
-<script src="../assets/js/site.js?v=17" data-page="post"></script>
+<script src="../assets/js/site.js?v=18" data-page="post"></script>
 </body>
 </html>
