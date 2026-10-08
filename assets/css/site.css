@@ -192,7 +192,7 @@ footer{ padding-top:80px; background:var(--bg); }
 .foot-top a{ text-decoration:none; color:var(--ink-dim); }
 .foot-top a:hover{ color:var(--deep); text-decoration:underline; text-decoration-color:var(--yellow); text-decoration-thickness:3px; text-underline-offset:4px; }
 .foot-blurb{ color:var(--ink-dim); max-width:32ch; font-size:14px; line-height:1.55; }
-.wordmark{ font-family:var(--f-display); font-weight:700; font-size:clamp(48px, 17vw, 280px); line-height:0.85; letter-spacing:-0.06em; color:var(--deep); text-align:center; padding:20px var(--pad-x) 30px; overflow:hidden; white-space:nowrap; }
+.wordmark{ font-family:var(--f-display); font-weight:700; font-size:clamp(48px, 17vw, 280px); line-height:0.85; letter-spacing:-0.06em; color:transparent; -webkit-text-stroke:1.5px rgba(15,42,32,.22); text-align:center; padding:20px var(--pad-x) 30px; overflow:hidden; white-space:nowrap; }
 .foot-bottom{ border-top:1px solid var(--line); }
 .foot-bottom .wrap{ display:flex; justify-content:space-between; align-items:center; padding:20px var(--pad-x); font-family:var(--f-mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-mute); }
 

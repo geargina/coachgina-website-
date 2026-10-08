@@ -66,7 +66,7 @@ A price is a claim. This is the only file that states one.
 | Willis | **PUBLISHED** | Public LinkedIn comment, cleared 23 Aug 2026 | Published as: "Enjoyed the session. I'm gonna build my own Obsidian coming week." Attributed "Willis, Masterclass attendee" per her instruction to keep it generic. **Caveat: I only ever had the ellipsis-truncated version of his comment.** The published line uses only the parts that were unambiguous. Worth checking against the original comment when convenient. |
 | "In Chong, CEO of BHB" | **RETIRED** | n/a | Appears in no record. Removed 23 Aug 2026. |
 | "Wee Kiat, Founder, Agency" | **RETIRED** | n/a | Appears in no record. Removed 23 Aug 2026. |
-| Keith | DRAFTED, consent pending | WhatsApp group post, 6 Oct 2026, screenshot in SecondBrain-Media/portfolio-site/. Ask Keith before it goes live, and before any surname or photo. | "If anyone here wants to know more about what AI can do, I seriously recommend contacting Geargina. In less than 30 mins she showed me how little I knew about AI, with her 'second brain'... Now I can't unsee what AI can do." First name only. |
+| Keith | **PUBLISHED** | WhatsApp group post, 6 Oct 2026, screenshot in SecondBrain-Media/portfolio-site/. Consent confirmed by Geargina 8 Oct 2026 ("he is ok"). First name only; ask again before a surname or photo. | "If anyone here wants to know more about what AI can do, I seriously recommend contacting Geargina. In less than 30 mins she showed me how little I knew about AI, with her 'second brain'... Now I can't unsee what AI can do." First name only. |
 
 Further source: Prasad at Cogentic is publishing testimonials on the Cogentic site. Link out to them rather than copying their copy.
 
