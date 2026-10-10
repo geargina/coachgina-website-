@@ -186,11 +186,6 @@ h2.sec{ font-family:var(--f-display); font-weight:700; font-size:clamp(32px, 4.2
 
 /* Footer */
 footer{ padding-top:80px; background:var(--bg); }
-.foot-top{ display:grid; grid-template-columns:1.2fr repeat(3,1fr); gap:32px; padding:40px 0; border-top:1px solid var(--line); }
-.foot-top h5{ font-family:var(--f-mono); font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-dim); margin:0 0 16px; }
-.foot-top ul{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px; font-size:14px; }
-.foot-top a{ text-decoration:none; color:var(--ink-dim); }
-.foot-top a:hover{ color:var(--deep); text-decoration:underline; text-decoration-color:var(--yellow); text-decoration-thickness:3px; text-underline-offset:4px; }
 .foot-blurb{ color:var(--ink-dim); max-width:32ch; font-size:14px; line-height:1.55; }
 .wordmark{ font-family:var(--f-display); font-weight:700; font-size:clamp(48px, 17vw, 280px); line-height:0.85; letter-spacing:-0.06em; color:transparent; -webkit-text-stroke:1.5px rgba(15,42,32,.22); text-align:center; padding:20px var(--pad-x) 30px; overflow:hidden; white-space:nowrap; }
 .foot-bottom{ border-top:1px solid var(--line); }
@@ -254,7 +249,6 @@ footer{ padding-top:80px; background:var(--bg); }
   .hero .wrap{ grid-template-columns:1fr; }
   .stats-grid{ grid-template-columns:repeat(2,1fr); }
   .offer-grid, .help-grid, .about-grid, .testi-grid, .blog-grid, .cta-banner, .split, .form-row{ grid-template-columns:1fr; }
-  .foot-top{ grid-template-columns:1fr 1fr; }
   .cta-banner{ padding:36px; }
 
   /* Top strip: one span, so clip it rather than let it wrap the bar to 2 lines */
@@ -548,4 +542,17 @@ footer{ padding-top:80px; background:var(--bg); }
   .sticker-badge{ animation:none; }
   .ticker-track{ animation:none; }
   .scroll-cue span{ animation:none; }
+}
+
+/* ============================================================
+   Mobile fix pass, 10 Oct 2026. Small-screen only; desktop untouched.
+   ============================================================ */
+@media (max-width:960px){
+  /* 1fr tracks let min-content (long email, select, inputs) push cards past the viewport at 360px */
+  .split{ grid-template-columns:minmax(0,1fr); }
+  .split > *{ min-width:0; }
+}
+@media (max-width:480px){
+  .form-card{ padding:28px 22px; border-radius:24px; }
+  .info-card{ padding:22px; }
 }
