@@ -567,3 +567,8 @@ footer{ padding-top:80px; background:var(--bg); }
   .foot-top{ gap:28px 20px; }
   .foot-top > :first-child, .foot-top > :last-child{ grid-column:1 / -1; }
 }
+@media (max-width:960px){
+  /* tap targets: brand link (28px mark) and buttons (41-43px) reach 44px on touch layouts */
+  .brand{ min-height:44px; }
+  .btn{ min-height:44px; }
+}

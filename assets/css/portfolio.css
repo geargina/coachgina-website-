@@ -204,6 +204,8 @@ body.is-locked{overflow:hidden}
 .chip{height:36px;padding:0 15px;border-radius:999px;font:500 13px/1 var(--sans);box-shadow:inset 0 0 0 1px rgba(15,42,32,.18);color:var(--ink-2);transition:background .3s,color .3s,box-shadow .3s}
 .chip:hover{box-shadow:inset 0 0 0 1px var(--deep);color:var(--ink)}
 .chip[aria-pressed="true"]{background:var(--deep);color:var(--paper);box-shadow:inset 0 0 0 1px var(--deep)}
+/* touch: 44px hit area without growing the 36px pill (8px row gap leaves room for the 4px bleed) */
+@media (pointer:coarse){.chip{position:relative}.chip::after{content:"";position:absolute;left:0;right:0;top:-4px;bottom:-4px}}
 .ptable{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:clamp(20px,2.5vw,36px);align-items:start}
 .ptable__grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px}
 .el{position:relative;aspect-ratio:1/1.08;border-radius:14px;background:var(--card);box-shadow:var(--hair);padding:9px 10px;display:flex;flex-direction:column;text-align:left;overflow:hidden;transition:transform .5s var(--ease),box-shadow .4s,opacity .5s,background .3s,color .3s}
