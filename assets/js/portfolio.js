@@ -78,8 +78,10 @@
   var hasVideo = !!(hv && typeof hv === 'object' && (hv.webm || hv.mp4));
   var heroMedia = hasVideo
     ? '<video class="hero__video" muted loop playsinline preload="metadata" poster="' + esc(hv.poster || 'assets/video/hero.webp') + '" aria-label="' + esc(P.name) + ', AI educator and operator, introduces herself as an animated 3D character">' +
-        (hv.webm ? '<source src="' + esc(hv.webm) + '" type="video/webm">' : '') +
-        (hv.mp4 ? '<source src="' + esc(hv.mp4) + '" type="video/mp4">' : '') + '</video>'
+        /* mp4 (H.264) first: WebKit/iOS accepts the VP9 4:4:4 webm, loads metadata, then never decodes a frame
+           and never errors, so it would never fall through. webm stays as a second source only. */
+        (hv.mp4 ? '<source src="' + esc(hv.mp4) + '" type="video/mp4">' : '') +
+        (hv.webm ? '<source src="' + esc(hv.webm) + '" type="video/webm">' : '') + '</video>'
     : '<picture><source srcset="assets/video/hero.webp" type="image/webp"><img src="assets/video/hero.png" width="768" height="960" alt="3D cartoon character of ' + esc(P.name) + ' standing in a white shirt and black trousers" fetchpriority="high" decoding="async"></picture>';
   var rh = P.roleHeading || [P.role || ''];
   fill('.hero',
@@ -393,6 +395,32 @@
     }
     function play() { var p = video.play(); return p && p.catch ? p : Promise.resolve(); }
     video.muted = false;
+    /* Stall safety net: if no frame decodes (readyState < 2) or the source errors, retry on the mp4,
+       then fall back to the poster as a plain <img> (same blend + mask via .hero__figure img). */
+    var fellBack = false, posterShown = false;
+    function mp4Src() { return hv.mp4 || ''; }
+    function showPoster() {
+      if (posterShown || video.readyState >= 2) return;
+      posterShown = true;
+      var img = doc.createElement('img');
+      img.className = 'hero__poster'; img.src = hv.poster || video.getAttribute('poster') || '';
+      img.alt = ''; img.setAttribute('aria-hidden', 'true'); img.decoding = 'async';
+      video.parentNode.insertBefore(img, video);
+      video.classList.add('is-stalled');
+      video.addEventListener('playing', function () { if (img.parentNode) img.parentNode.removeChild(img); video.classList.remove('is-stalled'); }, { once: true });
+    }
+    function rescue() {
+      if (video.readyState >= 2) return;
+      var cur = video.currentSrc || '';
+      if (!fellBack && mp4Src() && !/\.mp4(\?|$)/i.test(cur)) {
+        fellBack = true;
+        $$('source', video).forEach(function (s) { s.parentNode.removeChild(s); });
+        video.src = mp4Src(); video.load(); play().catch(function () {});
+        setTimeout(rescue, 2500);
+      } else showPoster();
+    }
+    video.addEventListener('error', rescue, true);
+    setTimeout(rescue, 2500);
     play().then(function () { btn.classList.remove('is-blocked'); sync(); }).catch(function () {
       video.muted = true; sync();
       btn.classList.add('is-blocked');

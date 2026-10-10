@@ -93,6 +93,8 @@ body.is-locked{overflow:hidden}
 .hero__figure{position:relative;z-index:1;height:min(96svh,1040px);aspect-ratio:768/960;max-width:100%;margin:0;mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 16%,#000 84%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 16%,#000 84%,transparent 100%)}
 .hero__figure.is-video{aspect-ratio:768/1098}
 .hero__figure img,.hero__figure video{width:100%;height:100%;object-fit:contain;object-position:bottom center;filter:brightness(1.035)}
+.hero__figure .hero__poster{position:absolute;inset:0}
+.hero__video.is-stalled{opacity:0}
 .js .hero__figure{opacity:0;transform:translateY(30px) scale(.985);transition:opacity 1.4s var(--ease),transform 1.6s var(--ease)}
 .js .hero.is-ready .hero__figure{opacity:1;transform:none}
 .hero__copy{position:absolute;z-index:2;left:var(--gutter);bottom:clamp(40px,11svh,120px);max-width:min(40vw,560px)}
