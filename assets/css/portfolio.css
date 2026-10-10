@@ -116,6 +116,11 @@ body.is-locked{overflow:hidden}
 .sound:hover{transform:scale(1.06)}
 .hero:has(.hero__transcript){padding-bottom:50px}
 .hero__transcript{position:absolute;z-index:2;left:50%;bottom:14px;transform:translateX(-50%);width:min(600px,44vw);text-align:center;font:500 11px/1.5 var(--mono);letter-spacing:.02em;color:var(--mute)}
+@media (min-width:1600px){
+  /* big screens: the small mono hero copy read as fine print beside the 1000px avatar */
+  .hero__transcript{font-size:12.5px;width:min(680px,40vw)}
+  .hero__eyebrow,.hero__meta{font-size:13px}
+}
 .sound.is-blocked::after{content:"";position:absolute;inset:0;border-radius:50%;box-shadow:0 0 0 0 rgba(15,42,32,.35);animation:ping 1.8s var(--ease) infinite}
 @keyframes ping{0%{box-shadow:0 0 0 0 rgba(15,42,32,.35)}100%{box-shadow:0 0 0 16px rgba(15,42,32,0)}}
 @media (max-width:1000px){
