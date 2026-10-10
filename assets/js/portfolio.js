@@ -583,14 +583,22 @@
 
   /* Numbers: pinned horizontal track + count-up */
   var numSec = $('#numbers'), track = $('#track'), numBar = $('#numBar'), ncards = $$('.ncard:not(.ncard--end)', track);
-  var travel = 0, pinned = false;
+  var travel = 0, pinned = false, SWIPE = window.matchMedia('(max-width:900px)');
   function layoutNumbers() {
-    pinned = !RM.matches;
-    numSec.classList.toggle('is-static', !pinned);
-    if (!pinned) { numSec.style.height = ''; return; }
+    /* phones/tablets: no scroll-jacked pin (it left ~2.9K px of dead scroll); the track becomes a native swipe row */
+    var swipe = SWIPE.matches && !RM.matches;
+    pinned = !RM.matches && !swipe;
+    numSec.classList.toggle('is-static', RM.matches);
+    numSec.classList.toggle('is-swipe', swipe);
+    if (!pinned) { numSec.style.height = ''; track.style.transform = ''; if (swipe) swipeBar(); return; }
     travel = Math.max(0, track.scrollWidth - window.innerWidth);
     numSec.style.height = (window.innerHeight + travel) + 'px';
   }
+  function swipeBar() {
+    var max = track.scrollWidth - track.clientWidth;
+    numBar.style.transform = 'scaleX(' + (max > 0 ? clamp(track.scrollLeft / max, 0, 1) : 0).toFixed(4) + ')';
+  }
+  track.addEventListener('scroll', function () { if (!pinned) requestAnimationFrame(swipeBar); }, { passive: true });
   function countUp(card) {
     var el = $('.cnt', card), v = +card.getAttribute('data-v'), t0 = performance.now(), dur = RM.matches ? 0 : 1400;
     (function tick(t) {

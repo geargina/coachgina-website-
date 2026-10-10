@@ -83,6 +83,8 @@ main:focus{outline:none}
 .menu.is-open .menu__list a{transform:none}
 body.is-locked{overflow:hidden}
 @media (max-width:860px){
+  /* phones: 96px top + 96px bottom per section read as dead space between blocks */
+  :root{--secpad:clamp(60px,8vh,76px)}
   .nav__pill{display:none}
   /* phones: the fixed nav gets a paper backdrop once scrolled so the mark, Menu pill and status-bar strip never print over content */
   .nav{transition:background-color .4s,box-shadow .4s,padding .4s var(--ease),-webkit-backdrop-filter .4s,backdrop-filter .4s}
@@ -424,6 +426,14 @@ body.is-locked{overflow:hidden}
 .numbers.is-static .track{width:auto;max-width:calc(var(--max) + 2 * var(--gutter));margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));transform:none!important}
 .numbers.is-static .ncard{width:auto}
 .numbers.is-static .num__bar{display:none}
+.numbers.is-swipe .num__pin{position:relative;height:auto;padding:var(--secpad) 0;gap:24px}
+.numbers.is-swipe .num__head{align-items:center}
+.numbers.is-swipe .num__head::after{content:"Swipe \2192";font:500 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.numbers.is-swipe .num__bar{width:min(180px,40vw)}
+.numbers.is-swipe .track{width:auto;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter);scrollbar-width:none;transform:none!important;padding-block:16px 28px}
+.numbers.is-swipe .track::-webkit-scrollbar{display:none}
+.numbers.is-swipe .ncard{scroll-snap-align:start;width:min(340px,calc(100vw - 2 * var(--gutter) - 36px))}
+.numbers.is-swipe .ncard--end{scroll-snap-align:end;width:auto}
 @media (max-width:560px){
   .ncard{padding:20px}
   .nval{font-size:52px}.nval.long{font-size:38px}
