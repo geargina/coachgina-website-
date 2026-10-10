@@ -158,6 +158,11 @@ body.is-locked{overflow:hidden}
 .idcard__face{position:absolute;inset:0;border-radius:22px;background:var(--card);box-shadow:var(--hair),0 40px 70px -30px rgba(15,42,32,.35),0 14px 28px -16px rgba(15,42,32,.2);backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;display:flex;flex-direction:column}
 .idcard__face::before{content:"";position:absolute;top:10px;left:50%;width:46px;height:8px;margin-left:-23px;border-radius:999px;background:var(--paper);box-shadow:inset 0 1px 2px rgba(0,0,0,.25);z-index:2}
 .idcard__back{transform:rotateY(180deg)}
+/* WebKit fallback: some Safari paths ignore backface-visibility inside the swinging lanyard and paint the mirrored back on top.
+   Swap face visibility at the flip midpoint (card edge-on) so the right face shows whatever the renderer does. */
+.idcard__front,.idcard__back{transition:visibility 0s .45s}
+.idcard__back,.idcard.is-flipped .idcard__front{visibility:hidden}
+.idcard.is-flipped .idcard__back{visibility:visible}
 .id__band{background:var(--deep);color:var(--paper);font:600 11px/1 var(--mono);letter-spacing:.22em;padding:28px 20px 14px;display:flex;justify-content:space-between}
 .id__band i{font-style:normal;color:rgba(255,255,255,.5)}
 .id__photo{position:relative;width:128px;height:156px;margin:18px auto 0;border-radius:16px;padding:3px;background:linear-gradient(160deg,#d9d6d0,#7d7a74 55%,#cfccc6)}
