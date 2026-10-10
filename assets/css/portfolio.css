@@ -123,7 +123,7 @@ body.is-locked{overflow:hidden}
   .hero__copy,.hero__side{position:relative;left:auto;right:auto;bottom:auto;max-width:none;text-align:center;align-items:center}
   .hero__copy{order:2;margin-top:8px}
   .hero:has(.hero__transcript){padding-bottom:48px}
-  .hero__transcript{position:relative;left:auto;bottom:auto;transform:none;order:1;width:auto;max-width:44ch;margin:10px 0 18px}
+  .hero__transcript{position:relative;left:auto;bottom:auto;transform:none;order:1;width:auto;max-width:44ch;margin:10px 0 18px;font-size:13px}
   .hero__side{order:3;margin-top:24px}
   .hero__side .btns{justify-content:center}
   .hero__scroll{display:none}
@@ -244,6 +244,14 @@ body.is-locked{overflow:hidden}
   .insp{position:relative;top:auto;min-height:0}
   .insp__logo{height:150px}
   .el__s{font-size:clamp(20px,6vw,30px)}
+}
+@media (max-width:560px){
+  /* phones: 3 columns so tile labels read in full (2 lines) instead of 9px ellipsis */
+  .ptable__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .el{aspect-ratio:auto;min-height:124px;padding:10px 11px 11px}
+  .el__n{font-size:11px}
+  .el__name{font-size:12.5px;line-height:1.22;white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+  .el__f{font-size:10px;line-height:1.25;letter-spacing:.03em;white-space:normal;margin-top:5px}
 }
 
 /* ---------- work ---------- */
