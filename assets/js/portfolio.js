@@ -590,6 +590,9 @@
     pinned = !RM.matches && !swipe;
     numSec.classList.toggle('is-static', RM.matches);
     numSec.classList.toggle('is-swipe', swipe);
+    /* swipe row is keyboard-scrollable and announced as a region */
+    if (swipe) { track.setAttribute('role', 'region'); track.setAttribute('aria-label', 'Numbers, swipe to see more'); track.tabIndex = 0; }
+    else { track.removeAttribute('role'); track.removeAttribute('aria-label'); track.removeAttribute('tabindex'); }
     if (!pinned) { numSec.style.height = ''; track.style.transform = ''; if (swipe) swipeBar(); return; }
     travel = Math.max(0, track.scrollWidth - window.innerWidth);
     numSec.style.height = (window.innerHeight + travel) + 'px';
@@ -612,7 +615,7 @@
     ncards.forEach(function (c) { var el = $('.cnt', c); if (el) el.textContent = '0'; });
     var co = new IntersectionObserver(function (en) {
       en.forEach(function (e) { if (e.isIntersecting) { countUp(e.target); co.unobserve(e.target); } });
-    }, { threshold: 0.5 });
+    }, { threshold: SWIPE.matches ? 0.05 : 0.5 }); /* swipe row: start as soon as a card peeks, so the peek never sits on '0' */
     ncards.forEach(function (c) { co.observe(c); });
   } else ncards.forEach(countUp);
 

@@ -88,7 +88,7 @@ body.is-locked{overflow:hidden}
   .nav__pill{display:none}
   /* phones: the fixed nav gets a paper backdrop once scrolled so the mark, Menu pill and status-bar strip never print over content */
   .nav{transition:background-color .4s,box-shadow .4s,padding .4s var(--ease),-webkit-backdrop-filter .4s,backdrop-filter .4s}
-  .nav.is-scrolled{background:rgba(250,248,241,.84);-webkit-backdrop-filter:blur(14px) saturate(1.15);backdrop-filter:blur(14px) saturate(1.15);box-shadow:0 1px 0 var(--line);padding-bottom:10px;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+  .nav.is-scrolled{pointer-events:auto;background:rgba(250,248,241,.92);-webkit-backdrop-filter:blur(14px) saturate(1.15);backdrop-filter:blur(14px) saturate(1.15);box-shadow:0 1px 0 var(--line);padding-bottom:10px;padding-top:calc(10px + env(safe-area-inset-top,0px))}
   .nav__menu{display:inline-flex;align-items:center}
 }
 
@@ -169,8 +169,8 @@ body.is-locked{overflow:hidden}
 .idcard__face::before{content:"";position:absolute;top:10px;left:50%;width:46px;height:8px;margin-left:-23px;border-radius:999px;background:var(--paper);box-shadow:inset 0 1px 2px rgba(0,0,0,.25);z-index:2}
 .idcard__back{transform:rotateY(180deg)}
 /* WebKit fallback: some Safari paths ignore backface-visibility inside the swinging lanyard and paint the mirrored back on top.
-   Swap face visibility at the flip midpoint (card edge-on) so the right face shows whatever the renderer does. */
-.idcard__front,.idcard__back{transition:visibility 0s .45s}
+   Swap face visibility where the eased 1s flip crosses 90deg (~0.1s with cubic-bezier(.16,1,.3,1)), both directions. */
+.idcard__front,.idcard__back{transition:visibility 0s .1s}
 .idcard__back,.idcard.is-flipped .idcard__front{visibility:hidden}
 .idcard.is-flipped .idcard__back{visibility:visible}
 .id__band{background:var(--deep);color:var(--paper);font:600 11px/1 var(--mono);letter-spacing:.22em;padding:28px 20px 14px;display:flex;justify-content:space-between}
@@ -437,7 +437,8 @@ body.is-locked{overflow:hidden}
 .numbers.is-static .num__bar{display:none}
 .numbers.is-swipe .num__pin{position:relative;height:auto;padding:var(--secpad) 0;gap:24px}
 .numbers.is-swipe .num__head{align-items:center}
-.numbers.is-swipe .num__head::after{content:"Swipe \2192";font:500 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+@media (hover:none),(pointer:coarse){.numbers.is-swipe .num__head::after{content:"Swipe \2192";font:500 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}}
+.numbers.is-swipe .track:focus-visible{outline:2px solid var(--deep);outline-offset:-2px;border-radius:28px}
 .numbers.is-swipe .num__bar{width:min(180px,40vw)}
 .numbers.is-swipe .track{width:auto;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter);scrollbar-width:none;transform:none!important;padding-block:16px 28px}
 .numbers.is-swipe .track::-webkit-scrollbar{display:none}
