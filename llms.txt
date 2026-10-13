@@ -19,7 +19,7 @@
 
 ## Blog
 
-- [Blog](https://www.geargina.com/blog/): Practical writing on AI, prompting and coaching, by an AI workshop facilitator in Singapore.
+- [Blog](https://www.geargina.com/blog/): Practical writing on AI, prompting and coaching, by an AI educator and operator in Singapore.
 - [API vs MCP, explained simply](https://www.geargina.com/blog/api-vs-mcp-difference-explained-simply.html): The difference between an API and MCP, explained simply for beginners.
 - [Singapore Budget 2026 AI guide](https://www.geargina.com/blog/singapore-budget-2026-ai-business-owners-workers-guide.html): Every Singapore Budget 2026 AI initiative, broken down by who it affects.
 - [AI in Singapore schools](https://www.geargina.com/blog/singapore-ai-education-moe-primary-school-framework.html): A parent-friendly breakdown of MOE's framework for AI in primary schools, what it gets right and what it misses.
