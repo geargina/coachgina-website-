@@ -42,7 +42,7 @@ Schema in use:
 
 **Published numbers are a subset of confirmed numbers.** Cohort sizes and survey respondent counts are confirmed in the register but withheld from the site by her decision. A percentage still needs its caveat, so the caveat is written in words ("answered by different people each time") rather than counts.
 
-**Title ownership.** The homepage title is the person ("Geargina Tan | AI Workshop Facilitator, Singapore | Coach Gina"). The hub owns "AI Workshops in Singapore". The Claude page owns "Claude Workshop in Singapore". Two pages never share a head term.
+**Title ownership.** The homepage title is the person ("Geargina Tan | AI Educator & Operator, Singapore | Coach Gina", role phrase per Geargina decision 13 Oct 2026, superseding "AI Workshop Facilitator"). The hub owns "AI Workshops in Singapore". The Claude page owns "Claude Workshop in Singapore". Two pages never share a head term.
 
 **Case studies** are flat root files (`case-study-*.html`, indexed by `case-studies.html` as a `CollectionPage`) with `Article` schema: `headline`, `image` at least 1200px wide, `datePublished`, `dateModified`, `author` → `#gina`, `publisher` → `#org`, `mainEntityOfPage`, plus `BreadcrumbList`. Never `Review` or `aggregateRating`. Facts only from the register; a client with no cleared quote gets no testimonial block.
 

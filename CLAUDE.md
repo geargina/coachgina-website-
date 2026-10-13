@@ -14,7 +14,7 @@ Static site for Geargina Tan (Coach Gina). Plain HTML, CSS and JS. No build step
 
 | Path | What |
 |---|---|
-| `index.html` | Homepage. Sections in order: nav, hero, ticker, `.hosts`, `#offerings`, `#trailer`, `#ladder`, help grid, `#about`, `#testi`, `#blog`, `#faq`, `#cta`, footer. Now carries an 8-question FAQ and the entity sentence ("Geargina Tan is a Singapore-based AI workshop facilitator...") under the H1. |
+| `index.html` | Homepage. Sections in order: nav, hero, ticker, `.hosts`, `#offerings`, `#trailer`, `#ladder`, help grid, `#about`, `#testi`, `#blog`, `#faq`, `#cta`, footer. Now carries an 8-question FAQ and the entity line under the H1 (role phrase "AI Educator & Operator", 13 Oct 2026; see the claims register). |
 | `ai-workshops-singapore.html` | The AI workshops hub. Run sheet, formats table, survey instrument, partners section, 4 FAQs. |
 | `claude-workshop-singapore.html` | Claude workshop page. Ladder, Claude Masterclass 101 section, trailer, Oct cohort link with expiry, 3 FAQs. |
 | `case-studies.html` + `case-study-*.html` | Case studies index plus two flat root files (`case-study-claude-masterclass-101.html`, `case-study-bnf-group-ai-workshop.html`), each carrying Article schema. |

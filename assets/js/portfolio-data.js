@@ -12,7 +12,7 @@ window.DATA = {
     roleHeading: ["AI Educator", "Operator."],          // heading: "AI Educator & <i>Operator.</i>"
     email: "hello@iamcoachgina.com",
     location: "Singapore",
-    linkedin: "https://linkedin.com/in/gearginatan",
+    linkedin: "https://www.linkedin.com/in/gearginatan/",
     linkedinLabel: "linkedin.com/in/gearginatan",
     resumePath: "geargina-tan-cv.pdf",
     heroVideo: { webm: "assets/video/hero.webm", mp4: "assets/video/hero.mp4", poster: "assets/video/hero.webp" },
@@ -194,13 +194,13 @@ window.DATA = {
       title: "Tell me who is in the room.",
       body: "Group size, how long you can give me, and what you want people doing differently next Monday. I reply within 2 business days.",
       primary: { label: "Contact me", href: "mailto:hello@iamcoachgina.com?subject=Workshop%20or%201%3A1%20enquiry" },
-      secondary: { label: "DM on LinkedIn", href: "https://linkedin.com/in/gearginatan" }
+      secondary: { label: "DM on LinkedIn", href: "https://www.linkedin.com/in/gearginatan/" }
     }
   },
 
   // FAQ: verbatim from the geargina.com homepage <details> blocks (#faq). Do not reword.
   faq: [
-    { q: "Who is Coach Gina?", a: "Coach Gina (Geargina Tan) is an AI workshop facilitator based in Singapore and the co-founder and COO of WTFox.ai, an AI company she runs on Claude and ChatGPT every day. She came to AI without a technical background, which shapes how she teaches. Her workshops start where beginners actually are, and take people from chatting with AI to handing it real work." },
+    { q: "Who is Coach Gina?", a: "Coach Gina (Geargina Tan) is an AI educator and operator based in Singapore and the co-founder and COO of WTFox.ai, an AI company she runs on Claude and ChatGPT every day. She came to AI without a technical background, which shapes how she teaches. Her workshops start where beginners actually are, and take people from chatting with AI to handing it real work." },
     { q: "Do I need a technical background to join an AI workshop?", a: "No. The sessions are built for people who are new to AI and have no technical background. Geargina is not a developer either, which is why the material starts in plain language instead of where an engineer would start. What you do need is a laptop, an account logged in before the session begins, and one real piece of your own work to practise on." },
     { q: "How do I choose an AI workshop facilitator in Singapore?", a: "Ask five things. Has this person run a room like yours, at your seniority and skill level. Does the session work on your own documents rather than a demo dataset. Is there hands-on time from the first 20 minutes. What will people have actually built by the time they leave. And will you see the survey results afterwards, the flat ones included." },
     { q: "How much does an AI workshop in Singapore cost?", a: "It is scoped per team, so there is no rate card. Four things move the number. How many people are in the room, how long the format runs (2 hrs, 3 hrs or a full day), how much prep goes into building the session on your own documents, and whether it runs in person in Singapore or online. Send those four on the contact form and you get a figure back." },
