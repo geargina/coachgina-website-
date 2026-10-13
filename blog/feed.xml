@@ -6,7 +6,15 @@
     <description>Honest writing on AI, prompting, coaching, and what's actually working, by an AI coach in Singapore.</description>
     <language>en</language>
     <atom:link href="https://www.geargina.com/blog/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 07 Sep 2026 01:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 01:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Which Claude Model Should I Use? Haiku vs Sonnet vs Opus vs Fable</title>
+      <link>https://www.geargina.com/blog/which-claude-model-should-i-use.html</link>
+      <guid>https://www.geargina.com/blog/which-claude-model-should-i-use.html</guid>
+      <pubDate>Tue, 13 Oct 2026 01:00:00 GMT</pubDate>
+      <category>Tools</category>
+      <description>Which Claude model should you use? Sonnet for most work, Opus for hard jobs, Haiku for quick ones, Fable for big builds. Plans and prices, Oct 2026.</description>
+    </item>
     <item>
       <title>An Alien Mind, Explained Simply: What OpenAI's Chief Scientist Said</title>
       <link>https://www.geargina.com/blog/an-alien-mind-explained-simply.html</link>
