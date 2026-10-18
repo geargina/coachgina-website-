@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coach Gina's AI Starter Kit | PICPA EMPOWER 2026 | GEARGINA</title>
+<meta name="description" content="The AI Starter Kit from Geargina Tan's talk at PICPA EMPOWER, Cagayan de Oro, 24 Oct 2026. The four-part brief, five everyday prompts, the door rule and a Project template." />
+<!-- Event landing page reached by the QR on the closing slide (geargina.com/picpa, rewritten here in vercel.json). Kept out of search and the sitemap on purpose. -->
+<meta name="robots" content="noindex, nofollow" />
+<link rel="canonical" href="https://www.geargina.com/picpa" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta name="theme-color" content="#0f2a20" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/fonts/portfolio/fonts.css">
+<link rel="stylesheet" href="assets/css/site.css?v=18">
+<style>
+  .kit-grid{ display:grid; grid-template-columns:1fr 1.15fr; gap:48px; align-items:start; }
+  .kit-list{ list-style:none; margin:0 0 28px; padding:0; }
+  .kit-list li{ position:relative; padding:12px 0 12px 30px; border-bottom:1px solid var(--line); color:var(--ink); font-size:16px; line-height:1.45; }
+  .kit-list li::before{ content:""; position:absolute; left:2px; top:19px; width:10px; height:10px; border-radius:50%; background:var(--yellow); box-shadow:0 0 0 1.5px var(--deep); }
+  .kit-list b{ color:var(--deep); }
+  .kit-note{ background:var(--card); border-radius:14px; box-shadow:inset 0 0 0 1px var(--line); padding:20px 22px; color:var(--ink-dim); font-size:15px; line-height:1.55; }
+  .kit-note strong{ color:var(--deep); }
+  .kit-form{ background:var(--card); border-radius:16px; box-shadow:inset 0 0 0 1px var(--line), 0 30px 60px -30px rgba(15,42,32,.25); overflow:hidden; }
+  .kit-form iframe{ display:block; width:100%; height:900px; border:0; }
+  .kit-form .fallback{ padding:28px; color:var(--ink-dim); }
+  @media (max-width:860px){ .kit-grid{ grid-template-columns:1fr; gap:32px; } .kit-form iframe{ height:1000px; } }
+</style>
+</head>
+<body>
+
+<div id="site-nav"></div>
+<main id="main">
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">PICPA EMPOWER · Cagayan de Oro · 24 Oct 2026</span>
+    <h1>Coach Gina's<br/>AI Starter Kit.</h1>
+    <p>Everything from the talk on 2 pages. Fill in the form and the download link shows up straight away.</p>
+  </div>
+</section>
+
+<section class="s">
+  <div class="wrap kit-grid">
+    <div>
+      <ul class="kit-list">
+        <li><b>The four-part brief.</b> Role, context, task, format. Brief it like a new hire.</li>
+        <li><b>My five everyday prompts.</b> Copy, fill the brackets, send.</li>
+        <li><b>A Project template.</b> Teach it once, so every chat starts warm.</li>
+        <li><b>The door rule</b> and the list of what never goes in a prompt.</li>
+        <li><b>What the free plans give you</b>, and how to save tokens.</li>
+      </ul>
+      <div class="kit-note">
+        <strong>Keen on a hands-on class in the Philippines?</strong> Tick the box on the form. It tells me where to run one.
+        <br/><br/>Questions after the talk? Send me a DM on <a href="https://www.linkedin.com/in/gearginatan" target="_blank" rel="noopener">LinkedIn</a>.
+      </div>
+    </div>
+    <div class="kit-form" id="kit-form">
+      <!-- Paste the Google Form embed URL (Send > <> > src, ends in ?embedded=true) into data-form. -->
+      <div class="fallback" data-form="">The form is loading. If it doesn't appear, message me on <a href="https://www.linkedin.com/in/gearginatan" target="_blank" rel="noopener">LinkedIn</a> and I'll send the kit.</div>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/site.js?v=18" data-page="picpa"></script>
+<script>
+  // Swap the fallback for the Google Form once its embed URL is set.
+  (function(){
+    var box = document.getElementById('kit-form'), fb = box.querySelector('[data-form]');
+    var src = fb && fb.getAttribute('data-form');
+    if (!src) return;
+    var f = document.createElement('iframe');
+    f.src = src; f.title = 'AI Starter Kit form'; f.loading = 'lazy';
+    box.replaceChild(f, fb);
+  })();
+</script>
+</body>
+</html>
