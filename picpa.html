@@ -29,6 +29,11 @@
   .kit-form{ background:var(--card); border-radius:16px; box-shadow:inset 0 0 0 1px var(--line), 0 30px 60px -30px rgba(15,42,32,.25); overflow:hidden; }
   .kit-form iframe{ display:block; width:100%; height:900px; border:0; }
   .kit-form .fallback{ padding:28px; color:var(--ink-dim); }
+  .kit-done{ padding:40px 32px; text-align:left; }
+  .kit-done h2{ font-family:var(--f-display); font-weight:700; font-size:32px; line-height:1.05; letter-spacing:-0.03em; color:var(--deep); margin:10px 0 12px; }
+  .kit-done p{ color:var(--ink-dim); font-size:16px; line-height:1.55; margin:0 0 22px; }
+  .kit-btn{ display:inline-flex; align-items:center; gap:10px; background:var(--deep); color:#fff; text-decoration:none; font-weight:600; font-size:17px; padding:16px 26px; border-radius:999px; }
+  .kit-btn:hover{ background:#0f2a20; }
   @media (max-width:860px){ .kit-grid{ grid-template-columns:1fr; gap:32px; } .kit-form iframe{ height:1000px; } }
 </style>
 </head>
@@ -56,12 +61,12 @@
         <li><b>What the free plans give you</b>, and how to save tokens.</li>
       </ul>
       <div class="kit-note">
-        <strong>Keen on a hands-on class in the Philippines?</strong> Tick the box on the form. It tells me where to run one.
+        <strong>Keen on a hands-on class in the Philippines, or one for your organisation?</strong> Tick a box on the form. It tells me where to run the next one.
         <br/><br/>Questions after the talk? Send me a DM on <a href="https://www.linkedin.com/in/gearginatan" target="_blank" rel="noopener">LinkedIn</a>.
       </div>
     </div>
     <div class="kit-form" id="kit-form">
-      <!-- Paste the Google Form embed URL (Send > <> > src, ends in ?embedded=true) into data-form. -->
+      <!-- Paste the form embed URL into data-form. Tally: Share > Embed > Standard, the https://tally.so/embed/... link. -->
       <div class="fallback" data-form="">The form is loading. If it doesn't appear, message me on <a href="https://www.linkedin.com/in/gearginatan" target="_blank" rel="noopener">LinkedIn</a> and I'll send the kit.</div>
     </div>
   </div>
@@ -71,14 +76,43 @@
 <div id="site-footer"></div>
 <script src="assets/js/site.js?v=18" data-page="picpa"></script>
 <script>
-  // Swap the fallback for the Google Form once its embed URL is set.
+  // Swap the fallback for the form once its embed URL is set. Tally embeds size themselves via Tally's widget script.
   (function(){
     var box = document.getElementById('kit-form'), fb = box.querySelector('[data-form]');
     var src = fb && fb.getAttribute('data-form');
     if (!src) return;
     var f = document.createElement('iframe');
-    f.src = src; f.title = 'AI Starter Kit form'; f.loading = 'lazy';
-    box.replaceChild(f, fb);
+    f.title = 'AI Starter Kit form'; f.loading = 'lazy';
+    if (/tally\.so/.test(src)) {
+      f.setAttribute('data-tally-src', src); f.style.height = '620px';
+      box.replaceChild(f, fb);
+      var s = document.createElement('script'); s.src = 'https://tally.so/widgets/embed.js';
+      s.onload = function(){ if (window.Tally) window.Tally.loadEmbeds(); else f.src = src; };
+      s.onerror = function(){ f.src = src; };
+      document.body.appendChild(s);
+    } else {
+      f.src = src; box.replaceChild(f, fb);
+    }
+  })();
+
+  // The moment Tally reports a submission, swap the form for the download.
+  // Tally's own thank-you page carries the same link as a backup.
+  (function(){
+    var KIT = '/assets/docs/coach-gina-ai-starter-kit-7f424099.pdf';
+    var shown = false;
+    window.addEventListener('message', function(e){
+      if (shown || !/tally\.so$/.test(String(e.origin).replace(/^https?:\/\//, ''))) return;
+      var d = e.data;
+      if (typeof d === 'string') { try { d = JSON.parse(d); } catch(err) { return; } }
+      if (!d || d.event !== 'Tally.FormSubmitted') return;
+      shown = true;
+      var box = document.getElementById('kit-form');
+      box.innerHTML = '<div class="kit-done"><span class="eyebrow">You\'re in</span>' +
+        '<h2>Here\'s your kit.</h2>' +
+        '<p>2 pages. Save it, then do one thing from page 2 by Wednesday.</p>' +
+        '<a class="kit-btn" href="' + KIT + '" target="_blank" rel="noopener">Download your kit <span aria-hidden="true">&rarr;</span></a></div>';
+      box.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
   })();
 </script>
 </body>
