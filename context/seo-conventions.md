@@ -9,7 +9,7 @@ Better than most. Every page has a title, meta description, canonical, and full 
 Schema in use:
 - `index.html`: an `@graph` with `Person`, `Organization`, `WebSite` and 4 `Service` blocks, plus a `VideoObject` for the trailer and an 8-question `FAQPage` that mirrors the visible `#faq` section. The homepage FAQ was cut from 10 invisible questions to 6 visible ones on 4 Sep 2026.
 - `speaking.html`: `WebPage` + `BreadcrumbList` + `FAQPage` (5, mirrored)
-- `ai-workshops-singapore.html`, `claude-workshop-singapore.html`: `WebPage` (with `dateModified`) + `BreadcrumbList` + `FAQPage` (4 and 3, mirrored) + `Service` references by `@id`
+- `ai-workshops-singapore.html`, `claude-workshop-singapore.html`: `WebPage` (with `dateModified`) + `BreadcrumbList` + `FAQPage` (4 and 7, mirrored) + `Service` references by `@id`
 - `case-study-*.html`: `Article` + `BreadcrumbList`; `case-studies.html`: `CollectionPage`
 - `links.html`: minimal `WebPage`, indexable, self-canonical
 - `contact.html`: `ContactPage`
@@ -34,7 +34,7 @@ Schema in use:
 
 **`@id` contract (9 Sep 2026).** Five reusable nodes are DEFINED once, on the homepage, and only REFERENCED everywhere else: `https://www.geargina.com/#svc-masterclass`, `https://www.geargina.com/#svc-team`, `https://www.geargina.com/#svc-partner`, `https://www.geargina.com/#svc-coaching`, `https://www.geargina.com/#video-trailer`. Plus the existing `#gina`, `#org`, `#website`. A reference is `{"@type": "Service", "@id": "https://www.geargina.com/#svc-team", "name": "Team Workshops"}` (type, id, name only, so the Rich Results Test does not flag a missing field). Never redefine a description or price on a second page; that is how two versions of one offer end up in the index.
 
-**FAQ contract (9 Sep 2026).** The homepage carries 8 questions. `ai-workshops-singapore.html` carries 4, `claude-workshop-singapore.html` 3, `speaking.html` 5. No question text appears on two pages. Every answer is 40 to 80 words and its first sentence is the answer. No self-referential superlative ("best AI workshop facilitator") is ever asked or answered on this domain; "How do I choose an AI workshop facilitator in Singapore?" is answered as an honest checklist.
+**FAQ contract (9 Sep 2026).** The homepage carries 8 questions. `ai-workshops-singapore.html` carries 4, `claude-workshop-singapore.html` 7 (raised from 3 on 30 Oct 2026 for Search Console intent: format, group size, SkillsFuture, cost), `speaking.html` 5. No question text appears on two pages. Every answer is 40 to 80 words and its first sentence is the answer. No self-referential superlative ("best AI workshop facilitator") is ever asked or answered on this domain; "How do I choose an AI workshop facilitator in Singapore?" is answered as an honest checklist.
 
 **Intent pages carry first-hand delivery detail.** A page earns its URL by holding things the homepage cannot: the run sheet, the scoping questions, the survey instrument, a formats table, what went wrong and what changed, screenshots of her own setup. No location swaps, no tool swaps, no rewording of an offer card into a page. Two intent pages exist (`ai-workshops-singapore.html`, `claude-workshop-singapore.html`); a third needs 60 days of Search Console data first.
 

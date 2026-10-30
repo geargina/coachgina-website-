@@ -16,7 +16,7 @@ Static site for Geargina Tan (Coach Gina). Plain HTML, CSS and JS. No build step
 |---|---|
 | `index.html` | Homepage. Sections in order: nav, hero, ticker, `.hosts`, `#offerings`, `#trailer`, `#ladder`, help grid, `#about`, `#testi`, `#blog`, `#faq`, `#cta`, footer. Now carries an 8-question FAQ and the entity line under the H1 (role phrase "AI Educator & Operator", 13 Oct 2026; see the claims register). |
 | `ai-workshops-singapore.html` | The AI workshops hub. Run sheet, formats table, survey instrument, partners section, 4 FAQs. |
-| `claude-workshop-singapore.html` | Claude workshop page. Ladder, Claude Masterclass 101 section, trailer, Oct cohort link with expiry, 3 FAQs. |
+| `claude-workshop-singapore.html` | Claude workshop page. Who it's for, ladder, Claude Masterclass 101 section (S$349 a seat, next cohort TBA), 3 attendee testimonials, private sessions, 7 FAQs. Trailer removed 30 Oct 2026 after the 1 Oct cohort expired. |
 | `case-studies.html` + `case-study-*.html` | Case studies index plus two flat root files (`case-study-claude-masterclass-101.html`, `case-study-bnf-group-ai-workshop.html`), each carrying Article schema. |
 | `links.html` | Instagram link-in-bio page. Indexable. |
 | `speaking.html` | Topics, upcoming, past stages, bio, FAQ. Every fact must trace to `context/claims-and-proof.md`, "Speaking engagements". |
@@ -39,7 +39,7 @@ Static site for Geargina Tan (Coach Gina). Plain HTML, CSS and JS. No build step
 3. **The FAQ JSON-LD is the copy answer engines quote.** Change it in the same commit as the visible copy, never later.
 4. **Blog covers are forced to 16:9 with `object-fit:cover`.** Portrait source art must be composed onto a 16:9 canvas first or it gets cropped through the middle.
 5. **`.article .body` has no `table` styles.** A post needing a table gets a scoped `<style>` in its own head, so one post does not force a cache-bust across every file.
-6. **`#trailer` on the homepage, and the trailer on `claude-workshop-singapore.html`, both advertise the 1 Oct 2026 cohort and link to cogentic-ai.com.** Remove or re-cut both after that date; the claims register row carries the expiry.
+6. **The Oct 2026 trailer is gone from `claude-workshop-singapore.html` (30 Oct 2026).** The `#video-trailer` VideoObject is still defined on `index.html`; retire it there too unless the video is re-cut. When a new cohort date is confirmed, it goes into the "Next cohort" block on the Claude page with its own claims-register row and expiry.
 7. **The trailer `<video>` uses `data-trailer-src`.** The IntersectionObserver loader at the bottom of `index.html` auto-downloads and auto-plays every `video[data-src]`. Giving the trailer `data-src` would start a 5.5MB download with sound on scroll.
 8. **FAQ schema must mirror a visible `<details>` block.** Homepage `#faq` and `speaking.html` both do this. Never add a Question to JSON-LD without its visible twin.
 9. **Mobile nav is a real `<button class="nav-toggle">` bound in `site.js` after injection.** If you re-render the nav markup, rebind it or the menu dies silently.
