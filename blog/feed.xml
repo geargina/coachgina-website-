@@ -3,7 +3,7 @@
   <channel>
     <title>Geargina Tan | Coach Gina</title>
     <link>https://www.geargina.com/blog/</link>
-    <description>Honest writing on AI, prompting, coaching, and what's actually working, by an AI coach in Singapore.</description>
+    <description>Honest writing on AI, prompting, coaching, and what's working, by an AI coach in Singapore.</description>
     <language>en</language>
     <atom:link href="https://www.geargina.com/blog/feed.xml" rel="self" type="application/rss+xml" />
     <lastBuildDate>Sun, 15 Nov 2026 01:05:00 GMT</lastBuildDate>
@@ -93,7 +93,7 @@
       <guid>https://www.geargina.com/blog/five-prompts-i-use-every-week.html</guid>
       <pubDate>Thu, 12 Mar 2026 01:00:00 GMT</pubDate>
       <category>Prompting</category>
-      <description>The Claude and ChatGPT prompts I actually run every week, for editing, decision-making, and resetting messy thinking.</description>
+      <description>The Claude and ChatGPT prompts I run every week, for editing, decision-making, and resetting messy thinking.</description>
     </item>
     <item>
       <title>Why "Just Use ChatGPT" Is the Worst AI Advice</title>
