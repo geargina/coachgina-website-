@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>How to Spot a Phishing Email With Claude | Geargina Tan</title>
+<meta name="description" content="A look-alike domain nearly got me. Here&#x27;s how I screen suspicious emails with Claude before I reply, plus the exact prompt to copy and paste." />
+<meta name="keywords" content="how to spot a phishing email, phishing email Claude, Claude Gmail connector, look-alike domain phishing, screen emails with AI, AI security tips Singapore, Claude workshop Singapore" />
+<meta name="author" content="Geargina Tan" />
+<link rel="canonical" href="https://www.geargina.com/blog/how-to-spot-a-phishing-email-with-claude.html" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<meta name="theme-color" content="#0f2a20" />
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="How to Spot a Phishing Email With Claude" />
+<meta property="og:description" content="A look-alike domain nearly got me. Here&#x27;s how I screen suspicious emails with Claude before I reply, plus the exact prompt to copy and paste." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.geargina.com/blog/how-to-spot-a-phishing-email-with-claude.html" />
+<meta property="og:image" content="https://www.geargina.com/assets/img/gemini-portrait-16.jpg" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="800" />
+<meta property="og:site_name" content="Geargina Tan | Coach Gina" />
+<meta property="article:published_time" content="2026-11-15T09:00:00+08:00" />
+<meta property="article:author" content="Geargina Tan" />
+<meta property="article:section" content="Tools" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="How to Spot a Phishing Email With Claude" />
+<meta name="twitter:description" content="A look-alike domain nearly got me. Here&#x27;s how I screen suspicious emails with Claude before I reply, plus the exact prompt to copy and paste." />
+<meta name="twitter:image" content="https://www.geargina.com/assets/img/gemini-portrait-16.jpg" />
+
+<!-- JSON-LD: BlogPosting. Author and publisher reference the nodes defined on index.html (@id contract). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Spot a Phishing Email With Claude",
+  "description": "A look-alike domain nearly got me. Here's how I screen suspicious emails with Claude before I reply, plus the exact prompt to copy and paste.",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.geargina.com/assets/img/gemini-portrait-16.jpg",
+    "width": 1280,
+    "height": 800
+  },
+  "datePublished": "2026-11-15",
+  "dateModified": "2026-11-15",
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.geargina.com/#gina",
+    "name": "Geargina Tan",
+    "url": "https://www.geargina.com/#about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://www.geargina.com/#org",
+    "name": "GEARGINA",
+    "url": "https://www.geargina.com/"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.geargina.com/blog/how-to-spot-a-phishing-email-with-claude.html"
+  },
+  "articleSection": "Tools",
+  "keywords": "how to spot a phishing email, phishing email Claude, Claude Gmail connector, look-alike domain phishing, screen emails with AI, AI security tips Singapore, Claude workshop Singapore",
+  "inLanguage": "en"
+}
+</script>
+
+<!-- JSON-LD: BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.geargina.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.geargina.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Spot a Phishing Email With Claude",
+      "item": "https://www.geargina.com/blog/how-to-spot-a-phishing-email-with-claude.html"
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/fonts/portfolio/fonts.css">
+<link rel="stylesheet" href="../assets/css/site.css?v=18">
+<style>
+  .article .body pre{ white-space:pre-wrap; word-break:break-word; }
+</style>
+</head>
+<body>
+
+<div id="site-nav"></div>
+<main id="main">
+
+<article class="s" style="padding:64px 0 48px;">
+  <div class="article">
+    <div class="meta">
+      <span>// Tools</span>
+      <span>4 min read</span>
+      <span>Nov 2026</span>
+    </div>
+    <h1>How to Spot a Phishing Email With Claude</h1>
+    <p class="dek">Compare the sender&#x27;s domain letter by letter with the company&#x27;s real one, then ask Claude to screen the email before you reply. Here is the prompt I use, and the extra-letter trick it caught.</p>
+  </div>
+
+  <div class="article">
+    <div class="cover"><img src="../assets/img/gemini-portrait-16.jpg" width="1280" height="800" alt="AI-generated portrait used by Geargina Tan (Coach Gina), Singapore&#x27;s AI expert and COO of WTFox.ai, for her post on spotting phishing emails with Claude. A woman in a black blazer stares straight at the camera against a dark red background. AI security tips for teams in Singapore." fetchpriority="high" decoding="async" /></div>
+  </div>
+
+  <div class="article">
+    <div class="body">
+      <p>To spot a phishing email, compare the sender's domain letter by letter with the company's real domain, then look for pressure and mismatched links. You can ask Claude to do that check before you reply. Mine caught a look-alike domain with one extra letter that I would have missed at a glance.</p>
+
+      <p>Here's what happened, and the prompt you can copy.</p>
+
+      <h2>What did the phishing email look like?</h2>
+
+      <p>It came in as a confidential, board-level executive search. It was flattering and specific, and it was accurate about my background.</p>
+
+      <p>That's what worries me. It didn't read like spam. It read like someone had done their homework on me.</p>
+
+      <p>My Friday OS screens an email and its source before it drafts any reply. Friday OS is the setup I run my week on in Claude. This one it flagged as high risk.</p>
+
+      <h2>How did Claude know it was a fake?</h2>
+
+      <p>The sender domain had an extra letter. It was close enough to pass a glance. Claude checked the company's real domain and confirmed the mismatch.</p>
+
+      <p>That's called a look-alike domain. The sender's address is one letter off from the real one, so the name looks right in your inbox.</p>
+
+      <p>The domain didn't check out, so my reply never went out.</p>
+
+      <blockquote>As tech advances, so does phishing.</blockquote>
+
+      <p>I had a close friend who lost $70,000 to phishing. It's getting harder to tell with your own eyes, and I don't trust mine on this any more.</p>
+
+      <h2>How do I get Claude to screen my emails before I reply?</h2>
+
+      <p>Connect Claude to your Gmail through connectors. Next time something feels slightly off, paste in the email and try this:</p>
+
+      <pre><code>Screen emails before I reply. Check the sender's real address against the company's official domain, flag any look-alike tricks, mismatched links or pressure tactics, and give me a verdict, safe, suspicious or high risk, with the reasons. After I give the go ahead, then draft a response in my email.</code></pre>
+
+      <p>Here's what each part of that prompt does:</p>
+
+      <ul>
+      <li>It checks the sender against the company's official domain, so the extra letter shows up.</li>
+      <li>It looks for look-alike tricks, mismatched links and pressure tactics, which are the usual giveaways.</li>
+      <li>It gives you a verdict (safe, suspicious or high risk) with reasons, so you can judge for yourself.</li>
+      <li>It waits for your go-ahead before drafting, so a rushed reply can't go out.</li>
+      </ul>
+
+      <p>The last line matters most. When an email flatters you, you want to answer fast. This prompt puts a pause between the feeling and the reply.</p>
+
+      <h2>What should I still check myself?</h2>
+
+      <p>Claude is a second pair of eyes. It isn't a guarantee.</p>
+
+      <p>If an email pushes you to act quickly or keep things quiet, stop and slow down. Flattery plus secrecy is a classic combination. And if it claims to be from a company, go to that company's website by typing the address yourself, not by clicking a link in the email.</p>
+
+      <p>If the verdict comes back high risk, don't click anything and don't reply. Delete it, or report it to the company it claims to be from, using contact details you looked up yourself. Then tell your team. If one person got an email like this, others may have too.</p>
+
+      <p>If you're not sure, ask Claude to flag anything inconsistent before you reply. A wrong answer costs you a minute. A wrong reply can cost far more.</p>
+
+      <h2>Can my team learn to set this up?</h2>
+
+      <p>Yes. Connectors are part of what I teach in my <a href="../claude-workshop-singapore.html">Claude workshop in Singapore</a>, built on your own work rather than a demo. A phishing screen is a good first setup, because everyone in the room has an inbox.</p>
+
+      <p class="keep-reading" style="margin-top:34px; padding-top:22px; border-top:1px solid var(--line); font-size:15px; color:var(--ink-mute);">Keep reading: <a href="five-prompts-i-use-every-week.html">five prompts I use every week</a>, or <a href="api-vs-mcp-difference-explained-simply.html">API vs MCP, explained simply</a> for what a connector is.</p>
+
+    </div>
+  </div>
+</article>
+
+<div class="article-foot">
+  <a href="index.html" class="btn ghost">← All posts</a>
+  <a href="../contact.html?topic=workshop" class="btn">Ask about a workshop
+    <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+  </a>
+</div>
+
+</main>
+<div id="site-footer"></div>
+
+<script src="../assets/js/site.js?v=18" data-page="post"></script>
+</body>
+</html>

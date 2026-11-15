@@ -20,6 +20,8 @@
 ## Blog
 
 - [Blog](https://www.geargina.com/blog/): Practical writing on AI, prompting and coaching, by an AI educator and operator in Singapore.
+- [AI agents in finance: when can they act alone?](https://www.geargina.com/blog/ai-agents-in-finance-when-can-they-act-alone.html): The one rule I gave the ACCA Singapore panel for letting AI agents act alone in finance, and why juniors become reviewers.
+- [How to spot a phishing email with Claude](https://www.geargina.com/blog/how-to-spot-a-phishing-email-with-claude.html): How to screen a suspicious email with Claude before you reply, with the exact prompt and the look-alike domain it caught.
 - [Which Claude model should I use?](https://www.geargina.com/blog/which-claude-model-should-i-use.html): Haiku vs Sonnet vs Opus vs Fable for business teams, which plans include each model, and the effort setting.
 - [API vs MCP, explained simply](https://www.geargina.com/blog/api-vs-mcp-difference-explained-simply.html): The difference between an API and MCP, explained simply for beginners.
 - [Singapore Budget 2026 AI guide](https://www.geargina.com/blog/singapore-budget-2026-ai-business-owners-workers-guide.html): Every Singapore Budget 2026 AI initiative, broken down by who it affects.

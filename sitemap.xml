@@ -68,6 +68,26 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.geargina.com/blog/ai-agents-in-finance-when-can-they-act-alone.html</loc>
+    <image:image>
+      <image:loc>https://www.geargina.com/assets/img/coaching-casual.jpg</image:loc>
+      <image:title>AI Agents in Finance: When Can They Act Alone?</image:title>
+    </image:image>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.geargina.com/blog/how-to-spot-a-phishing-email-with-claude.html</loc>
+    <image:image>
+      <image:loc>https://www.geargina.com/assets/img/gemini-portrait-16.jpg</image:loc>
+      <image:title>How to Spot a Phishing Email With Claude</image:title>
+    </image:image>
+    <lastmod>2026-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.geargina.com/blog/which-claude-model-should-i-use.html</loc>
     <image:image>
       <image:loc>https://www.geargina.com/assets/img/which-claude-model-toolbox.jpg</image:loc>
