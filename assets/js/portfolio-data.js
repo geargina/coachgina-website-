@@ -117,8 +117,8 @@ window.DATA = {
 
   // Speaking & teaching → ink-flood index (replaces the doc's Certifications section)
   speaking: [
-    { title: "Speaker, AI showcase for small business owners", issuer: "SME Arena, Maybank Tower, Singapore · Upcoming, 11 Nov 2026" },
-    { title: "Guest speaker, \"Unlocking Your Superpowers: Masterclass on Personal Productivity with AI\"", issuer: "PICPA EMPOWER International Conference, Cagayan de Oro · Upcoming, 24 Oct 2026" },
+    { title: "Speaker, AI showcase for small business owners", issuer: "SME Arena, Maybank Tower, Singapore · 11 Nov 2026" },
+    { title: "Guest speaker, \"Unlocking Your Superpowers: Masterclass on Personal Productivity with AI\"", issuer: "PICPA EMPOWER International Conference, Cagayan de Oro · 24 Oct 2026" },
     { title: "Guest session, GenAI in Digital Marketing", issuer: "SMU Academy, Singapore · October 2026" },
     { title: "Panelist, \"AI-first Finance: A strategic journey\"", issuer: "ACCA Singapore Annual Conference 2026 · October 2026" },
     { title: "Solopreneur AI workshop (paid programme)", issuer: "Singapore · September 2026" },
@@ -171,7 +171,7 @@ window.DATA = {
         cta: { label: "Ask about the next cohort", href: "mailto:hello@iamcoachgina.com?subject=Claude%20Masterclass%20enquiry" },
         more: { label: "Masterclass details", href: "claude-workshop-singapore.html" } },
       { index: "03", title: "1:1 tutoring", kind: "Private sessions",
-        body: "You, your laptop and your own work. Skills, agents, connectors and project context, set up on the tasks you actually repeat, in person in Singapore or online.",
+        body: "You, your laptop and your own work. Skills, agents, connectors and project context, set up on the tasks you repeat, in person in Singapore or online.",
         facts: ["Claude or ChatGPT, your choice", "Scoped per person"],
         cta: { label: "Book a 1:1", href: "mailto:hello@iamcoachgina.com?subject=1%3A1%20tutoring%20enquiry" },
         more: { label: "Contact form", href: "contact.html" } },
@@ -200,13 +200,13 @@ window.DATA = {
 
   // FAQ: verbatim from the geargina.com homepage <details> blocks (#faq). Do not reword.
   faq: [
-    { q: "Who is Coach Gina?", a: "Coach Gina (Geargina Tan) is an AI educator and operator based in Singapore and the co-founder and COO of WTFox.ai, an AI company she runs on Claude and ChatGPT every day. She came to AI without a technical background, which shapes how she teaches. Her workshops start where beginners actually are, and take people from chatting with AI to handing it real work." },
+    { q: "Who is Coach Gina?", a: "Coach Gina (Geargina Tan) is an AI educator and operator based in Singapore and the co-founder and COO of WTFox.ai, an AI company she runs on Claude and ChatGPT every day. She came to AI without a technical background, which shapes how she teaches. Her workshops start where beginners are, and take people from chatting with AI to handing it real work." },
     { q: "Do I need a technical background to join an AI workshop?", a: "No. The sessions are built for people who are new to AI and have no technical background. Geargina is not a developer either, which is why the material starts in plain language instead of where an engineer would start. What you do need is a laptop, an account logged in before the session begins, and one real piece of your own work to practise on." },
-    { q: "How do I choose an AI workshop facilitator in Singapore?", a: "Ask five things. Has this person run a room like yours, at your seniority and skill level. Does the session work on your own documents rather than a demo dataset. Is there hands-on time from the first 20 minutes. What will people have actually built by the time they leave. And will you see the survey results afterwards, the flat ones included." },
+    { q: "How do I choose an AI workshop facilitator in Singapore?", a: "Ask five things. Has this person run a room like yours, at your seniority and skill level. Does the session work on your own documents rather than a demo dataset. Is there hands-on time from the first 20 minutes. What will people have built by the time they leave. And will you see the survey results afterwards, the flat ones included." },
     { q: "How much does an AI workshop in Singapore cost?", a: "It is scoped per team, so there is no rate card. Four things move the number. How many people are in the room, how long the format runs (2 hrs, 3 hrs or a full day), how much prep goes into building the session on your own documents, and whether it runs in person in Singapore or online. Send those four on the contact form and you get a figure back." },
     { q: "Do you run AI workshops for beginners?", a: "Yes, and most rooms are beginners. At the BNF Group strategy retreat in March 2026, a room of 40+ senior managers had almost no AI use between them. After the August 2026 Claude Masterclass, attendees self-rated their confidence in setting up a Claude Project 48% higher than before. That comes from a post-session survey, so read it as feedback rather than a study." },
     { q: "Can you build the workshop around our company's own work?", a: "Yes, that is the format rather than an add-on. Everyone brings a laptop and one real piece of their own work, a report they write monthly, a deck in progress, a process doc. Before the day there is a scoping call on who is in the room, what tools they already pay for, and what you want them doing differently next Monday. The exercises get rewritten onto your material." },
-    { q: "Does Geargina Tan speak at conferences and events?", a: "Yes. Geargina Tan speaks at conferences, industry events and private team sessions in Singapore and across Southeast Asia, in person and online. Recent stages include the ACCA Singapore Annual Conference panel on 9 October 2026, a guest session at SMU Academy on 10 October 2026 and the EntreBoss HUB panel. Next up are the PICPA EMPOWER International Conference in Cagayan de Oro on 24 October 2026 and SME Arena in Singapore on 11 November 2026. Details at geargina.com/speaking.html." },
+    { q: "Does Geargina Tan speak at conferences and events?", a: "Yes. Geargina Tan speaks at conferences, industry events and private team sessions in Singapore and across Southeast Asia, in person and online. Recent stages include SME Arena in Singapore on 11 November 2026, the PICPA EMPOWER International Conference in Cagayan de Oro on 24 October 2026, the ACCA Singapore Annual Conference panel on 9 October 2026 and a guest session at SMU Academy on 10 October 2026. Details at geargina.com/speaking.html." },
     { q: "How do I get in touch with Coach Gina?", a: "Send the contact form at geargina.com/contact.html with your team size, topic and rough timeline, or send a direct message on LinkedIn. Geargina replies personally within 2 business days from hello@iamcoachgina.com." }
   ],
 
