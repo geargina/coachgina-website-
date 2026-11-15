@@ -193,7 +193,7 @@ window.DATA = {
     cta: {
       title: "Tell me who is in the room.",
       body: "Group size, how long you can give me, and what you want people doing differently next Monday. I reply within 2 business days.",
-      primary: { label: "Contact me", href: "mailto:hello@iamcoachgina.com?subject=Workshop%20or%201%3A1%20enquiry" },
+      primary: { label: "Book a call", href: "https://calendar.app.google/BRG9V5yuCzC41HiM9" },
       secondary: { label: "DM on LinkedIn", href: "https://www.linkedin.com/in/gearginatan/" }
     }
   },
