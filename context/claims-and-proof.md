@@ -43,6 +43,7 @@ Last reviewed: 13 Oct 2026
 | Quote | Status | Source | Notes |
 |---|---|---|---|
 | Bryce, 1:1 AI coaching, Sep 2026 | CONFIRMED | Written testimonial sent to Geargina, 16 Sep 2026, passed on 22 Sep 2026 | Published on `ai-workshops-singapore.html` as an excerpt. His full text runs 3 paragraphs and contains typos ("actualy", "impt", "havent") and one garbled clause, so the site quotes 3 clean fragments of his own words joined by ellipses. Nothing is reworded. Full original text is in the session log; ask before publishing more of it, and ask him before using a surname or a photo. |
+| Neo Wei Jian, General Manager, Interlift Sales Pte Ltd, Claude team workshop, Nov 2026 | CONFIRMED | Written testimonial, consent given by email 25 Nov 2026 for use on geargina.com with name and company | Published in full and verbatim on `index.html` (`#testi`, first card), `assets/js/portfolio-data.js` and `ai-workshops-singapore.html`. His spelling "sceptical" is kept on purpose. No Review or aggregateRating schema for it (self-serving review markup). |
 
 ## Offers and pricing
 
